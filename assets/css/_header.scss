@@ -1,0 +1,353 @@
+@import "variables";
+
+.top-header {
+    & .site-header {
+        position: absolute;
+        width: 100%;
+        z-index: 1000;
+        & .navcenter-wrapper {
+            & .navcenter-lower {
+                & .nav-list .header-link {
+                    color: $white;
+                }
+            }
+        }
+    }
+    & .logo {
+        max-width: 300px;
+    }
+
+   & .site-header {
+       #nav-open span, #nav-open span:before, #nav-open span:after {
+           background: $white;
+       }
+   }
+}
+
+
+.site-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    & .site-branding {
+        margin-right: 40px;
+        padding-left: 5px;
+        display: flex;
+        align-items: center;
+        & img {
+            align-items: center;
+            width: 56%;
+            max-width: 300px;
+            height: auto;
+        }
+    }
+
+    & .pc-nav {
+        display: flex;
+    }
+
+    & .navcenter-wrapper {
+        display: flex;
+        flex-direction: column;
+
+
+        & .navcenter-upper {
+            display: flex;
+            justify-content: flex-end;
+            & .phone-number {
+                font-family: yugothic;
+                font-weight: bold;
+            }
+
+            & .phone,
+            & .btn-contact {
+                background-color: $brand-color;
+                color: $white;
+                display: flex;
+                align-items: center;
+                padding: 8px 32px;
+                border-radius: 0 0 10px 10px;
+                border: none;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            & .icon-phone {
+                margin-right: 8px;
+            }
+
+            & .phone-number a{
+                color: $white;
+                text-decoration: none;
+            }
+
+            & .phone {
+                margin: 0;
+            }
+
+            & .btn-contact {
+                margin: 0 16px;
+            }
+        }
+
+        & .navcenter-lower {
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            height: 80px;
+            align-items: center;
+
+            & .nav-list {
+                margin: 24px;
+                font-size: 18px;
+                z-index: 100;
+                position: relative;
+
+                &:last-child {
+                    margin-right: 16px;
+                }
+
+
+                &:hover ul {
+                    display: block;
+                    background-color: $brand-color;
+                    text-align: center;
+                }
+                & a {
+                    color: $brand-color;
+                    text-decoration: none;
+                }
+
+                & .submenu-wrapper {
+                    display: none;
+                    position: absolute;
+                    left: -54px;
+                    & .submenu {
+                        display: block;
+                        position: relative;
+                        font-size: 16px;
+                        padding: 12px 0px;
+                        width: 168px;
+
+                        & a {
+                            background-color: $brand-color;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+            & .nav-list:nth-child(2) {
+                & .submenu-wrapper {
+                    left: -25px;
+                }
+            }
+        }
+        & .nav-list .mailmagazine-link {
+            display: flex;
+            color: $white;
+            justify-content: center;
+            align-items: center;
+            background-color: #d7b554;
+            border: 1px solid $white;
+            padding: 8px 16px;
+            & .description {
+                display: inline-block;
+                margin-left: 8px;
+                font-size: 10px;
+                line-height: 1;
+                color: $white;
+            }
+            & .strong {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .sp-nav {
+       padding:10px;
+    }
+
+    #nav-drawer {
+    position: relative;
+    }
+
+    /*チェックボックス等は非表示に*/
+    .nav-unshown {
+    display:none;
+    }
+
+    /*アイコンのスペース*/
+    #nav-open {
+    display: inline-block;
+    width: 30px;
+    height: 22px;
+    vertical-align: middle;
+    }
+
+    /*ハンバーガーアイコンをCSSだけで表現*/
+    #nav-open span, #nav-open span:before, #nav-open span:after {
+    position: absolute;
+    height: 3px;/*線の太さ*/
+    width: 25px;/*長さ*/
+    border-radius: 3px;
+    background: #555;
+    display: block;
+    content: '';
+    cursor: pointer;
+    }
+    #nav-open span:before {
+    bottom: -8px;
+    }
+    #nav-open span:after {
+    bottom: -16px;
+    }
+
+    /*閉じる用の薄黒カバー*/
+    #nav-close {
+    display: none;/*はじめは隠しておく*/
+    position: fixed;
+    z-index: 99;
+    top: 0;/*全体に広がるように*/
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0;
+    transition: .3s ease-in-out;
+    }
+
+    /*中身*/
+    #nav-content {
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;/*最前面に*/
+    width: 90%;/*右側に隙間を作る（閉じるカバーを表示）*/
+    max-width: 330px;/*最大幅（調整してください）*/
+    height: 100%;
+    background: $white;/*背景色*/
+    transition: .3s ease-in-out;/*滑らかに表示*/
+    -webkit-transform: translateX(-105%);
+    transform: translateX(-105%);/*左に隠しておく*/
+    }
+
+    /*チェックが入ったらもろもろ表示*/
+    #nav-input:checked ~ #nav-close {
+    display: block;/*カバーを表示*/
+    opacity: .5;
+    }
+
+    #nav-input:checked ~ #nav-content {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);/*中身を表示（右へスライド）*/
+    box-shadow: 6px 0 25px rgba(0,0,0,.15);
+    }
+
+    & .mail-magazine {
+        font-size: 12px;
+        background-color: $yellow-light;
+        text-align: center;
+        color: $white;
+        & .mail-icon {
+            display: block;
+            margin: auto;
+            padding: 8px 0;
+        }
+        & .mailmagazine-link {
+            display: block;
+            color: $white;
+            padding: 6px 16px;
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1096px) {
+    .site-header {
+        & .site-branding {
+            margin-right: 0;
+            width: 150px;
+            & img {
+                width: 90%;
+            }
+        }
+        & .navcenter-wrapper {
+            & .navcenter-lower {
+                & .nav-list {
+                    margin: 24px 14px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .top-header .site-header {
+        top: 4px;
+    }
+    .site-header {
+        justify-content: space-between;
+        margin: 8px auto;
+        & .site-branding {
+            width: 180px;
+            padding-left: 16px;
+        }
+        & .sp-nav-wrapper {
+            margin: 0;
+        }
+
+        & .sp {
+            display: block;
+            padding-right: 40px;
+        }
+        & .pc-nav {
+            display: none;
+        }
+
+        a {
+            color: $white;
+            text-decoration: none;
+            margin-left: 16px;
+        }
+
+        & .site-navigation {
+            display: flex;
+            align-items: center;
+        }
+
+        & #nav-content {
+            background-color: #080841;
+            max-width: 240px;
+
+            & .nav-list {
+                font-size: 18px;
+                padding: 16px;
+                &:not(:last-child) {
+                    border-bottom: 1px solid #5a5c73;
+                }
+
+                & .submenu-wrapper {
+                    margin-top: 4px;
+                }
+
+                & .submenu {
+                    font-size: 16px;
+                    padding: 4px 16px;
+                }
+            }
+
+            & .nav-contact {
+                display: flex;
+                align-items: center;
+                padding-left: 30px;
+                background-color: #dfc578;
+            }
+            & .footer-contact-link {
+                margin-left: 0;
+            }
+        }
+    }
+}

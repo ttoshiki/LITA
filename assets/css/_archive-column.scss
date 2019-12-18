@@ -1,0 +1,36 @@
+@import "variables";
+
+.column-page {
+    & em {
+        font-weight: bold;
+    }
+    & strong {
+        font-style: oblique;
+    }
+    & .article-main-wrapper {
+        // サイドメニューを横並びに
+        display: flex;
+    }
+    & .heading2-wrapper {
+        > .heading2 {
+            margin-top: 90px;
+        }
+    }
+
+    & .article-list-wrapper {
+        margin: 0 auto;
+        > .article-list {
+            > .article {
+                margin: 0 auto 48px;
+                .article-cat {
+                    padding: 2px 12px;
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+
+    & .sidebar {
+        margin-bottom: 80px;
+    }
+}

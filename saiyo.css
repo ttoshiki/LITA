@@ -1,0 +1,503 @@
+.boshu {
+  margin: 0px auto;
+  padding: 0px 80px;
+}
+
+.main-visual img {
+  width: 100%;
+  height: auto;
+}
+
+.intro-header p {
+  text-align: center;
+  font-family: YasashisaAntique;
+  color: #000461;
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.producer h1 {
+  color: #000461;
+  font-size: 29px;
+  font-weight: 400;
+  line-height: 0.8;
+}
+
+.producer p {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.intro-gyomu,
+.person,
+.skill h1 {
+  color: #211815;
+  font-size: 24px;
+  line-height: 0.6;
+}
+
+.skill h1 {
+  font-size: 29px;
+  color: #006;
+}
+
+.img-boshu,
+.img-kinmu,
+.img-process {
+  /*親div*/
+  position: relative; /*相対配置*/
+}
+
+.entry-content li {
+  list-style: none;
+  font-family: GRyuminPro;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.interview h1 {
+  line-height: normal;
+  color: #d0b563;
+  font-size: 29px;
+  font-weight: 700;
+  padding-left: 0px;
+  padding-top: 20px;
+  margin-bottom: 0px;
+}
+
+.interview ul li {
+  font-family: GRyuminPro;
+  line-height: 27px;
+  color: #000000;
+  font-size: 17px;
+  font-weight: 100;
+}
+
+.entry-button img {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+.interview-1 img {
+  width: 23%;
+  padding-top: 10px;
+  margin-bottom: -10px;
+}
+
+.entry-content table {
+  margin: 0px;
+  text-align: left;
+  border-collapse: collapse;
+  table-layout: fixed;
+  word-break: break-word;
+  border: solid 1px #d5d5d5;
+}
+
+.tbl-ptn th {
+  background: #eaeaea;
+  border: solid 1px #d5d5d5;
+  padding-left: 20px;
+  width: 220px;
+  height: 50px;
+}
+
+.tbl-ptn td {
+  border: solid 1px #d5d5d5;
+  padding-left: 20px;
+  width: 720px;
+  height: 50px;
+}
+
+.pc-display {
+  display: block;
+}
+.sp-display {
+  display: none;
+}
+
+.day {
+  margin-top: 20px;
+}
+
+.entry__occupation {
+  display: inline-block;
+}
+
+.entry__subtitle {
+  display: inline-block;
+  margin-left: 12px;
+  font-size: 20px;
+  color: #000461;
+}
+
+.entry__caution {
+  margin: 0 0 24px;
+  width: 564px;
+  padding-left: 12px;
+  color: #000461;
+  font-weight: 600;
+  border-left: 8px solid #000461;
+}
+
+/************************************
+** レスポンシブデザイン用のメディアクエリ
+************************************/
+
+/* pc */
+@media screen and (min-width: 961px) {
+  /*ここにpc用スタイルを記述*/
+}
+
+/* tablet  */
+@media only screen and (min-width: 641px) and (max-width: 960px) {
+  /*ここにtablet用スタイルを記述*/
+  boshu {
+    margin: 0px auto;
+    padding: 0px 30px;
+  }
+
+  .main-visual img {
+    width: 100%;
+    height: auto;
+  }
+
+  .intro-header p {
+    text-align: center;
+    font-family: YasashisaAntique;
+    color: #000461;
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  .producer h1 {
+    font-family: YasashisaAntique;
+    color: #000461;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 0.2;
+  }
+
+  .producer p {
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .intro-gyomu h1 {
+    font-family: YasashisaAntique;
+    color: #211815;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 0.4;
+  }
+
+  .person h1 {
+    font-family: YasashisaAntique;
+    color: #211815;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 0.4;
+  }
+
+  .skill h1 {
+    font-family: YasashisaAntique;
+    color: #211815;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 0.4;
+  }
+
+  .img-boshu,
+  .img-kinmu,
+  .img-process {
+    /*親div*/
+    position: relative; /*相対配置*/
+  }
+
+  .entry-content li {
+    list-style: none;
+    font-family: GRyuminPro;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+  }
+
+  .interview h1 {
+    font-family: GRyuminPro;
+    line-height: 28px;
+    color: #d0b563;
+    font-size: 26px;
+    font-weight: 700;
+    padding-left: 0px;
+  }
+
+  .interview ul li {
+    font-family: GRyuminPro;
+    line-height: 27px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 100;
+  }
+
+  .interview-arai img {
+    float: none;
+    width: 100%;
+  }
+
+  .interview-tsuru img {
+    float: none;
+    width: 100%;
+  }
+
+  .interview-terao img {
+    float: none;
+    width: 100%;
+  }
+
+  .interview-1-sub {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 100px;
+  }
+
+  .interview-2-sub {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 100px;
+  }
+
+  .interview-3-sub {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 100px;
+  }
+
+  .entry-button img {
+    display: block;
+    margin: auto;
+    width: 80%;
+  }
+
+  .img-boshu img {
+    width: 25%;
+    padding-top: 10px;
+  }
+
+  .img-kinmu img {
+    width: 25%;
+    padding-top: 10px;
+  }
+
+  .img-process img {
+    width: 30%;
+    padding-top: 10px;
+  }
+
+  .interview-1 img {
+    width: 45%;
+    padding-top: 10px;
+    margin-bottom: -10px;
+  }
+
+  .pc-display {
+    display: none;
+  }
+  .sp-display {
+    display: block;
+  }
+
+  .line img {
+    height: 3px;
+  }
+
+  .day {
+    margin-top: 20px;
+  }
+
+  .day img {
+    width: 70%;
+  }
+}
+
+/* smartPhone */
+@media screen and (max-width: 640px) {
+  /*ここにスマホ用スタイルを記述*/
+  .boshu {
+    margin: 0px auto;
+    padding: 0px 30px;
+  }
+
+  .main-visual img {
+    width: 100%;
+    height: auto;
+  }
+
+  .intro-header p {
+    text-align: center;
+    font-family: YasashisaAntique;
+    color: #000461;
+    font-size: 26px;
+    font-weight: 400;
+  }
+
+  .producer h1 {
+    font-family: YasashisaAntique;
+    color: #000461;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 0.2;
+  }
+
+  .producer p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .intro-gyomu h1 {
+    font-family: YasashisaAntique;
+    color: #211815;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 0.4;
+  }
+
+  .person h1 {
+    font-family: YasashisaAntique;
+    color: #211815;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 0.4;
+  }
+
+  .skill h1 {
+    font-family: YasashisaAntique;
+    color: #211815;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 0.4;
+  }
+
+  .img-boshu,
+  .img-kinmu,
+  .img-process {
+    /*親div*/
+    position: relative; /*相対配置*/
+  }
+
+  .entry-content li {
+    list-style: none;
+    font-family: GRyuminPro;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 26px;
+  }
+
+  .interview h1 {
+    font-family: GRyuminPro;
+    line-height: 20px;
+    color: #d0b563;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 0px;
+  }
+
+  .interview ul li {
+    font-family: GRyuminPro;
+    line-height: 27px;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 100;
+  }
+
+  .interview-arai img {
+    float: none;
+    width: 100%;
+  }
+
+  .interview-tsuru img {
+    float: none;
+    width: 100%;
+  }
+
+  .interview-terao img {
+    float: none;
+    width: 100%;
+  }
+
+  .interview-1-sub {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 100px;
+  }
+
+  .interview-2-sub {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 100px;
+  }
+
+  .interview-3-sub {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 100px;
+  }
+
+  .entry-button img {
+    display: block;
+    margin: auto;
+    width: 90%;
+  }
+
+  .img-boshu img {
+    width: 30%;
+    padding-top: 10px;
+  }
+
+  .img-kinmu img {
+    width: 30%;
+    padding-top: 10px;
+  }
+
+  .img-process img {
+    width: 40%;
+    padding-top: 10px;
+  }
+
+  .interview-1 img {
+    width: 60%;
+    padding-top: 10px;
+    margin-bottom: -10px;
+  }
+
+  .pc-display {
+    display: none;
+  }
+  .sp-display {
+    display: block;
+  }
+
+  .line img {
+    height: 3px;
+  }
+
+  .day {
+    margin-top: 20px;
+  }
+
+  .day img {
+    width: 80%;
+  }
+
+  .entry__subtitle {
+    margin-left: 0;
+  }
+
+  .entry__caution {
+    width: 96%;
+    margin-top: 16px;
+  }
+}

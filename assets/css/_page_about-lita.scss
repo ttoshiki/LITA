@@ -1,0 +1,607 @@
+@import "variables";
+
+.page-about-lita {
+  & .pc {
+    display: block;
+  }
+  & .sp {
+    display: none;
+  }
+    & .heading2-wrapper {
+        & .heading2 {
+            margin-bottom: 0;
+        }
+        & .heading2-subtext {
+            color: $brand-color;
+            &::before {
+                content: '-';
+                padding-right: 12px;
+            }
+            &::after {
+                content: '-';
+                padding-left: 12px;
+            }
+        }
+    }
+    & .header-img-wrapper {
+        position: relative;
+        & .header-img {
+            width: 100%;
+            height: auto;
+        }
+        & .heading1 {
+            color: $white;
+            font-size: 2.5vw;
+            letter-spacing: $text-space-m;
+            text-shadow: 2px 2px 6px #333;
+            font-weight: normal;
+            position: absolute;
+            top: 24%;
+            left: 42%;
+            & .strong {
+                font-size: 4.5vw;
+            }
+            & .header-sub {
+                display: block;
+                font-size: 16px;
+            }
+        }
+    }
+
+    & .sec:not(:last-child) {
+        margin-bottom: 160px;
+    }
+
+    & .content-area {
+        margin: 0 auto 160px;
+    }
+
+  & .sec.vision {
+    background: url("./assets/img/about_vision_bg.jpg") no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+    margin-bottom: 0;
+    & .heading2 {
+      font-size: 56px;
+    }
+    .desc {
+        text-align: center;
+        line-height: 2.2;
+        font-size: 24px;
+        color: $black;
+        margin-bottom: 40px;
+    }
+  }
+
+  & .philosophy {
+      background-color: $blue-light-300;
+      padding: 80px 0;
+      & .heading2 {
+        font-size: 40px;
+        margin-bottom: 80px;
+      }
+
+      & .block-wrapper {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          margin: 40px auto;
+          position: relative;
+          &:nth-of-type(2) {
+              flex-direction: row-reverse;
+          }
+      }
+      & .philosophy-heading {
+          height: auto;
+          color: $brand-color;
+          font-size: 40px;
+          width: 500px;
+          margin: 0 auto 40px;
+          padding: 16px 8px;
+          border: 2px solid $brand-color;
+          letter-spacing: $text-space-l;
+          position: relative;
+          & .first-letter {
+            font-size: 56px;
+          }
+      }
+
+      & .desc {
+        font-size: 24px;
+        text-align: center;
+        line-height: 2;
+        color: $black;
+      }
+
+
+  }
+
+  & .company-overview {
+    & .table-wrapper {
+        border-collapse: collapse;
+        margin: auto;
+        max-width: 960px;
+        width: 80%;
+      }
+
+    & .table-wrapper tr {
+        border: solid 1px $brand-color;
+    }
+
+      dl {
+          margin: 0;
+          &:not(:last-child) {
+            border-top: 1px solid $brand-color;
+            border-right: 1px solid $brand-color;
+            border-left: 1px solid $brand-color;
+          }
+          &:last-child {
+              border: 1px solid $brand-color;
+          }
+      }
+
+        .heading,
+        .desc {
+            display: inline-block;
+        }
+
+        .heading {
+        width: 20%;
+        text-align: center;
+        padding: 8px 24px;
+        background-color: $brand-color;
+        color: $white;
+        }
+
+        & .desc {
+            margin-left: 16px;
+        }
+  }
+  & .biography {
+    margin: auto;
+    background-color: $blue-light-300;
+    padding: 80px 0;
+  }
+
+  & .president-wrapper {
+    max-width: $max-width;
+    margin: auto;
+    & .desc {
+      padding-right: 16px;
+    }
+  }
+
+  & .content-area {
+    margin: auto;
+
+  }
+
+  & .president-name {
+    display: block;
+    font-size: 40px;
+    letter-spacing: $text-space-m;
+    font-style: normal;
+  }
+
+  & .banner-area {
+    max-width: $max-width;
+    margin: 80px auto;
+    justify-content: space-around;
+    & .banner-link {
+      width: 44%;
+      height: 44%;
+    }
+    & .banner {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  & .biography-wrapper {
+    text-align: left;
+    & .img-biography {
+      width: 100%;
+      max-width: 800px;
+      margin: auto;
+      height: auto;
+    }
+  }
+
+  & .media {
+    max-width: $max-width;
+    margin: auto;
+  }
+
+  & .president-achievement-wrapper {
+    max-width: $max-width;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    & .achievement-list-wrapper {
+      width: 33%;
+      display: flex;
+      justify-content: center;
+      & .achievement-img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    & .achievement-list {
+      width: 90%;
+
+      & .achievement-name {
+        background-color: $brand-color;
+        color: $white;
+        margin-bottom: 8px;
+        padding: 4px 16px;
+        text-align: center;
+      }
+    }
+
+    & .heading2 {
+      font-size: 18px;
+    }
+  }
+
+  & .activity {
+    & .activity-list-wrapper {
+      list-style: none;
+      margin: 0 auto 80px;
+      width: 800px;
+      padding-left: 0;
+      font-size: 20px;
+
+      & .day {
+        margin: 0 40px;
+        color: $brand-color;
+        letter-spacing: $text-space-m;
+      }
+
+      & a {
+        color: $brand-color;
+        text-decoration: none;
+        letter-spacing: $text-space-m;
+      }
+
+      & a:hover {
+        text-decoration: underline;
+      }
+
+      & .activity-list {
+        & .title {
+          color: $brand-color;
+        }
+      }
+
+      & .activity-list:not(:last-child) {
+        margin-bottom: 32px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 16px;
+      }
+    }
+
+    & .activity-btn {
+      display: block;
+      margin: auto;
+      border: none;
+      border-radius: 2px;
+      color: $white;
+      font-size: 24px;
+      letter-spacing: $text-space-m;
+      background-color: $brand-color;
+      padding: 16px 80px;
+      transition: .2s;
+
+      &:hover {
+        cursor: pointer;
+        opacity: .8;
+      }
+    }
+  }
+  & .seminar {
+  max-width: $max-width;
+  margin: auto;
+  }
+
+  & .biography-wrapper {
+    & .show-way-button {
+      border: none;
+      border-radius: 2px;
+      background-color: $brand-color;
+      color: $white;
+      font-size: 20px;
+      padding: 24px 80px;
+      margin-bottom: 40px;
+      transition: .2s;
+
+      &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+      }
+
+    }
+    & .way-wrapper {
+      & .article {
+        display: flex;
+        justify-content: center;
+        padding: 80px 40px;
+      }
+    }
+    & .article:nth-child(odd) {
+      background-color: $blue-light-100;
+      & .subtitle {
+        margin: 24px 0;
+      }
+
+      & .text {
+        margin-right: 40px;
+      }
+    }
+
+    & .article:nth-child(even) {
+      background-color: $blue-light-700;
+      flex-direction: row-reverse;
+
+      & .subtitle {
+        margin: 24px 40px;
+      }
+
+      & .text {
+        margin-left: 40px;
+
+      }
+      & .heading3 {
+        margin-left: 40px;
+      }
+    }
+
+    & .heading3 {
+      margin-top: 0;
+      margin-bottom: 0;
+      text-align: left;
+      font-size: 24px;
+      color: #333;
+      &::before {
+        content: "Q.";
+        color: #333;
+      }
+    }
+    & .subtitle {
+      display: block;
+      color: $brand-color;
+      font-size: 20px;
+      text-align: left;
+    }
+
+    & .text {
+      text-align: left;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    & .text-wrapper {
+      width: 50%;
+      padding-right: 20px;
+    }
+
+    & .img-wrapper{
+        width: 100%;
+        max-width: 375px;
+      & img {
+        width: 380px;
+        height: auto;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 769px) {
+  .page-about-lita {
+    .pc {
+      display: none;
+    }
+    .sp {
+      display: block;
+    }
+    & .header-img-wrapper {
+      & .header-img {
+        &.sp {
+          display: block;
+        }
+        &.pc {
+          display: none;
+        }
+      }
+      & .heading1 {
+        font-size: 6vw;
+        top: 28%;
+        left: 33%;
+        & .strong {
+          font-size: 8vw;
+        }
+      }
+    }
+        & .sec.vision {
+          background: url("./assets/img/about_vision_bg_sp.jpg") no-repeat;
+          padding: 20px 0;
+          & .heading2 {
+            font-size: 40px;
+          }
+          & .desc {
+            font-size: 16px;
+            padding: 0 16px;
+          }
+        }
+        & .philosophy {
+          & .heading2 {
+            margin-bottom: 40px;
+          }
+          & .text-wrapper {
+            padding: 16px;
+          }
+          & .philosophy-heading  {
+            width: 90%;
+          }
+
+          & .desc {
+            font-size: 14px;
+          }
+        }
+        & .company-overview {
+            & .table-wrapper {
+                border-collapse: collapse;
+                width: 90%;
+            }
+
+            & .heading {
+              display: block;
+              width: 100%;
+              padding: 8px 0;
+              text-align: center;
+            }
+
+            & .desc {
+              display: block;
+              text-align: center;
+              margin-left: 0;
+              padding: 8px 0;
+            }
+        }
+        & .president-wrapper {
+            flex-direction: column;
+            position: relative;
+            & .president-img.pc {
+              display: none;
+            }
+
+            & .president-img {
+            display: block;
+            width: 100%;
+            height: auto;
+            }
+            & .position-name-wrapper {
+            padding: 24px 16px;
+            position: absolute;
+            top: 64px;
+            right: 0;
+            font-size: 12px;
+            }
+            & .desc {
+              margin: 24px auto;
+              &:first-child {
+                margin-top: 40px;
+              }
+            }
+        }
+        & .president-name {
+            font-size: 32px;
+        }
+        & .desc-wrapper {
+            padding: 0 16px;
+        }
+        & .banner-area {
+            flex-direction: column;
+            margin-top: 40px;
+            & .banner-link {
+                margin: auto;
+                width: 90%;
+                margin-bottom: 16px;
+            }
+        }
+
+        & .president-achievement-wrapper {
+            & .achievement-list-wrapper {
+                width: 50%;
+                font-size: 16px;
+
+                & .achievement-list {
+                    & .achievement-name {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 64px;
+
+                        & .heading2 {
+                        font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+
+        & .biography-wrapper {
+          & .heading3 {
+            font-size: 20px;
+          }
+            & .img-biography {
+                width: 90%;
+                max-width: 600px;
+            }
+
+            & .img-wrapper {
+              max-width: 300px;
+              & img {
+                width: 100%;
+              }
+            }
+
+            & .way-wrapper {
+                & .article {
+                display: block;
+                display: flex;
+                flex-direction: column;
+                }
+            }
+
+            & .article:nth-child(even) {
+              & .heading3 {
+                margin: 0 auto 40px;
+              }
+                & .text {
+                margin-left: 0;
+                }
+                & .subtitle {
+                  margin: 24px 0 8px;
+                }
+            }
+
+            & .article:nth-child(odd) {
+              & .heading3 {
+                margin: 0 auto 40px;
+              }
+                & .text {
+                margin-right: 0;
+                }
+            }
+        }
+
+        & .activity {
+            & .activity-list-wrapper {
+                width: 90%;
+                & .day {
+                margin-left: 0;
+                display: block;
+                }
+                & .activity-list {
+                  font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+  .page-about-lita {
+    & .president-wrapper {
+      & .position-name-wrapper {
+        top: 40px;
+        & .president-name {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}

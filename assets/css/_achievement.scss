@@ -1,0 +1,126 @@
+@import "variables";
+
+.achievement-wrapper {
+    max-width: 1096px;
+    margin: 0 auto 160px;
+
+    & .preparation {
+        & .heading1 {
+            font-size: 64px;
+            text-align: center;
+            font-weight: normal;
+            letter-spacing: 8px;
+        }
+        & .text {
+            text-align: center;
+            margin-bottom: 400px;
+        }
+    }
+
+    & .sec:first-child {
+        margin-top: 120px;
+    }
+
+    & .company-logo-wrapper {
+        margin: 0 auto 160px;
+        width: 100%;
+        max-width: 756px;
+
+        & .company-logo {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .small-text {
+        display: block;
+        margin-top: 16px;
+        color: $brand-color;
+    }
+
+    & .achievement-main-wrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    & .achievement-list-wrapper{
+        margin-top: 80px;
+        padding: 0 16px;
+        & .achievement-title {
+            color: $brand-color;
+            background-color: $blue-light-100;
+            padding: 16px;
+        }
+
+        & .achievement-text {
+            margin-top: 0;
+        }
+
+        & .achievement-img {
+            width: 360px;
+            max-width: 100%;
+            height: auto;
+            margin-left: 24px;
+        }
+    }
+
+    & .client {
+        margin-top: 160px;
+        & .heading3 {
+            background-color: $brand-color;
+            color: $white;
+            font-size: 20px;
+            padding: 8px 0 8px 16px;
+            text-align: left;
+        }
+        & .client-img {
+            width: 80%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+        & .heading4 {
+            color: $brand-color;
+            font-size: 24px;
+            margin-bottom: 4px;
+        }
+        & .website {
+            color: $brand-color;
+        }
+        & .qa-wrapper {
+            margin: 40px auto;
+            & .question {
+                color: $brand-color;
+                &::before {
+                    content: 'Q.';
+                    padding-right: 4px;
+                }
+            }
+            & .answer {
+                &::before {
+                    content: 'A.';
+                    padding-right: 4px;
+                }
+            }
+            &:last-child {
+                    margin-bottom: 80px;
+                }
+        }
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .achievement-wrapper {
+        padding: 0 16px;
+
+        & .achievement-list-wrapper {
+            padding: 0;
+        }
+        & .achievement-main-wrapper {
+            flex-direction: column;
+
+            & .achievement-img {
+                margin-left: 0;
+            }
+        }
+    }
+}

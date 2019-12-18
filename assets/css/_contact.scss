@@ -1,0 +1,194 @@
+@import "variables";
+
+.contact {
+    max-width: $max-width;
+    margin: 0 auto 160px;
+    & .sp {
+        display: none;
+    }
+
+    & .form-wrapper {
+        width: 70%;
+        margin: auto;
+    }
+
+    & .wpcf7-submit,
+    & .confirm-btn
+     {
+        border: none;
+        border-radius: 2px;
+        background-color: $brand-color;
+        color: $white;
+        width: 240px;
+        height: 56px;
+        letter-spacing: $text-space-l;
+        transition: .2s;
+        &:hover {
+            cursor: pointer;
+            opacity: .2s;
+        }
+    }
+    & .confirm-btn {
+        margin-top: 40px;
+    }
+    & .submit-btn {
+        position: absolute;
+        top: 40px;
+        right: 80px;
+    }
+    & .back-btn {
+        border: 1px solid $brand-color;
+        border-radius: 2px;
+        width: 240px;
+        height: 56px;
+        letter-spacing: $text-space-l;
+        transition: .2s;
+        background-color: transparent;
+        color: $brand-color;
+        position: absolute;
+        top: 40px;
+        left: 80px;
+        &:hover {
+            cursor: pointer;
+            opacity: .8;
+        }
+    }
+
+    & .submit-btn-wrapper {
+        text-align: center;
+        position: relative;
+    }
+
+    & .contact-label {
+        font-size: 20px;
+        color: $brand-color;
+        display: inline-block;
+        margin-bottom: 8px;
+    }
+
+    & .contact-table {
+        margin-bottom: 24px;
+
+        & .wpcf7-list-item {
+            margin: 0 16px 8px 0;
+        }
+
+        & .wpcf7-text {
+            padding: 8px;
+            border: 1px solid $black;
+        }
+        & .your-sex {
+            display: inline-block;
+            margin-right: 24px;
+        }
+        & .input-sex,
+        & .input-name {
+            width: 200px;
+        }
+        & .input-sex {
+            margin-right: 24px;
+        }
+        & .name-label {
+            margin-right: 16px;
+        }
+
+        & .wpcf7-textarea {
+            border: 1px solid $black;
+            padding: 8px;
+            line-height: 1.5;
+        }
+        & .sex-name-wrapper {
+            display: flex;
+            flex-direction: row;
+        }
+        & .sex-wrapper,
+        & .name-wrapper {
+            display: flex;
+            align-items: baseline;
+        }
+        & .input-long {
+            width: 95%;
+        }
+        & .wpcf7c-conf {
+            border: none;
+            background-color: transparent;
+            color: $black;
+            &.wpcf7-textarea {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                resize: none;
+                padding: 0;
+                border: 0;
+                outline: none;
+                background: transparent;
+            }
+        }
+    }
+
+    div.wpcf7-mail-sent-ok {
+        border: 2px solid $yellow;
+        padding: 16px;
+    }
+
+    input:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0px 1000px $white inset;
+    }
+}
+
+
+
+@media screen and (max-width:1024px) {
+    .contact {
+        .wpcf7-form {
+            width: 95%;
+            margin:  auto;
+        }
+        & .contact-table {
+            & .sex-name-wrapper {
+                flex-direction: column;
+            }
+        }
+        & .name-wrapper {
+            margin-top: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .contact {
+        & .sp {
+            display: block;
+        }
+        & .heading2-wrapper {
+            margin-top: 80px;
+        }
+
+        & .submit-btn-wrapper {
+            height: 80px;
+            margin-bottom: 80px;
+        }
+
+        & .back-btn {
+            top: 80px;
+            left: 13%;
+        }
+
+        & .submit-btn {
+            top: 0;
+            left: 13%;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact {
+        & .subtitle {
+            padding: 0 16px;
+            font-size: 16px;
+        }
+        & .form-wrapper {
+            width: 90%;
+        }
+    }
+}

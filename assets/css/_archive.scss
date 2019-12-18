@@ -1,0 +1,196 @@
+@import "variables";
+
+.article-main-wrapper {
+    margin: auto;
+    width: 90%;
+    max-width: $max-width;
+}
+
+.article-list-wrapper {
+    padding-left: 0;
+    max-width: 1000px;
+    list-style: none;
+    margin: auto;
+
+    > .article-list {
+        min-width: 840px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+
+        > .article {
+            width: 76%;
+            height: auto;
+            margin: 0 auto;
+            position: relative;
+            margin-bottom: 40px;
+
+            > a {
+                color: $black;
+                display: block;
+                text-decoration: none;
+            }
+
+            & img {
+                width: 240px;
+                height: 240px;
+                object-fit: cover;
+                max-width: 100%;
+                max-height: 100%;
+                display: block;
+                margin: 0 auto 16px;
+            }
+
+            & .article-cat {
+                position: absolute;
+                top: 10px;
+                left: 16px;
+                font-size: 8px;
+                display: inline-block;
+                padding: 2px 12px;
+                color: $white;
+                background-color: $yellow;
+                border-radius: 16px;
+            }
+            & .daytime,
+            & .article-title {
+                display: block;
+                width: 240px;
+                margin: auto;
+            }
+        }
+    }
+}
+
+.category-wrapper {
+     margin-top: 80px;
+}
+
+.sidebar {
+    & .sidebar-title {
+        box-sizing: border-box;
+        width: 300px;
+        margin-top: 16px;
+        background: $brand-color;
+        color: $white;
+        font-size: 18px;
+        letter-spacing: $text-space-l;
+        padding: 16px;
+    }
+
+    & ul {
+        padding: 0 16px;
+    }
+
+    & .sidebar-article-list {
+        margin-bottom: 24px;
+        padding-bottom: 8px;
+        max-width: 268px;
+        & a {
+            color: $brand-color;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    & .sidebar-article-list:not(:last-child) {
+        border-bottom: 1px solid #ccc;
+    }
+
+    & .category-list {
+        list-style: none;
+
+        & .cat-item {
+            margin-bottom: 24px;
+            padding-bottom: 8px;
+
+            & a {
+                color: $brand-color;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    & .cat-item:not(:last-child) {
+        border-bottom: 1px solid #ccc;
+    }
+
+}
+
+
+@media screen and (max-width:1024px) {
+    & .article-main-wrapper {
+        flex-direction: column;
+    }
+
+    & .article-list-wrapper{
+        margin-bottom: 80px;
+        > .article-list {
+            min-width: 0;
+            justify-content: space-around;
+        }
+    }
+
+    & .sidebar {
+        margin-top: 80px;
+        & .sidebar-title {
+            width: 100%;
+        }
+        & .sidebar-article-list {
+            max-width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .article-wrapper {
+        & .article-content-wrapper {
+            & .paging {
+                width: 100%;
+                margin-bottom: 80px;
+            }
+        }
+
+        article {
+            width: 100%;
+        }
+    }
+
+    .article-main-wrapper {
+        margin-bottom: 80px;
+    }
+
+    .article-list-wrapper {
+        > .article-list {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            & .article-cat {
+                font-size: 8px;
+            }
+
+            > .article {
+                width: 80%;
+                & .article-cat {
+                    left: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .article-list-wrapper > .article-list > .article {
+        & img {
+            width: 128px;
+            height: 128px;
+        }
+        & .article-title {
+            width: 128px;
+        }
+    }
+}

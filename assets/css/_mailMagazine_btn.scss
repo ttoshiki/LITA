@@ -1,0 +1,117 @@
+@import "variables";
+
+.mail-magazine-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.mail-magazine-block {
+    width: 100%;
+    border: 2px solid $brand-color;
+    max-width: 960px;
+    margin: 80px 0;
+    > .mail-magazine-heading {
+        margin: 0;
+        background-color: $brand-color;
+        color: $white;
+        text-align: center;
+        letter-spacing: $text-space-m;
+        padding: 24px;
+        font-size: 32px;
+    }
+
+    & .strong {
+        display: block;
+        text-align: center;
+        font-size: 28px;
+        color: $red;
+        letter-spacing: $text-space-m;
+    }
+
+    > .mail-magazine-inner {
+       padding: 32px 40px;
+
+       > .text {
+           margin: 8px auto 24px;
+           text-align: center;
+       }
+    }
+
+    & .example-box {
+        background-color: $blue-light-300;
+        padding: 16px 40px;
+        margin-bottom: 40px;
+        & .heading3 {
+            font-size: 24px;
+            margin: 0 auto 16px;;
+            color: #333;
+        }
+        & .example-list {
+            padding-left: 24px;
+            margin-bottom: 8px;
+            background: url('./assets/img/icon_check.png') no-repeat top left;
+            background-size: 16px;
+        }
+    }
+
+    & .regi {
+        display: block;
+        margin: 0 auto;
+        background-color: $yellow;
+        color: $white;
+        width: 400px;
+        height: auto;
+        transition: .2s;
+    }
+
+    & .right-position {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    & .regi:hover {
+        cursor: pointer;
+        opacity: .8;
+    }
+}
+
+@media screen and (max-width:1024px) {
+  .mail-magazine-wrapper {
+      max-width: 90%;
+      margin: auto;
+
+      & .mail-magazine-block {
+          max-width: 100%;
+          margin-top: 0;
+
+          > .mail-magazine-inner {
+              padding: 32px 16px;
+          }
+
+          & .strong {
+              font-size: 20px;
+          }
+
+          & .example-box {
+              padding: 16px 12px;
+
+              & .example-list {
+                  padding-left: 20px;
+              }
+          }
+      }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .mail-magazine-wrapper {
+      & .regi {
+          width: 100%;
+          max-width: 375px;
+      }
+
+      & .mail-magazine-heading {
+          font-size: 20px;
+      }
+  }
+}
