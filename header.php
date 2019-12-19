@@ -125,7 +125,7 @@
 								</ul>
 							</li>
 							<li class="nav-list"><a href="/service-list" class="header-link">PR代行</a>
-							<li class="nav-list"><a href="/services" class="header-link" target="_blank">PR塾</a></li>
+							<li class="nav-list"><a href="//pr-professional.jp/pr-learn/" class="header-link" target="_blank">PR塾</a></li>
 							<li class="nav-list"><a href="/column" class="header-link">PRコラム</a></li>
 							<li class="nav-list"><a href="/announcement" class="header-link">活動実績</a></li>
 							<li class="nav-list"><a href="/entry" class="header-link">採用情報</a>
@@ -164,7 +164,7 @@
 									<li class="submenu"><a href="/about-lita#president-introduction">代表紹介</a></li>
 								</ul>
 							<li class="nav-list"><a href="/service-list">PR代行</a>
-							<li class="nav-list"><a href="/services">PR塾</a>
+							<li class="nav-list"><a href="//pr-professional.jp/pr-learn/">PR塾</a>
 							<li class="nav-list"><a href="/column">PRコラム</a></li>
 							<li class="nav-list"><a href="/announcement">活動実績</a>
 							<li class="nav-list"><a href="/entry" class="header-link">採用情報</a>
