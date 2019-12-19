@@ -52,7 +52,7 @@
 			</ul>
 			<ul class="list-wrapper">
 				<li class="list"><a href="/service-list"><span class="list-root">-</span>PR代行</a></li>
-				<li class="list"><a href="/services" target="_blank"><span class="list-root">-</span>PR塾</a></li>
+				<li class="list"><a href="//pr-professional.jp/pr-learn/" target="_blank"><span class="list-root">-</span>PR塾</a></li>
 			</ul>
 
 			<ul class="list-wrapper">
