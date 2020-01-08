@@ -108,21 +108,7 @@ get_header();
 					</div>
 				</section>
 				<section class="book-anouncement">
-					<a href="/book-anouncement" class="book-anouncement__inner">
-						<div class="book-anouncement__bookCover">
-							<h1 class="book-anouncement__heading">著書</h1>
-							<img src="<?php echo content_url() ?>/themes/lita/assets/img/book_front.png" alt="0円PR" class="book-anouncement__image">
-						</div>
-						<div class="book-anouncement__bookInformation">
-							<h2 class="book-anouncement__bookName">「０円PR」</h2>
-							<p class="book-anouncement__text">
-								株式会社LITA・代表の笹木郁乃の初書籍。<br />
-								中小ベンチャー企業・スタートアップの経営者様、<br />
-								広報担当者の皆様にオススメの一冊です。<br />
-								全国の書店ほかamazonでもご購入いただけます。
-							</p>
-						</div>
-					</a>
+					<?php get_template_part('bookAnouncement_band'); ?>
 				</section>
 				<section class="acitivity-wrapper">
 					<img src="<?php echo content_url() ?>/themes/lita/assets/img/activity@2x.png" alt="" class="activity-img pc">
