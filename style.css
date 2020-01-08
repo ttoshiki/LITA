@@ -5375,6 +5375,20 @@ ul {
   text-align: center;
 }
 
+.bookAnouncement__strong {
+  margin: 16px 0 0 0;
+  font-size: 32px;
+  color: #b50007;
+  text-align: center;
+}
+
+.bookAnouncement__ranking {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 392px;
+}
+
 .bookAnouncement__mainHeading {
   margin: 64px auto 8px;
   text-align: center;
@@ -5462,4 +5476,10 @@ ul {
 
 .bookAnouncement__companyInfo {
   text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .bookAnouncement__strong {
+    font-size: 28px;
+  }
 }

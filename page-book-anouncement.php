@@ -4,7 +4,9 @@ get_header();
 
 <main class="bookAnouncement">
     <h1 class="bookAnouncement__title"><?php the_title(); ?></h1>
-    <p class="bookAnouncement__subtitle">弊社代表取締役社長 笹木郁乃が書籍を出版いたします。</p>
+    <p class="bookAnouncement__subtitle">弊社代表取締役社長 笹木郁乃が<br />日経BP社さまより<br class="sp" />書籍を出版いたしました。</p>
+    <h2 class="bookAnouncement__strong">発売5日で即、重版決定！</h2>
+    <img src="<?php echo content_url() ?>/themes/lita/assets/img/amazon_ranking.png" alt="amazonランキング各部門1位を獲得" class="bookAnouncement__ranking">
     <section>
         <h2 class="bookAnouncement__mainHeading">なぜエアウィーヴは<br />浅田真央さんに選ばれたのか――？</h2>
         <p class="bookAnouncement__text">
@@ -47,8 +49,7 @@ get_header();
             <hr class="bookAnouncement__divider" />
         </div>
         <p class="bookAnouncement__text">
-            2019年12月20日（金）より、<br />
-            Amazon及び全国書店にて販売いたしております。</p>
+            Amazon及び全国書店にて好評発売中。</p>
         <p class="bookAnouncement__text amazonUrl">
             【Amazon販売ページ】<br />
             <a href="https://www.amazon.co.jp/%E3%82%BC%E3%83%AD%E5%86%86%EF%BC%B0%EF%BC%B2-%E7%AC%B9%E6%9C%A8%E9%83%81%E4%B9%83/dp/4296104926/ref=mp_s_a_1_1?keywords=%E7%AC%B9%E6%9C%A8%E9%83%81%E4%B9%83&qid=1576144796&sr=8-1
