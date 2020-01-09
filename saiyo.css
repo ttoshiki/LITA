@@ -1,11 +1,26 @@
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
 .boshu {
   margin: 0px auto;
   padding: 0px 80px;
 }
 
-.main-visual img {
+.main-visual {
   width: 100%;
   height: auto;
+}
+
+.img-boshu {
+  width: 12%;
+  height: auto;
+}
+
+.entry-button {
+  margin: 50px auto 100px;
 }
 
 .intro-header p {
@@ -14,6 +29,11 @@
   color: #000461;
   font-size: 35px;
   font-weight: 400;
+}
+
+.line {
+  margin: 50px auto;
+  width: 100%;
 }
 
 .producer h1 {
@@ -26,6 +46,10 @@
 .producer p {
   font-size: 16px;
   line-height: 18px;
+}
+
+.img-conditions {
+  width: 12%;
 }
 
 .intro-gyomu,
@@ -118,8 +142,10 @@
   display: none;
 }
 
-.day {
+.day-flow {
+  display: block;
   margin-top: 20px;
+  width: 360px;
 }
 
 .entry__occupation {
@@ -142,6 +168,18 @@
   border-left: 8px solid #000461;
 }
 
+.interview-sub {
+}
+
+.interview__img {
+  width: 45%;
+  float: right;
+}
+
+.interview__textWrapper {
+  float: left;
+}
+
 /************************************
 ** レスポンシブデザイン用のメディアクエリ
 ************************************/
@@ -159,7 +197,7 @@
     padding: 0px 30px;
   }
 
-  .main-visual img {
+  .main-visual {
     width: 100%;
     height: auto;
   }
@@ -257,21 +295,9 @@
     width: 100%;
   }
 
-  .interview-1-sub {
+  .interview-sub {
     display: flex;
-    flex-direction: column-reverse;
-    padding-bottom: 100px;
-  }
-
-  .interview-2-sub {
-    display: flex;
-    flex-direction: column-reverse;
-    padding-bottom: 100px;
-  }
-
-  .interview-3-sub {
-    display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     padding-bottom: 100px;
   }
 
@@ -286,7 +312,7 @@
     padding-top: 10px;
   }
 
-  .img-kinmu img {
+  .img-conditions {
     width: 25%;
     padding-top: 10px;
   }
@@ -313,11 +339,7 @@
     height: 3px;
   }
 
-  .day {
-    margin-top: 20px;
-  }
-
-  .day img {
+  .day-flow {
     width: 70%;
   }
 }
@@ -330,7 +352,7 @@
     padding: 0px 30px;
   }
 
-  .main-visual img {
+  .main-visual {
     width: 100%;
     height: auto;
   }
@@ -428,22 +450,8 @@
     width: 100%;
   }
 
-  .interview-1-sub {
-    display: flex;
-    flex-direction: column-reverse;
-    padding-bottom: 100px;
-  }
-
-  .interview-2-sub {
-    display: flex;
-    flex-direction: column-reverse;
-    padding-bottom: 100px;
-  }
-
-  .interview-3-sub {
-    display: flex;
-    flex-direction: column-reverse;
-    padding-bottom: 100px;
+  .interview__img {
+    margin: 64px auto;
   }
 
   .entry-button img {
@@ -452,12 +460,12 @@
     width: 90%;
   }
 
-  .img-boshu img {
+  .img-boshu {
     width: 30%;
     padding-top: 10px;
   }
 
-  .img-kinmu img {
+  .img-conditions {
     width: 30%;
     padding-top: 10px;
   }
@@ -484,11 +492,7 @@
     height: 3px;
   }
 
-  .day {
-    margin-top: 20px;
-  }
-
-  .day img {
+  .day-flow {
     width: 80%;
   }
 

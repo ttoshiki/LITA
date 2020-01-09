@@ -4900,7 +4900,7 @@ ul {
 }
 
 .contact input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  box-shadow: 0 0 0px 1000px #fff inset;
 }
 
 @media screen and (max-width: 1024px) {
@@ -5315,7 +5315,6 @@ ul {
 .inmail {
   animation-duration: 2s; /* アニメーション時間 */
   animation-name: RightToLeft; /* アニメーション名 */
-   animation-iteration-count: 1; /* アニメーションの繰り返し*/
 }
 
 .site-header .navcenter-wrapper .nav-list .mailmagazine-link .description {

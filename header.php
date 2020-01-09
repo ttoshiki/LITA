@@ -49,7 +49,9 @@
 	<link rel="icon" type="image/x-icon" href="<?php echo content_url() ?>/themes/lita/assets/img/favicon.ico">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
 	<link rel="stylesheet" href="<?php echo content_url() ?>/themes/lita/assets/css/swiper.min.css">
+	<?php if (is_page('entry')) : ?>
 	<link rel="stylesheet" href="<?php echo content_url() ?>/themes/lita/saiyo.css">
+	<?php endif; ?>
 	<script
   src="https://code.jquery.com/jquery-3.4.0.min.js"
   integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
