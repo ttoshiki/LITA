@@ -34,7 +34,7 @@ get_header();
                                         $myposts = get_posts($args);
                                         foreach ($myposts as $post) {
                                             setup_postdata($post); ?>
-											<li class="announcement-list horizontal">
+											<li class="announcement-list horizontal" id="<?php echo get_the_id(); ?>">
 												<time class="day"><?php echo the_time('Y.m.d'); ?></time>
 												<div class="title-img-wrapper">
 													<?php if (post_custom('link_url')): ?>

@@ -41,13 +41,9 @@ get_header();
 											<li class="news-list horizontal">
 												<time class="day"><?php echo the_time('Y.m.d'); ?></time>
 												<div class="title-img-wrapper">
-													<?php if (post_custom('link_url')): ?>
-														<a href="<?php the_field('link_url')?>" class="news-link">
-													<?php endif; ?>
-															<?php the_title(); ?>
-													<?php if (post_custom('link_url')): ?>
-														</a>
-													<?php endif; ?>
+													<a href="<?php echo get_site_url(); ?>/announcement/#<?php echo get_the_id()?>" class="news-link">
+														<?php the_title(); ?>
+													</a>
 													<?php if (post_custom('link_url')): ?>
 														<a href="<?php the_field('link_url')?>" class="news-link">
 													<?php endif; ?>
