@@ -19,6 +19,7 @@ html {
   line-height: 1.15;
   /* 1 */
   -webkit-text-size-adjust: 100%;
+  scroll-padding-top: 16px;
   /* 2 */
 }
 
@@ -1242,7 +1243,7 @@ ul {
 }
 
 .top-page .heroimg-wrapper__bookInformation {
-  width: 300px;
+  width: 260px;
   height: auto;
   position: absolute;
   right: 40px;
@@ -1500,12 +1501,12 @@ ul {
   font-size: 40px;
 }
 
-.top-page .book-anouncement {
+.book-anouncement {
   background-color: #000066;
   color: #fff;
   margin-bottom: 80px;
 }
-.top-page .book-anouncement__inner {
+.book-anouncement__inner {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -1515,33 +1516,72 @@ ul {
   color: #fff;
   text-decoration: none;
 }
-.top-page .book-anouncement__heading {
+
+.book-anouncement__bookFigure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 110px;
+  background-color: #b50007;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.book-anouncement__bookFiguteText {
   color: #fff;
-  margin: 20px 24px 0 0;
+  font-size: 14px;
+  line-height: 1.3;
+  font-feature-settings: "palt";
+}
+
+.book-anouncement__bookFigureEmphasis {
+  font-size: 26px;
+}
+
+.book-anouncement__heading {
+  color: #fff;
+  text-align: center;
+  margin: 26px 0 8px 0;
   font-size: 20px;
   min-width: 40px;
 }
 
-.top-page .book-anouncement__image {
+.book-anouncement__image {
   width: 146px;
+  margin-left: 12px;
 }
 
-.top-page .book-anouncement__bookInformation {
+.book-anouncement__bookInformation {
   display: flex;
   flex-direction: column;
   margin-left: 12px;
 }
 
-.top-page .book-anouncement__bookName {
-  margin: 28px 0 4px 0;
+.book-anouncement__subTitle {
+  margin: 17px 0 4px;
+  font-size: 14px;
+}
+
+.book-anouncement__subTitleEmphasis {
+  display: inline-block;
+  margin-right: 4px;
+  padding: 0 2px;
+  font-size: 16px;
+  color: #000066;
+  background-color: #fff;
+}
+
+.book-anouncement__bookName {
+  margin: 0 0 4px 0;
   font-size: 28px;
   font-feature-settings: "palt";
   letter-spacing: 2px;
 }
-.top-page .book-anouncement__text {
+.book-anouncement__text {
   margin: 0;
 }
-.top-page .book-anouncement__bookCover {
+.book-anouncement__bookCover {
   display: flex;
   align-items: flex-start;
 }
@@ -1655,7 +1695,7 @@ ul {
 }
 
 .news {
-  padding: 120px 0 40px;
+  padding: 120px 0 80px;
 }
 
 .news .news-content {
@@ -1856,7 +1896,7 @@ ul {
     font-size: 56px;
   }
   .top-page .heroimg-wrapper__bookInformation {
-    width: 120px;
+    width: 160px;
     right: 16px;
     bottom: 16px;
   }
@@ -1980,7 +2020,7 @@ ul {
     font-size: 16px;
   }
   .top-page .news {
-    padding: 16px;
+    padding: 16px 16px 40px;
   }
   .top-page .news .tab .cat .tab-link {
     padding: 10px 32px;
@@ -2004,6 +2044,9 @@ ul {
     display: block;
     margin: 0 40px 0 16px;
   }
+  .news .news-list-btn {
+    margin-top: 60px;
+  }
   .top-page .service-wrapper {
     flex-direction: column;
     width: 90%;
@@ -2024,31 +2067,47 @@ ul {
   .top-page .service-wrapper .service-list .detail {
     margin-top: 32px;
   }
-  .top-page .book-anouncement__inner {
+  .book-anouncement__inner {
     display: block;
     padding: 24px 0;
   }
-  .top-page .book-anouncement__image {
-    width: 96px;
+  .book-anouncement__image {
+    width: 140px;
+    margin-left: 0;
   }
-  .top-page .book-anouncement__bookInformation {
+  .book-anouncement__bookInformation {
     margin-left: 0;
     align-items: center;
   }
-  .top-page .book-anouncement__bookCover {
+  .book-anouncement__bookCover {
+    margin-bottom: 8px;
     justify-content: center;
   }
-  .top-page .book-anouncement__bookName {
+  .book-anouncement__bookName {
     margin-top: 0;
     font-size: 24px;
   }
-  .top-page .book-anouncement__text {
+  .book-anouncement__bookFiguteText {
+    font-size: 14px;
+  }
+  .book-anouncement__bookFigureEmphasis {
+    font-size: 24px;
+  }
+  .book-anouncement__bookFigure {
+    width: 100px;
+    height: 100px;
+  }
+  .book-anouncement__subTitle {
+    margin-top: 0;
+  }
+  .book-anouncement__text {
     text-align: center;
     font-size: 14px;
   }
-  .top-page .book-anouncement__heading {
-    margin: 28px 0 0 -40px;
-    font-size: 16px;
+  .book-anouncement__heading {
+    margin: 8px 0;
+    text-align: right;
+    font-size: 22px;
   }
 }
 
@@ -4090,51 +4149,6 @@ ul {
   .page-about-lita .activity .activity-list-wrapper .activity-list {
     font-size: 16px;
   }
-  .page-about-lita .book-anouncement {
-    background-color: #000066;
-    color: #fff;
-    display: block;
-    margin: 24px 0 40px;
-  }
-  .page-about-lita .book-anouncement__inner {
-    margin: 0 auto;
-    max-width: 400px;
-    display: block;
-    padding: 24px 0;
-    color: #fff;
-    text-decoration: none;
-  }
-  .page-about-lita .book-anouncement__heading {
-    min-width: 40px;
-    margin: 28px 0 0 -40px;
-    font-size: 16px;
-    color: #fff;
-  }
-  .page-about-lita .book-anouncement__image {
-    width: 96px;
-  }
-  .page-about-lita .book-anouncement__bookInformation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 0;
-  }
-  .page-about-lita .book-anouncement__bookName {
-    margin: 0 0 4px 0;
-    font-size: 24px;
-    font-feature-settings: "palt";
-    letter-spacing: 2px;
-  }
-  .page-about-lita .book-anouncement__text {
-    margin: 0;
-    text-align: center;
-    font-size: 14px;
-  }
-  .page-about-lita .book-anouncement__bookCover {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-  }
 }
 
 @media screen and (max-width: 480px) {
@@ -4887,7 +4901,7 @@ ul {
 }
 
 .contact input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  box-shadow: 0 0 0px 1000px #fff inset;
 }
 
 @media screen and (max-width: 1024px) {
@@ -5302,7 +5316,6 @@ ul {
 .inmail {
   animation-duration: 2s; /* アニメーション時間 */
   animation-name: RightToLeft; /* アニメーション名 */
-   animation-iteration-count: 1; /* アニメーションの繰り返し*/
 }
 
 .site-header .navcenter-wrapper .nav-list .mailmagazine-link .description {
@@ -5363,6 +5376,20 @@ ul {
   margin-top: 8px;
   font-size: 18px;
   text-align: center;
+}
+
+.bookAnouncement__strong {
+  margin: 16px 0 0 0;
+  font-size: 32px;
+  color: #b50007;
+  text-align: center;
+}
+
+.bookAnouncement__ranking {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 392px;
 }
 
 .bookAnouncement__mainHeading {
@@ -5452,4 +5479,10 @@ ul {
 
 .bookAnouncement__companyInfo {
   text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .bookAnouncement__strong {
+    font-size: 28px;
+  }
 }

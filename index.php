@@ -18,6 +18,61 @@ get_header();
 					</div>
 					<a href="/book-anouncement"><img src="<?php echo content_url() ?>/themes/lita/assets/img/mainvisual_book_info.png" alt="" class="heroimg-wrapper__bookInformation"></a>
 				</div>
+				<section class="desc">
+					<div class="news">
+						<div class="news-content">
+							<h3 class="heading2 fadein">NEWS</h3>
+							<ul class="tab horizontal fadein">
+								<li class="cat"><a href="#tab1" class="tab-link">ALL</a></li>
+								<li class="cat"><a href="#tab2" class="tab-link"><?php echo get_cat_name(1); ?></a></li>
+								<li class="cat"><a href="#tab3" class="tab-link"><?php echo get_cat_name(5); ?></a></li>
+							</ul>
+							<div class="tab-content fadein">
+								<div class="tab-area" id="tab1">
+									<ul>
+										<?php global $post;
+                                        $args = array(
+                                            'post_type' => 'post',
+                                            'no_found_rows' => true,
+                                        );
+                                        $myposts = get_posts($args);
+                                        foreach ($myposts as $post) {
+                                            setup_postdata($post); ?>
+											<li class="news-list horizontal">
+												<time class="day"><?php echo the_time('Y.m.d'); ?></time>
+												<div class="title-img-wrapper">
+													<a href="<?php echo get_site_url(); ?>/announcement/#<?php echo get_the_id()?>" class="news-link">
+														<?php the_title(); ?>
+													</a>
+													<?php if (post_custom('link_url')): ?>
+														<a href="<?php the_field('link_url')?>" class="news-link">
+													<?php endif; ?>
+													<?php if (post_custom('link_url')): ?>
+														</a>
+													<?php endif; ?>
+												</div>
+											</li>
+										<?php
+                                        }
+                                        wp_reset_postdata();
+                                        ?>
+									</ul>
+								</div>
+								<div class="tab-area" id="tab2">
+									<ul>
+										<?php top_cat_post_list(5, 1); ?>
+									</ul>
+								</div>
+								<div class="tab-area" id="tab3">
+									<ul>
+										<?php top_cat_post_list(5, 5); ?>
+									</ul>
+								</div>
+							</div>
+							<button onclick="location.href='/announcement'" class="news-list-btn fadein">お知らせ一覧</button>
+						</div>
+					</div>
+				</section>
 				<section class="sec desc">
 					<div class="desc-wrapper">
 						<div class="desc-text">
@@ -108,21 +163,7 @@ get_header();
 					</div>
 				</section>
 				<section class="book-anouncement">
-					<a href="/book-anouncement" class="book-anouncement__inner">
-						<div class="book-anouncement__bookCover">
-							<h1 class="book-anouncement__heading">著書</h1>
-							<img src="<?php echo content_url() ?>/themes/lita/assets/img/book_front.png" alt="0円PR" class="book-anouncement__image">
-						</div>
-						<div class="book-anouncement__bookInformation">
-							<h2 class="book-anouncement__bookName">「０円PR」</h2>
-							<p class="book-anouncement__text">
-								株式会社LITA・代表の笹木郁乃の初書籍。<br />
-								中小ベンチャー企業・スタートアップの経営者様、<br />
-								広報担当者の皆様にオススメの一冊です。<br />
-								全国の書店ほかamazonでもご購入いただけます。
-							</p>
-						</div>
-					</a>
+					<?php get_template_part('bookAnouncement_band'); ?>
 				</section>
 				<section class="acitivity-wrapper">
 					<img src="<?php echo content_url() ?>/themes/lita/assets/img/activity@2x.png" alt="" class="activity-img pc">
@@ -200,63 +241,6 @@ get_header();
 									お客様への貢献を突き通していきたいと思っております。
 								</p>
 							</div>
-						</div>
-					</div>
-					<div class="news">
-						<div class="news-content">
-							<h3 class="heading2 fadein">NEWS</h3>
-							<ul class="tab horizontal fadein">
-								<li class="cat"><a href="#tab1" class="tab-link">ALL</a></li>
-								<li class="cat"><a href="#tab2" class="tab-link"><?php echo get_cat_name(1); ?></a></li>
-								<li class="cat"><a href="#tab3" class="tab-link"><?php echo get_cat_name(5); ?></a></li>
-							</ul>
-							<div class="tab-content fadein">
-								<div class="tab-area" id="tab1">
-									<ul>
-										<?php global $post;
-                                        $args = array(
-                                            'post_type' => 'post',
-                                            'no_found_rows' => true,
-                                        );
-                                        $myposts = get_posts($args);
-                                        foreach ($myposts as $post) {
-                                            setup_postdata($post); ?>
-											<li class="news-list horizontal">
-												<time class="day"><?php echo the_time('Y.m.d'); ?></time>
-												<div class="title-img-wrapper">
-													<?php if (post_custom('link_url')): ?>
-														<a href="<?php the_field('link_url')?>" class="news-link">
-													<?php endif; ?>
-															<?php the_title(); ?>
-													<?php if (post_custom('link_url')): ?>
-														</a>
-													<?php endif; ?>
-													<?php if (post_custom('link_url')): ?>
-														<a href="<?php the_field('link_url')?>" class="news-link">
-													<?php endif; ?>
-													<?php if (post_custom('link_url')): ?>
-														</a>
-													<?php endif; ?>
-												</div>
-											</li>
-										<?php
-                                        }
-                                        wp_reset_postdata();
-                                        ?>
-									</ul>
-								</div>
-								<div class="tab-area" id="tab2">
-									<ul>
-										<?php top_cat_post_list(5, 1); ?>
-									</ul>
-								</div>
-								<div class="tab-area" id="tab3">
-									<ul>
-										<?php top_cat_post_list(5, 5); ?>
-									</ul>
-								</div>
-							</div>
-							<button onclick="location.href='/announcement'" class="news-list-btn fadein">お知らせ一覧</button>
 						</div>
 					</div>
 				</section>
