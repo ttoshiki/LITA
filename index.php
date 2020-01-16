@@ -258,7 +258,7 @@ get_header();
 								<ul class="article-list">
 									<?php $args = array(
                                         'numberposts' => 6, //表示する記事の数
-                                        'post_type' => 'column' //投稿タイプ名
+                                        'post_type' => array('column','blog') //投稿タイプ名
                                     );
                                     $customPosts = get_posts($args);
                                     if ($customPosts) : foreach ($customPosts as $post) : setup_postdata($post);
