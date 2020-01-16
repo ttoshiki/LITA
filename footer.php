@@ -1,3 +1,4 @@
+<?php if (!is_archive() || get_post_type() !== 'post') { ?>
 <footer class="site-footer">
 	<div class="footer-contact">
 		<div class="contact-phone">
@@ -94,6 +95,8 @@
 </footer>
 
 <?php wp_footer(); ?>
+
+<?php } ?>
 
 </body>
 </html>

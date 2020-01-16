@@ -81,6 +81,7 @@
 <?php else: ?>
 <div class="site-header">
 <?php endif; ?>
+	<?php if (!is_archive() || get_post_type() !== 'post') { ?>
 	<header class="site-header">
 		<div class="site-branding">
 			<?php if (is_front_page()): ?>
@@ -200,4 +201,5 @@
 			</header>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
+	<?php } ; ?>
 </div>
