@@ -30,10 +30,8 @@ get_header();
                             $myposts = get_posts($args);
                             foreach ($myposts as $post) {
                                 setup_postdata($post); ?>
-                                <li class="snsVoice__item" id="<?php echo get_the_id(); ?>">
-                                    <div class="snsVoice__articleText">
-                                        <?php the_content(); ?>
-                                    </div>
+                                <li class="snsVoice__item">
+                                    <?php the_content(); ?>
                                 </li>
                             <?php
                             }
