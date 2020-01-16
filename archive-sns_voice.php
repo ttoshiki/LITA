@@ -3,7 +3,7 @@
 get_header();
 ?>
 <head>
-	<meta name="description" content="LITAの活動実績となるメディアやニュース記事など、過去から最新の情報までご確認頂けます。メディアでの活躍とLITA自身の活動を是非ご覧ください。">
+	<meta name="description" content="">
 </head>
 	<div class="snsVoice">
 		<div class="content-area">
