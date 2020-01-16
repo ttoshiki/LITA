@@ -36,6 +36,8 @@
 	<?php elseif (is_post_type_archive('column')): ?>
 	<?php echo('PRコラム | PR会社LITA（売上拡大のパートナー）') ?>
 	<?php elseif (is_tax('column')): ?>
+	<?php echo('SNS口コミ | PR会社LITA（売上拡大のパートナー）') ?>
+	<?php elseif (is_tax('sns_voice')): ?>
 	<?php echo('タグ | PR会社LITA（売上拡大のパートナー）') ?>
 	<?php elseif (is_archive()): ?>
 	<?php echo('活動実績 | PR会社LITA（売上拡大のパートナー）') ?>
@@ -129,6 +131,7 @@
 							<li class="nav-list"><a href="/service-list" class="header-link">PR代行</a>
 							<li class="nav-list"><a href="//pr-professional.jp/pr-learn/" class="header-link" target="_blank">PR塾</a></li>
 							<li class="nav-list"><a href="/column" class="header-link">PRコラム</a></li>
+							<li class="nav-list"><a href="/sns_voice" class="header-link">SNS口コミ</a></li>
 							<li class="nav-list"><a href="/announcement" class="header-link">活動実績</a></li>
 							<li class="nav-list"><a href="/entry" class="header-link">採用情報</a>
 						<ul class="submenu-wrapper">

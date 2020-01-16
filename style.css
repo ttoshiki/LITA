@@ -5486,3 +5486,52 @@ ul {
     font-size: 28px;
   }
 }
+
+/* SNS口コミ */
+
+.snsVoice iframe {
+  max-width: 100% !important;
+  width: 500px !important;
+}
+
+.snsVoice__article {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.snsVoice__leadText {
+  text-align: center;
+  color: #000066;
+  font-size: 22px;
+}
+
+.snsVoice__logoWrapper {
+  text-align: center;
+  margin: 48px auto 24px;
+}
+
+.snsVoice__logo {
+  width: 40px;
+  margin: 0 6px;
+}
+
+.snsVoice__item {
+  margin-bottom: 80px;
+}
+
+@media screen and (max-width: 769px) {
+  .snsVoice__leadText {
+    font-size: 20px;
+  }
+  .snsVoice__item {
+    display: block;
+    width: 90%;
+    margin: 0 auto 48px;
+  }
+  .snsVoice__item {
+    padding-bottom: 0;
+  }
+  .snsVoice iframe {
+    width: 100% !important;
+  }
+}
