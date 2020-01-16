@@ -5487,6 +5487,8 @@ ul {
   }
 }
 
+/* SNS口コミ */
+
 .snsVoice iframe {
   max-width: 100% !important;
   width: 500px !important;
@@ -5515,10 +5517,7 @@ ul {
 
 .snsVoice__item {
   display: flex;
-  margin-bottom: 40px;
-  padding-bottom: 40px;
-  color: #333;
-  border-bottom: 1px solid #eee;
+  margin-bottom: 80px;
 }
 
 @media screen and (max-width: 769px) {
