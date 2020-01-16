@@ -5529,7 +5529,7 @@ ul {
     margin: 0 auto 48px;
   }
   .snsVoice__item {
-    padding-bottom: 48px;
+    padding-bottom: 0;
   }
   .snsVoice iframe {
     width: 100% !important;
