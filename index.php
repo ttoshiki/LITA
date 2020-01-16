@@ -258,7 +258,7 @@ get_header();
 								<ul class="article-list">
 									<?php $args = array(
                                         'numberposts' => 6, //表示する記事の数
-                                        'post_type' => array('column','blog') //投稿タイプ名
+                                        'post_type' => 'column' //投稿タイプ名
                                     );
                                     $customPosts = get_posts($args);
                                     if ($customPosts) : foreach ($customPosts as $post) : setup_postdata($post);
@@ -270,8 +270,12 @@ get_header();
                                                 if ($terms = get_the_terms($post->ID, 'column_cat')) {
                                                     foreach ($terms as $term) {
                                                         ?>
-														<span class="article-cat"><?php echo esc_html($term->name); ?></span>
-
+														<?php if ($term->slug === 'blog') { ?>
+															<span class="article-cat blog">
+														<?php } else { ?>
+															<span class="article-cat">
+														<?php } ?>
+														<?php echo esc_html($term->name); ?></span>
 													<?php
                                                     }
                                                 }
@@ -289,52 +293,6 @@ get_header();
 								</ul>
 						</article>
 						<button onclick="location.href='/column'" class="clm fadein">>> コラム一覧</button>
-					</div>
-				</section>
-				<section class="sec column">
-					<div class="heading2-wrapper fadein">
-						<h2 class="heading2">代表ブログ</h2>
-						<div class="heading2-borderbtm"></div>
-						<p class="subtitle">
-							LITA代表・笹木郁乃の<br>ブログを更新しています。
-						</p>
-					</div>
-					<div class="article-main-wrapper without-pagination fadein">
-						<article class="article-list-wrapper">
-								<ul class="article-list">
-									<?php $args = array(
-                                        'numberposts' => 6, //表示する記事の数
-                                        'post_type' => 'blog' //投稿タイプ名
-                                    );
-                                    $customPosts = get_posts($args);
-                                    if ($customPosts) : foreach ($customPosts as $post) : setup_postdata($post);
-                                    ?>
-									<li class="article">
-										<a href="<?php the_permalink(); ?>">
-											<?php the_post_thumbnail();?>
-											<?php
-                                                if ($terms = get_the_terms($post->ID, 'column_cat')) {
-                                                    foreach ($terms as $term) {
-                                                        ?>
-														<span class="article-cat"><?php echo esc_html($term->name); ?></span>
-
-													<?php
-                                                    }
-                                                }
-                                                ?>
-											<span class="daytime"><?php the_time('Y.m.d') ?></span>
-											<span class="article-title"><?php the_title(); ?></span>
-										</a>
-									</li>
-
-									<?php endforeach; ?>
-									<?php else : //記事が無い場合?>
-									<p>Sorry, no posts matched your criteria.</p>
-									<?php endif;
-                                    wp_reset_postdata(); ?>
-								</ul>
-						</article>
-						<button onclick="location.href='/blog'" class="clm fadein">>> 代表ブログ一覧</button>
 					</div>
 				</section>
 				<?php get_template_part('mailMagazine-btn'); ?>

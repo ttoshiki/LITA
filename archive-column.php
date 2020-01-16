@@ -24,8 +24,12 @@ get_header();
 										<?php
                                             if ($terms = get_the_terms($post->ID, 'column_cat')) {
                                                 foreach ($terms as $term) { ?>
-													<span class="article-cat"><?php echo esc_html($term->name);?></span>
-
+												<?php if ($term->slug === 'blog') { ?>
+															<span class="article-cat blog">
+														<?php } else { ?>
+															<span class="article-cat">
+														<?php } ?>
+													<?php echo esc_html($term->name);?></span>
 												<?php }
                                             }
                                         ?>
