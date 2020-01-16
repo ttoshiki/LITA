@@ -31,12 +31,8 @@ get_header();
                             foreach ($myposts as $post) {
                                 setup_postdata($post); ?>
                                 <li class="snsVoice__item" id="<?php echo get_the_id(); ?>">
-                                    <time class="snsVoice__day"><?php echo the_time('Y.m.d'); ?></time>
                                     <div class="snsVoice__articleText">
-                                        <div class="snsVoice__posttitle"><?php the_title(); ?></div>
                                         <?php the_content(); ?>
-                                        <?php echo get_cat_name(5); ?></a>
-                                        <div><?php the_field('embed_code')?></div>
                                     </div>
                                 </li>
                             <?php

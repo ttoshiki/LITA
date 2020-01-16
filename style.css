@@ -5493,7 +5493,7 @@ ul {
 }
 
 .snsVoice__article {
-  max-width: 870px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -5521,19 +5521,6 @@ ul {
   border-bottom: 1px solid #eee;
 }
 
-.snsVoice__day {
-  margin: 0 56px;
-}
-
-.snsVoice__posttitle {
-  color: #000066;
-  font-size: 18px;
-}
-
-.snsVoice__articleText {
-  max-width: 500px;
-}
-
 @media screen and (max-width: 769px) {
   .snsVoice__leadText {
     font-size: 20px;
@@ -5542,14 +5529,6 @@ ul {
     display: block;
     width: 90%;
     margin: 0 auto 48px;
-  }
-  .snsVoice__day {
-    display: block;
-    margin: 0 auto 8px;
-  }
-  .snsVoice__articleText {
-    margin: 0 auto;
-    width: 100%;
   }
   .snsVoice__item {
     padding-bottom: 48px;
