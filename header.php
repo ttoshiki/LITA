@@ -171,6 +171,7 @@
 							<li class="nav-list"><a href="/service-list">PR代行</a>
 							<li class="nav-list"><a href="//pr-professional.jp/pr-learn/">PR塾</a>
 							<li class="nav-list"><a href="/column">PRコラム</a></li>
+							<li class="nav-list"><a href="/sns_voice" class="header-link">SNS口コミ</a></li>
 							<li class="nav-list"><a href="/announcement">活動実績</a>
 							<li class="nav-list"><a href="/entry" class="header-link">採用情報</a>
 								<ul class="submenu-wrapper">
