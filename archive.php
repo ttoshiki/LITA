@@ -12,7 +12,7 @@ get_header();
 			<main class="site-main">
 				<section class="sec announcement">
 					<div class="heading2-wrapper fadein">
-						<h2 class="heading2">お知らせ</h2>
+						<h2 class="heading2">活動実績</h2>
 						<div class="heading2-borderbtm"></div>
 					</div>
 					<div class="announcement-wrapper horizontal fadein">
