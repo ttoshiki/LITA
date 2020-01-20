@@ -35,12 +35,12 @@
 	<?php echo('PR代行サービス | PR会社LITA（売上拡大のパートナー）') ?>
 	<?php elseif (is_post_type_archive('column')): ?>
 	<?php echo('PRコラム | PR会社LITA（売上拡大のパートナー）') ?>
-	<?php elseif (is_tax('column')): ?>
+	<?php elseif (is_archive() && (get_post_type() == 'sns_voice')): ?>
 	<?php echo('SNS口コミ | PR会社LITA（売上拡大のパートナー）') ?>
-	<?php elseif (is_tax('sns_voice')): ?>
-	<?php echo('タグ | PR会社LITA（売上拡大のパートナー）') ?>
-	<?php elseif (is_archive()): ?>
+	<?php elseif (is_archive() && (get_post_type() == 'post')): ?>
 	<?php echo('活動実績 | PR会社LITA（売上拡大のパートナー）') ?>
+	<?php elseif (is_archive()): ?>
+	<?php echo('タグ | PR会社LITA（売上拡大のパートナー）') ?>
 	<?php elseif (is_page('20')): ?>
 	<?php echo('事例紹介 | PR会社LITA（売上拡大のパートナー）') ?>
 	<?php elseif (is_page('16')): ?>
