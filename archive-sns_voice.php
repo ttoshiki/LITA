@@ -3,7 +3,7 @@
 get_header();
 ?>
 <head>
-	<meta name="description" content="">
+	<meta name="description" content="当協会運営のPR塾や代表 笹木郁乃に対して寄せられたSNS(Facebook／Instagram／Twitter)等の投稿をご紹介していきます。是非ご覧ください。">
 </head>
 	<div class="snsVoice">
 		<div class="content-area">
