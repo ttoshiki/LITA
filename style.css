@@ -1232,13 +1232,9 @@ ul {
   left: 40.2%;
 }
 
-.top-page .heroimg-wrapper .swiper-container {
-  position: relative;
+.top-page__mainVisual {
+  width: 100%;
   height: 100vh;
-  min-height: 600px;
-}
-
-.top-page .heroimg-wrapper .swiper-container .swiper-slide {
   background-size: cover;
 }
 

@@ -8,23 +8,12 @@
 	<meta name="description" content="LITAはクライアントの認知拡大に繋がるための情報・実績の流れをつくり、口コミの渦を広げ「ヒット」「話題」を巻き起こし売上拡大へと導きます。メディア露出 × SNS拡散性について最新の広報PRを常に追求し、時代に対応した新たなPRを提案し続けます。利他の心でお客様や社会への貢献を常に優先し、二人三脚で売上拡大に繋がる広報PRを展開していきます。">
 	<meta name="keywords" content="LITA,利他,売上拡大のビジネスパートナー,広報PR戦略,PR塾,無料メール講座,笹木郁乃,認知拡大">
 	<?php endif; ?>
-	<?php if (is_page('about-lita')) : ?>
-	<!--<h1>LITAとは│会社概要や代表紹介、LITA設立までのストーリー</h1>-->
-	<?php endif; ?>
-	<?php if (is_page('service-list')) : ?>
-	<!--<h1>PR代行サービス│広報PRのお悩みを解決するメソッドやLITAの3つの約束やサービスの流れ</h1>-->
-	<?php endif; ?>
-	<?php if (is_page('service')) : ?>
-	<!--<h1>PR塾│ 選ばれるあなたになる4つのスキルや5つの特長を。協力サポート体制</h1>-->
-	<?php endif; ?>
 
-	<!-- <meta property="og:url" content="https://lita-pr.com/"> -->
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="PR会社LITA（売上拡大のビジネスパートナー）">
 	<!-- <meta property="og:image" content="http://lita-pr.com/wp-content/uploads/2019/05/ogp_lita.png"> -->
 	<meta property="og:description" content="株式会社LITAは、売上拡大のビジネスパートナーのPR会社です。スマホ時代に合った広報PR戦略で、メディア露出から口コミの渦という流れを作り、あなたのブランドを全国区に。PR歴11年のLITA代表・笹木郁乃が直接PR指導をする、3ヶ月でPRスキルを習得できるPR塾も開催。">
 	<meta property="og:site_name" content="株式会社LITA">
-	<!-- <meta property="og:locale" content="ja"> -->
 	<meta name="google-site-verification" content="UbJlYhmygncZaCHiPXNZQIxrM958EGv0rh29-9Q8h7E" />
 	<title>
 	<?php if (is_front_page()): ?>
@@ -50,7 +39,6 @@
 
 	<link rel="icon" type="image/x-icon" href="<?php echo content_url() ?>/themes/lita/assets/img/favicon.ico">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
-	<link rel="stylesheet" href="<?php echo content_url() ?>/themes/lita/assets/css/swiper.min.css">
 	<?php if (is_page('entry')) : ?>
 	<link rel="stylesheet" href="<?php echo content_url() ?>/themes/lita/saiyo.css">
 	<?php endif; ?>
@@ -58,19 +46,7 @@
   src="https://code.jquery.com/jquery-3.4.0.min.js"
   integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
   crossorigin="anonymous"></script>
-	<script src="<?php echo content_url() ?>/themes/lita/assets/js/swiper.min.js"></script>
-	<script src="<?php echo content_url() ?>/themes/lita/assets/js/script.js"></script>
-	<!-- adobe fonts -->
-	<script>
-		(function(d) {
-			var config = {
-			kitId: 'ons2kpn',
-			scriptTimeout: 3000,
-			async: true
-			},
-			h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-		})(document);
-	</script>
+	<script src="<?php echo content_url() ?>/themes/lita/assets/js/script.js" defer></script>
 	<script src="https://yubinbango.github.io/yubinbango/yubinbango.js" type="text/javascript" charset="UTF-8"></script>
 	<?php wp_head(); ?>
 </head>
