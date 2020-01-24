@@ -1827,19 +1827,11 @@ ul {
 }
 
 @media screen and (max-width: 1096px) {
-  .top-page .heroimg-wrapper .swiper-container {
-    height: 100vh;
-    min-height: auto;
-  }
   .top-page .service-wrapper .service-list .heading4 {
     height: 60px;
   }
   .top-page .service-wrapper .service-list .detail {
     margin-top: 80px;
-  }
-  .top-page .heroimg-wrapper .swiper-container .catch-wrapper {
-    top: 23%;
-    left: calc(10vw * 6 + -410px);
   }
   .desc-wrapper:nth-child(4) .img {
     width: 90%;
@@ -1871,25 +1863,6 @@ ul {
   }
   .top-page .heroimg-wrapper .sp {
     display: block;
-  }
-  .top-page .heroimg-wrapper .swiper-container {
-    height: 100vh;
-  }
-  .top-page .heroimg-wrapper .swiper-container .catch-wrapper {
-    top: 23%;
-    left: calc(10vw * 6 + -276px);
-  }
-  .top-page .heroimg-wrapper .swiper-container .catch-wrapper .border-wrapper {
-    width: 360px;
-  }
-  .top-page .heroimg-wrapper .swiper-container .catch-wrapper .catch {
-    font-size: 32px;
-  }
-  .top-page .heroimg-wrapper .swiper-container .catch-wrapper .catch .line1 {
-    font-size: 32px;
-  }
-  .top-page .heroimg-wrapper .swiper-container .catch-wrapper .catch .num {
-    font-size: 56px;
   }
   .top-page .heroimg-wrapper__bookInformation {
     width: 160px;
@@ -2108,9 +2081,6 @@ ul {
 }
 
 @media screen and (max-width: 480px) {
-  .top-page .heroimg-wrapper .swiper-container .swiper-slide {
-    background-position: -94px;
-  }
   .top-page .sec:last-child {
     margin-bottom: 0;
   }
@@ -2125,23 +2095,6 @@ ul {
   }
   .top-page .heroimg-wrapper {
     height: 100vh;
-  }
-  .top-page .heroimg-wrapper .swiper-container {
-    height: 100vh;
-    min-height: auto;
-  }
-  .top-page .heroimg-wrapper .swiper-container .swiper-wrapper {
-    height: 100vh;
-  }
-  .top-page .heroimg-wrapper .swiper-container .catch-wrapper {
-    top: 10%;
-    left: calc(10vw * 3 + -74px);
-  }
-  .top-page .heroimg-wrapper .swiper-container .catch-wrapper .border-wrapper {
-    width: 90%;
-  }
-  .top-page .heroimg-wrapper .swiper-container .catch-sub {
-    font-size: 24px;
   }
   .top-page .sec.desc .heading2 {
     font-size: 28px;
@@ -3026,15 +2979,6 @@ ul {
   }
   .page-service-list .heroimg-wrapper .service-list-hero {
     min-width: auto;
-  }
-  .page-service-list .swiper-container {
-    height: 51vh;
-  }
-  .page-service-list .swiper-container .swiper-wrapper {
-    height: 51vh;
-  }
-  .page-service-list .swiper-container .swiper-wrapper .swiper-slide {
-    height: 51vh;
   }
   .page-service-list .worries .list-wrapper .list {
     width: 80%;
@@ -5257,10 +5201,6 @@ ul {
 }
 
 @media screen and (max-width: 480px) {
-  .top-page .heroimg-wrapper .swiper-container .swiper-slide {
-    background-position: 0px;
-  }
-
   .column-page .article-list-wrapper {
     margin: 0 auto;
     width: 100%;

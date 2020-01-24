@@ -32,7 +32,7 @@
   }
 
   .sec.blue-bg {
-      background-color: $blue-light-100;
+    background-color: $blue-light-100;
   }
   & .heading2 {
     font-size: 40px;
@@ -46,34 +46,34 @@
   & .worries {
     padding: 80px 0;
     position: relative;
-     & .list-wrapper {
-       max-width: $max-width;
-       margin: auto;
-       & .list {
-         padding: 24px 0 24px 160px;
-         background: url('assets/img/icon_check.png') no-repeat center left 80px;
-         background-color: $white;
-         background-size: 32px;
-         margin: 0 auto 40px;
-         max-width: 750px;
-         font-size: 22px;
-       }
-       & .strong {
-         color:  $red;
-         font-size: 24px;
-       }
-     }
-     & .triangle {
-       width: 0;
-       height: 0;
-       border-left: 100px solid transparent;
-       border-right: 100px solid transparent;
-       border-top: 60px solid $blue-light-100;
-       position: absolute;
-       top: 796px;
-       left: calc(50% - 100px);
-        z-index: 1000;
-     }
+    & .list-wrapper {
+      max-width: $max-width;
+      margin: auto;
+      & .list {
+        padding: 24px 0 24px 160px;
+        background: url("assets/img/icon_check.png") no-repeat center left 80px;
+        background-color: $white;
+        background-size: 32px;
+        margin: 0 auto 40px;
+        max-width: 750px;
+        font-size: 22px;
+      }
+      & .strong {
+        color: $red;
+        font-size: 24px;
+      }
+    }
+    & .triangle {
+      width: 0;
+      height: 0;
+      border-left: 100px solid transparent;
+      border-right: 100px solid transparent;
+      border-top: 60px solid $blue-light-100;
+      position: absolute;
+      top: 796px;
+      left: calc(50% - 100px);
+      z-index: 1000;
+    }
   }
   & .lita-solution {
     display: flex;
@@ -157,7 +157,7 @@
       }
       & .whirlpool-chart {
         display: block;
-        margin: 0 auto 80px;;
+        margin: 0 auto 80px;
         width: 1200px;
         max-width: 96%;
         &.sp {
@@ -206,7 +206,7 @@
       }
     }
     & .figure-wrapper {
-      margin: 0 auto 80px;;
+      margin: 0 auto 80px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -240,7 +240,7 @@
       }
       & .cross-1 {
         fill: #daa827;
-				fill-rule: evenodd;
+        fill-rule: evenodd;
       }
     }
     & .desc {
@@ -334,7 +334,7 @@
           top: -100px;
           left: 0;
           color: $blue-light-700;
-          opacity: .3;
+          opacity: 0.3;
           font-size: 180px;
           z-index: -100;
         }
@@ -345,7 +345,7 @@
           top: 120px;
           left: 80px;
           width: 300px;
-          opacity: .4;
+          opacity: 0.4;
           z-index: -100;
         }
       }
@@ -365,7 +365,7 @@
           top: -100px;
           left: 0;
           color: $blue-light-700;
-          opacity: .3;
+          opacity: 0.3;
           font-size: 180px;
           z-index: -100;
         }
@@ -376,7 +376,7 @@
           top: 120px;
           left: 80px;
           width: 300px;
-          opacity: .4;
+          opacity: 0.4;
           z-index: -100;
         }
       }
@@ -389,7 +389,7 @@
           top: -100px;
           left: 0;
           color: $blue-light-700;
-          opacity: .3;
+          opacity: 0.3;
           font-size: 180px;
           z-index: -100;
         }
@@ -400,7 +400,7 @@
           top: 120px;
           left: 80px;
           width: 300px;
-          opacity: .4;
+          opacity: 0.4;
           z-index: -100;
         }
       }
@@ -573,17 +573,16 @@
           }
         }
       }
-      & .triangle{
-          width: 0;
-          height: 0;
-          margin: 12px auto;
-          border-top: 32px solid $yellow-dark;
-          border-right: 32px solid transparent;
-          border-left: 32px solid transparent;
+      & .triangle {
+        width: 0;
+        height: 0;
+        margin: 12px auto;
+        border-top: 32px solid $yellow-dark;
+        border-right: 32px solid transparent;
+        border-left: 32px solid transparent;
       }
     }
   }
-
 }
 .request {
   & .heading2-wrapper {
@@ -591,62 +590,62 @@
       margin-top: 80px;
     }
   }
-    & .pr-contact-table {
-        width: 95%;
-        max-width: 800px;
-        margin: 0 auto 24px;
-        & .wpcf7-form-control-wrap {
-            border: none;
-            padding-left: 0;
-            &:last-child {
-              border: none;
-            }
-        }
+  & .pr-contact-table {
+    width: 95%;
+    max-width: 800px;
+    margin: 0 auto 24px;
+    & .wpcf7-form-control-wrap {
+      border: none;
+      padding-left: 0;
+      &:last-child {
+        border: none;
+      }
+    }
 
-        & .wpcf7-text,
-        & .wpcf7-textarea {
-          border: 1px solid $black;
-          padding: 8px;
-          width: 100%;
-        }
+    & .wpcf7-text,
+    & .wpcf7-textarea {
+      border: 1px solid $black;
+      padding: 8px;
+      width: 100%;
+    }
 
-        & .required {
-            background-color: $red;
-            border-radius: 4px;
-            color: $white;
-            font-size: 12px;
-            display: inline-block;
-            margin: 0 8px 8px;
-            padding: 2px 8px;
-        }
+    & .required {
+      background-color: $red;
+      border-radius: 4px;
+      color: $white;
+      font-size: 12px;
+      display: inline-block;
+      margin: 0 8px 8px;
+      padding: 2px 8px;
+    }
 
-        & .submit-btn {
-          text-align: center;
-          & .wpcf7-submit {
-              border:none;
-              border-radius: 2px;
-              font-size: 24px;
-              padding: 16px 104px;
-              letter-spacing: $text-space-l;
-              display: inline-block;
-              margin: 24px auto 80px;;
-              background-color: $brand-color;
-              color: $white;
-              transition: .2s;
-              &:hover {
-                  cursor: pointer;
-                  opacity: .8;
-              }
-          }
+    & .submit-btn {
+      text-align: center;
+      & .wpcf7-submit {
+        border: none;
+        border-radius: 2px;
+        font-size: 24px;
+        padding: 16px 104px;
+        letter-spacing: $text-space-l;
+        display: inline-block;
+        margin: 24px auto 80px;
+        background-color: $brand-color;
+        color: $white;
+        transition: 0.2s;
+        &:hover {
+          cursor: pointer;
+          opacity: 0.8;
         }
+      }
+    }
   }
   & img {
-      display: block;
-      margin: 40px auto 0;
-      padding-bottom: 80px;
-      height: auto;
-      width: 95%;
-      max-width: 540px;
+    display: block;
+    margin: 40px auto 0;
+    padding-bottom: 80px;
+    height: auto;
+    width: 95%;
+    max-width: 540px;
   }
 }
 
@@ -658,15 +657,6 @@
     & .heroimg-wrapper {
       & .service-list-hero {
         min-width: auto;
-      }
-    }
-    & .swiper-container {
-      height: 51vh;
-      & .swiper-wrapper {
-        height: 51vh;
-        & .swiper-slide {
-          height: 51vh;
-        }
       }
     }
     & .worries {
@@ -713,7 +703,7 @@
       & .chart-wrapper {
         & .chart {
           & .desc::before {
-            left: calc(80%/3 + 150px);
+            left: calc(80% / 3 + 150px);
           }
           & .heading3 {
             margin: 0 24px 0 0;
@@ -750,15 +740,15 @@
     .pr-service-wrapper {
       & .heroimg {
         & .heading1 {
-            font-size: 32px;
-            line-height: 1.4;
+          font-size: 32px;
+          line-height: 1.4;
         }
         .conversion {
-            top: 75%;
+          top: 75%;
         }
 
         em.strong {
-            font-size: 48px;
+          font-size: 48px;
         }
       }
     }
@@ -806,7 +796,6 @@
           padding: 0 16px;
           &:first-of-type {
             margin-top: 48px;
-
           }
         }
       }
@@ -1137,24 +1126,24 @@
     }
     & .solution-proposal {
       background-position: -440px;
+      & .heading3 {
+        padding: 0 8px;
+      }
+      & .solution-proposal-wrapper {
         & .heading3 {
-          padding: 0 8px;
+          font-size: 25px;
+          line-height: 1.4;
+          & .strong {
+            font-size: 30px;
+            font-weight: 600;
+          }
         }
-        & .solution-proposal-wrapper {
-          & .heading3 {
-            font-size: 25px;
-            line-height: 1.4;
-            & .strong {
-              font-size: 30px;
-              font-weight: 600;
-            }
-          }
-          & .desc {
-            font-size: 18px;
-            line-height: 28px;
-          }
+        & .desc {
+          font-size: 18px;
+          line-height: 28px;
         }
       }
+    }
     & .pr-strategy {
       & .pr-strategy-wrapper {
         padding: 0 16px;
@@ -1272,5 +1261,4 @@
       }
     }
   }
-
 }
