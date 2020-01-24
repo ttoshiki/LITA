@@ -5,19 +5,9 @@ get_header();
 	<div class="top-page">
 		<div class="content-area">
 			<main class="site-main">
-				<div class="heroimg-wrapper">
-					<div class="swiper-container pc">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide" style="background-image: url('<?php echo content_url() ?>/themes/lita/assets/img/heroimg_1@2x.jpg');"></div>
-						</div>
-					</div>
-					<div class="swiper-container sp">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide sp" style="background-image: url('<?php echo content_url() ?>/themes/lita/assets/img/heroimg_1_sp@2x.jpg');"></div>
-						</div>
-					</div>
-					<a href="/book-anouncement"><img src="<?php echo content_url() ?>/themes/lita/assets/img/mainvisual_book_info.png" alt="" class="heroimg-wrapper__bookInformation"></a>
-				</div>
+				<div class="top-page__mainVisual pc" style="background-image: url('<?php echo content_url() ?>/themes/lita/assets/img/heroimg_1@2x.jpg');"></div>
+				<div class="top-page__mainVisual sp" style="background-image: url('<?php echo content_url() ?>/themes/lita/assets/img/heroimg_1_sp@2x.jpg');"></div>
+				<a href="/book-anouncement"><img src="<?php echo content_url() ?>/themes/lita/assets/img/mainvisual_book_info.png" alt="" class="heroimg-wrapper__bookInformation"></a>
 				<section class="desc">
 					<div class="news">
 						<div class="news-content">
