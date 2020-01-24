@@ -1232,20 +1232,10 @@ ul {
   left: 40.2%;
 }
 
-.top-page__mainVisualWrapper {
-  position: relative;
-  height: 100vh;
-}
-
 .top-page__mainVisual {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: auto;
-  height: auto;
-  min-width: 100%;
-  min-height: 100%;
-  max-width: inherit;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
 }
 
 .top-page .heroimg-wrapper__bookInformation {
@@ -2087,11 +2077,6 @@ ul {
     margin: 8px 0;
     text-align: right;
     font-size: 22px;
-  }
-  .top-page__mainVisual {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
   }
 }
 
