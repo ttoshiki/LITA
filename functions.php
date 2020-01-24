@@ -124,8 +124,6 @@ add_action('widgets_init', '_s_widgets_init');
  */
 function _s_scripts()
 {
-    wp_enqueue_style('_s-style', get_stylesheet_uri());
-
     wp_enqueue_script('_s-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true);
 
     wp_enqueue_script('_s-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true);
@@ -390,28 +388,45 @@ function wpautop_filter($content)
 //Custom CSS Widget
 add_action('admin_menu', 'custom_css_hooks');
 add_action('save_post', 'save_custom_css');
-add_action('wp_head','insert_custom_css');
-function custom_css_hooks() {
+add_action('wp_head', 'insert_custom_css');
+function custom_css_hooks()
+{
     add_meta_box('custom_css', 'Custom CSS', 'custom_css_input', 'post', 'normal', 'high');
     add_meta_box('custom_css', 'Custom CSS', 'custom_css_input', 'page', 'normal', 'high');
 }
-function custom_css_input() {
+function custom_css_input()
+{
     global $post;
     echo '<input type="hidden" name="custom_css_noncename" id="custom_css_noncename" value="'.wp_create_nonce('custom-css').'" />';
-    echo '<textarea name="custom_css" id="custom_css" rows="5" cols="30" style="width:100%;">'.get_post_meta($post->ID,'_custom_css',true).'</textarea>';
+    echo '<textarea name="custom_css" id="custom_css" rows="5" cols="30" style="width:100%;">'.get_post_meta($post->ID, '_custom_css', true).'</textarea>';
 }
-function save_custom_css($post_id) {
-    if (!wp_verify_nonce($_POST['custom_css_noncename'], 'custom-css')) return $post_id;
-    if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) return $post_id;
+function save_custom_css($post_id)
+{
+    if (!wp_verify_nonce($_POST['custom_css_noncename'], 'custom-css')) {
+        return $post_id;
+    }
+    if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) {
+        return $post_id;
+    }
     $custom_css = $_POST['custom_css'];
     update_post_meta($post_id, '_custom_css', $custom_css);
 }
-function insert_custom_css() {
+function insert_custom_css()
+{
     if (is_page() || is_single()) {
         if (have_posts()) : while (have_posts()) : the_post();
-            echo '<style type="text/css">'.get_post_meta(get_the_ID(), '_custom_css', true).'</style>';
-        endwhile; endif;
+        echo '<style type="text/css">'.get_post_meta(get_the_ID(), '_custom_css', true).'</style>';
+        endwhile;
+        endif;
         rewind_posts();
     }
 }
-wp_enqueue_script( 'yubinbango', 'https://yubinbango.github.io/yubinbango/yubinbango.js', array(), null, true );
+wp_enqueue_script('yubinbango', 'https://yubinbango.github.io/yubinbango/yubinbango.js', array(), null, true);
+
+// キャッシュ対策
+function file_date($filename)
+{
+    if (file_exists($filename)) {
+        return date('Y-m-d-His', filemtime($filename));
+    }
+}
