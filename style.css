@@ -4089,6 +4089,9 @@ ul {
   .page-about-lita .activity .activity-list-wrapper .activity-list {
     font-size: 16px;
   }
+  .page-about-lita .president-wrapper .bookInformation {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 480px) {
