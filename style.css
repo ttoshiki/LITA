@@ -5220,8 +5220,8 @@ ul {
 
   .article-list-wrapper > .article-list > .article .article-cat {
     position: absolute;
-    top: -23px;
-    left: 0px;
+    top: 10px;
+    left: 7px;
     font-size: 12px;
     padding: 1px 10px;
   }
