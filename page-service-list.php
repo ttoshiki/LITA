@@ -433,8 +433,6 @@ get_header();
 				<div class="fadein">
 					<?php echo do_shortcode('[contact-form-7 id="47" title="pr-contact"]'); ?>
 				</div>
-				<img src="<?php echo content_url() ?>/themes/lita/assets/img/pr-service_contact.png" alt="" width="800" height="215" class="fadein">
-
 			</section>
 
 			</main><!-- .main -->
