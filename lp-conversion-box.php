@@ -8,7 +8,7 @@
 
 
                 <address class>
-                    <a href="tel:" class="tel-num">03-4500-8026</a>
+                    <a href="tel:<?php phoneNumber() ?>" class="tel-num"><?php phoneNumber() ?></a>
                 </address>
             </div>
         </div>

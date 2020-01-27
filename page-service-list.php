@@ -22,7 +22,7 @@ get_header();
 						<img src="<?php echo content_url() ?>/themes/lita/assets/img/icon_phone.svg" alt="" class="icon-phone">
 
 						<address>
-							<a href="tel:03-4500-8026" class="tel-num">03-4500-8026</a>
+							<a href="tel:<?php phoneNumber() ?>" class="tel-num"><?php phoneNumber() ?></a>
 						</address>
 					</div>
 				</div>

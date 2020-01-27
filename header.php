@@ -103,8 +103,8 @@
 										</g>
 									</svg>
 
-									<a href="tel:03-5801-0777" style="color:#ffffff;text-decoration: none;">
-										<address class="phone-number" style="line-height:1;">03-5801-0777<br><span
+									<a href="tel:<?php phoneNumber(); ?>" style="color:#ffffff;text-decoration: none;">
+										<address class="phone-number" style="line-height:1;"><?php phoneNumber() ?><br><span
 												style="font-size:0.7em;font-weight:300;margin-left:-20px;">平日10〜17時（土日祝休み）</span>
 										</address>
 									</a>

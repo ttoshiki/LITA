@@ -430,3 +430,9 @@ function file_date($filename)
         return date('Y-m-d-His', filemtime($filename));
     }
 }
+
+// 電話番号
+function phoneNumber()
+{
+    echo '03-5801-0777';
+}

@@ -63,7 +63,7 @@ get_header();
     <section class="bookAnouncement__contact">
         <h3 class="bookAnouncement__contactHeading">＜本件に関する問い合わせ＞</h3>
         <address class="bookAnouncement__companyInfo">株式会社LITA</address>
-        <address class="bookAnouncement__companyInfo">TEL：03-5801-0777 / <br class="sp" /> FAX：03-6684-4399</address>
+        <address class="bookAnouncement__companyInfo">TEL：<?php phoneNumber() ?> / <br class="sp" /> FAX：03-6684-4399</address>
         <address class="bookAnouncement__companyInfo">E-mail: info@lita-pr.com</address>
     </section>
     <?php get_template_part('bookPresentPlanning'); ?>

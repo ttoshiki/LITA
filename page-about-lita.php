@@ -113,7 +113,7 @@ get_header();
                         </tr>
                         <tr>
                             <td class="heading">TEL</td>
-                            <td class="desc">03-5801-0777</td>
+                            <td class="desc"><?php phoneNumber(); ?></td>
                         </tr>
                         <tr>
                             <td class="heading">FAX</td>

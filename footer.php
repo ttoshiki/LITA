@@ -5,7 +5,7 @@
 			<p class="subtitle">お電話でのお問い合わせ</p>
 			<!-- 電話アイコン -->
 			    <img src="<?php echo content_url() ?>/themes/lita/assets/img/icon_phone.svg" alt="" class="icon-phone">
-			<span class="phone-num">03-4500-8026</span><br><span style="font-size:0.9em;padding-left:15px;">平日10〜17時（土日祝休み）</span>
+			<span class="phone-num"><?php phoneNumber() ?></span><br><span style="font-size:0.9em;padding-left:15px;">平日10〜17時（土日祝休み）</span>
 		</div>
 		<button class="contact-mail" onclick="location.href='/contact'">
 			<p class="subtitle">メールでのお問い合わせ</p>
