@@ -14,12 +14,12 @@ get_header();
 						<div class="heading2-borderbtm"></div>
 						<p class="subtitle">PRのお役立ち情報を更新しています</p>
 					</div>
-					<div class="article-main-wrapper fadein">
+					<div class="article-main-wrapper -archive fadein">
 						<article class="article-list-wrapper">
 							<ul class="article-list">
 								<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 								<li class="article">
-									<a href="<?php the_permalink(); ?>">
+									<a href="<?php the_permalink(); ?>" class="article__link">
 										<?php the_post_thumbnail();?>
 										<?php
                                             if ($terms = get_the_terms($post->ID, 'column_cat')) {

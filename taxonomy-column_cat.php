@@ -9,12 +9,12 @@ get_header();
 				<h2 class="heading2"><?php single_term_title(); ?>の記事一覧</h2>
 				<div class="heading2-borderbtm"></div>
 			</div>
-			<div class="article-main-wrapper column_cat">
-				<article class="article-list-wrapper">
+			<div class="article-main-wrapper -archive">
+				<article class="article-list-wrapper -column_cat">
 					<ul class="article-list">
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 						<li class="article">
-							<a href="<?php the_permalink(); ?>">
+							<a href="<?php the_permalink(); ?>" class="article__link">
 								<?php the_post_thumbnail();?>
 								<?php
                                     if ($terms = get_the_terms($post->ID, 'column_cat')) {

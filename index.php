@@ -254,7 +254,7 @@ get_header();
                                     if ($customPosts) : foreach ($customPosts as $post) : setup_postdata($post);
                                     ?>
 									<li class="article">
-										<a href="<?php the_permalink(); ?>">
+										<a href="<?php the_permalink(); ?>" class="article__link">
 											<?php the_post_thumbnail();?>
 											<?php
                                                 if ($terms = get_the_terms($post->ID, 'column_cat')) {
