@@ -7,6 +7,23 @@ get_header();
     <p class="bookAnouncement__subtitle">弊社代表取締役社長 笹木郁乃が<br />日経BP社さまより<br class="sp" />書籍を出版いたしました。</p>
     <h2 class="bookAnouncement__strong">発売5日で即、重版決定！</h2>
     <img src="<?php echo content_url() ?>/themes/lita/assets/img/amazon_ranking.png" alt="amazonランキング各部門1位を獲得" class="bookAnouncement__ranking">
+    <p class="bookAnouncement__bookAnouncementText">
+        これまで、PR塾、「0円PR」、代表について、<br />
+        各メディアでも多数ご紹介頂きました！
+    </p>
+    <div class="bookAnouncement__bookAnouncementCompanies">
+        <ul class="bookAnouncement__companiesList">
+            <li class="bookAnouncement__companyItem"><img src="<?php echo content_url() ?>/themes/lita/assets/img/logo_nikkeiTopLeader.gif" alt="日経トップリーダー" class=""></li>
+            <li class="bookAnouncement__companyItem"><img src="<?php echo content_url() ?>/themes/lita/assets/img/logo_nikkeiBusiness.gif" alt="日経ビジネス" class=""></li>
+            <li class="bookAnouncement__companyItem"><img src="<?php echo content_url() ?>/themes/lita/assets/img/logo_nikkeiAria.png" alt="日経ARIA" class="bookAnouncement__nikkeiAria"></li>
+            <li class="bookAnouncement__companyItem"><img src="<?php echo content_url() ?>/themes/lita/assets/img/logo_keizaikai.png" alt="経済界" class="bookAnouncement__keizaikai"></li>
+            <li class="bookAnouncement__companyItem"><img src="<?php echo content_url() ?>/themes/lita/assets/img/logo_chichiSyuppansya.png" alt="致知出版社" class="bookAnouncement__chichiSyuppansya"></li>
+            <li class="bookAnouncement__companyItem"><img src="<?php echo content_url() ?>/themes/lita/assets/img/logo_goethe.png" alt="GOETHE" class="bookAnouncement__goethe"></li>
+            <li class="bookAnouncement__companyItem"><img src="<?php echo content_url() ?>/themes/lita/assets/img/logo_chubuKeizaiShinbun.png" alt="中部経済新聞" class=""></li>
+            <li class="bookAnouncement__companyItem"><img src="<?php echo content_url() ?>/themes/lita/assets/img/logo_chukyoTv.png" alt="CHUKYO TV" class="bookAnouncement__chukyoTv"></li>
+        </ul>
+        <small class="bookAnouncement__small -right">他多数</small>
+    </div>
     <section>
         <h2 class="bookAnouncement__mainHeading">なぜエアウィーヴは<br />浅田真央さんに選ばれたのか――？</h2>
         <p class="bookAnouncement__text">

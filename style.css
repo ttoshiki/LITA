@@ -1583,6 +1583,70 @@ ul {
   align-items: flex-start;
 }
 
+.bookAnouncement__bookAnouncementText {
+  font-size: 18px;
+  margin: 40px auto 24px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.bookAnouncement__bookAnouncementCompanies {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.bookAnouncement__companiesList {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+
+.bookAnouncement__companyItem img {
+  max-width: 100%;
+}
+
+.bookAnouncement__companyItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: calc(50% - 6px);
+  height: 140px;
+  margin-bottom: 12px;
+  padding: 12px;
+  border: 1px solid #b3b3b3;
+  border-radius: 10px;
+}
+
+.bookAnouncement__nikkeiAria {
+  width: 88%;
+}
+
+.bookAnouncement__keizaikai {
+  width: 80%;
+}
+
+.bookAnouncement__chichiSyuppansya {
+  width: 80%;
+}
+
+.bookAnouncement__goethe {
+  width: 80%;
+}
+
+.bookAnouncement__chukyoTv {
+  width: 68%;
+}
+
+.bookAnouncement__small {
+  display: block;
+}
+
+.bookAnouncement__small.-right {
+  text-align: right;
+}
+
 .service-wrapper {
   margin: 0 auto 160px;
   padding: 0 16px;
@@ -2078,6 +2142,15 @@ ul {
     margin: 8px 0;
     text-align: right;
     font-size: 22px;
+  }
+  .bookAnouncement__bookAnouncementText {
+    font-size: 16px;
+  }
+  .bookAnouncement__bookAnouncementCompanies {
+    padding: 0 16px;
+  }
+  .bookAnouncement__companyItem {
+    height: 120px;
   }
 }
 
