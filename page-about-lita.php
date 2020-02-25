@@ -85,7 +85,7 @@ get_header();
                         </tr>
                         <tr>
                             <td class="heading">本拠地</td>
-                            <td class="desc">〒113-0033 東京都文京区本郷3-3-11NCKビル3階</td>
+                            <td class="desc">〒113-0034 東京都文京区湯島1-7-9お茶の水ウチヤマビル6F</td>
                         </tr>
                         <tr>
                             <td class="heading">資本金</td>
