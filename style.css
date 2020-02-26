@@ -4002,6 +4002,11 @@ ul {
   height: auto;
 }
 
+.president-img.pc {
+  min-width: 450px;
+  max-height: 630px;
+}
+
 @media screen and (max-width: 769px) {
   .page-about-lita .pc {
     display: none;
