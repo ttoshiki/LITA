@@ -474,6 +474,16 @@ ul {
   display: flex;
 }
 
+.single__snsShareWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.fb-share-button {
+  height: 28px;
+  margin-right: 16px;
+}
+
 .pagination {
   box-sizing: border-box;
   display: flex;

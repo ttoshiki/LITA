@@ -23,6 +23,16 @@ get_header();
                     endwhile; // End of the loop.
                     ?>
 
+                    <div class="single__snsShareWrapper">
+                        <div class="fb-share-button" data-href="<?php echo get_the_permalink(); ?>" data-layout="button" data-size="small" data-text="hoge">
+                            <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">
+                                シェア
+                            </a>
+                        </div>
+                        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" data-text="<?php echo the_title(); ?> 始めよう、ＳＮＳ。見直そう、HP。-LITA／売上拡大のビジネスパートナーPR会社-">Tweet</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+
                     <div class="paging">
 
                     <?php if (get_previous_post()):?>
