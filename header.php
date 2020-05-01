@@ -51,6 +51,10 @@
 		integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
 	<script src="<?php echo content_url() ?>/themes/lita/assets/js/script.js" defer></script>
 	<script src="https://yubinbango.github.io/yubinbango/yubinbango.js" type="text/javascript" charset="UTF-8"></script>
+	<!-- facebook シェアボタン用 -->
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous"
+		src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v6.0"></script>
 	<?php wp_head(); ?>
 </head>
 
