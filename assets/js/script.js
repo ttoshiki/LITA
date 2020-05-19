@@ -67,7 +67,6 @@ jQuery(function () {
     var $win = $(window),
       $topLogo = $(".top-header .site-branding img"),
       $logo = $(".site-header > header.site-header .site-branding img"),
-      $topHeader = $(".top-header .site-header"),
       $header = $(".site-header > header.site-header"),
       navPosTopPage = $(window).height(),
       navPos = 87;
@@ -76,17 +75,13 @@ jQuery(function () {
       var value = $(this).scrollTop();
       if (value > navPosTopPage) {
         $topLogo.css("width", 120);
-        $topHeader.css("background-color", "rgba(0, 0, 102, 0.9");
       } else {
         $topLogo.css("width", "90%");
-        $topHeader.css("background-color", "rgba(0, 0, 102, 0.5");
       }
       if (value > navPos) {
         $logo.css("width", 120);
-        $header.css("background-color", "rgba(255, 255, 255, 0.9");
       } else {
         $logo.css("width", "90%");
-        $header.css("background-color", "rgba(255, 255, 255, 0.5");
       }
     });
   }

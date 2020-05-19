@@ -933,7 +933,7 @@ ul {
   .site-header {
     justify-content: space-between;
     padding: 12px 0;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #ffffff;
     position: fixed;
     top: 0;
     z-index: 1000;
@@ -943,7 +943,7 @@ ul {
   }
   .top-header .site-header {
     position: fixed;
-    background-color: rgba(0, 0, 102, 0.5);
+    background-color: #000066;
   }
   .site-header .site-branding img {
     min-width: auto;
