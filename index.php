@@ -6,7 +6,7 @@ get_header();
 		<div class="content-area">
 			<main class="site-main">
 				<div class="top-page__mainVisual pc" style="background-image: url('<?php echo content_url() ?>/themes/lita/assets/img/heroimg_1@2x.jpg');"></div>
-				<div class="top-page__mainVisual sp" style="background-image: url('<?php echo content_url() ?>/themes/lita/assets/img/heroimg_1_sp@2x.jpg');"></div>
+				<div class="top-page__mainVisual sp" id="top-page__mainVisualSp" style="background-image: url('<?php echo content_url() ?>/themes/lita/assets/img/heroimg_1_sp@2x.jpg');"></div>
 				<a href="/book-anouncement"><img src="<?php echo content_url() ?>/themes/lita/assets/img/mainvisual_book_info.png" alt="" class="heroimg-wrapper__bookInformation"></a>
 				<section class="desc">
 					<div class="news">

@@ -354,8 +354,8 @@ template {
 }
 
 body {
-  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho",
-    serif;
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro",
+    "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
   font-weight: 300;
   font-style: normal;
   box-sizing: border-box;
@@ -403,8 +403,8 @@ ul {
 }
 
 .yumincho {
-  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho",
-    serif;
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro",
+    "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
 }
 
 .entry-header {
@@ -615,7 +615,12 @@ ul {
   z-index: 1000;
 }
 
-.top-header .site-header .navcenter-wrapper .navcenter-lower .nav-list .header-link {
+.top-header
+  .site-header
+  .navcenter-wrapper
+  .navcenter-lower
+  .nav-list
+  .header-link {
   color: #fff;
 }
 
@@ -745,7 +750,12 @@ ul {
   left: -54px;
 }
 
-.site-header .navcenter-wrapper .navcenter-lower .nav-list .submenu-wrapper .submenu {
+.site-header
+  .navcenter-wrapper
+  .navcenter-lower
+  .nav-list
+  .submenu-wrapper
+  .submenu {
   display: block;
   position: relative;
   font-size: 16px;
@@ -753,12 +763,22 @@ ul {
   width: 168px;
 }
 
-.site-header .navcenter-wrapper .navcenter-lower .nav-list .submenu-wrapper .submenu a {
+.site-header
+  .navcenter-wrapper
+  .navcenter-lower
+  .nav-list
+  .submenu-wrapper
+  .submenu
+  a {
   background-color: #000066;
   color: #fff;
 }
 
-.site-header .navcenter-wrapper .navcenter-lower .nav-list:nth-child(2) .submenu-wrapper {
+.site-header
+  .navcenter-wrapper
+  .navcenter-lower
+  .nav-list:nth-child(2)
+  .submenu-wrapper {
   left: -25px;
 }
 
@@ -910,12 +930,24 @@ ul {
 }
 
 @media screen and (max-width: 960px) {
-  .top-header .site-header {
-    top: 4px;
-  }
   .site-header {
     justify-content: space-between;
-    margin: 8px auto;
+    padding: 12px 0;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  }
+  body.header-nav {
+    margin-top: 87px;
+  }
+  .top-header .site-header {
+    position: fixed;
+    background-color: #000066;
+  }
+  .site-header .site-branding img {
+    min-width: auto;
+    transition: all 0.2s;
   }
   .site-header .site-branding {
     width: 180px;
@@ -1138,7 +1170,10 @@ ul {
   .announcementBlock .announcementBlock__wrapper .announcementBlock__attention {
     padding: 16px 12px;
   }
-  .announcementBlock .announcementBlock__wrapper .announcementBlock__attention .announcementBlock__attentionItem {
+  .announcementBlock
+    .announcementBlock__wrapper
+    .announcementBlock__attention
+    .announcementBlock__attentionItem {
     padding-left: 20px;
   }
   .announcementBlock__photo {
@@ -2455,7 +2490,10 @@ ul {
   letter-spacing: 0.2em;
 }
 
-.page-service-list .solution-proposal .solution-proposal-wrapper .heading3::after {
+.page-service-list
+  .solution-proposal
+  .solution-proposal-wrapper
+  .heading3::after {
   content: "";
   position: absolute;
   top: 160px;
@@ -2465,7 +2503,11 @@ ul {
   border-bottom: 1px solid #fff;
 }
 
-.page-service-list .solution-proposal .solution-proposal-wrapper .heading3 .strong {
+.page-service-list
+  .solution-proposal
+  .solution-proposal-wrapper
+  .heading3
+  .strong {
   font-size: 48px;
 }
 
@@ -2944,7 +2986,11 @@ ul {
   border-radius: 4px 0 0 4px;
 }
 
-.page-service-list .flow-wrapper .chart-wrapper .chart .service-contents-wrapper {
+.page-service-list
+  .flow-wrapper
+  .chart-wrapper
+  .chart
+  .service-contents-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -2952,11 +2998,20 @@ ul {
   width: 100%;
 }
 
-.page-service-list .flow-wrapper .chart-wrapper .chart .service-contents-wrapper .desc {
+.page-service-list
+  .flow-wrapper
+  .chart-wrapper
+  .chart
+  .service-contents-wrapper
+  .desc {
   width: 50%;
 }
 
-.page-service-list .flow-wrapper .chart-wrapper .chart .service-contents-heading {
+.page-service-list
+  .flow-wrapper
+  .chart-wrapper
+  .chart
+  .service-contents-heading {
   display: flex;
   align-items: center;
   width: 40%;
@@ -3160,17 +3215,27 @@ ul {
   .page-service-list .solution-proposal .solution-proposal-wrapper .heading3 {
     font-size: 32px;
   }
-  .page-service-list .solution-proposal .solution-proposal-wrapper .heading3 .strong {
+  .page-service-list
+    .solution-proposal
+    .solution-proposal-wrapper
+    .heading3
+    .strong {
     font-size: 40px;
   }
-  .page-service-list .solution-proposal .solution-proposal-wrapper .heading3::after {
+  .page-service-list
+    .solution-proposal
+    .solution-proposal-wrapper
+    .heading3::after {
     top: 134px;
   }
   .page-service-list .solution-proposal .solution-proposal-wrapper .desc {
     font-size: 20px;
     padding: 0 16px;
   }
-  .page-service-list .solution-proposal .solution-proposal-wrapper .desc:first-of-type {
+  .page-service-list
+    .solution-proposal
+    .solution-proposal-wrapper
+    .desc:first-of-type {
     margin-top: 48px;
   }
   .page-service-list .worries {
@@ -3358,20 +3423,38 @@ ul {
   .page-service-list .flow-wrapper .chart-wrapper .chart .desc::before {
     display: none;
   }
-  .page-service-list .flow-wrapper .chart-wrapper .chart .service-contents-wrapper {
+  .page-service-list
+    .flow-wrapper
+    .chart-wrapper
+    .chart
+    .service-contents-wrapper {
     flex-direction: column;
   }
-  .page-service-list .flow-wrapper .chart-wrapper .chart .service-contents-wrapper .desc {
+  .page-service-list
+    .flow-wrapper
+    .chart-wrapper
+    .chart
+    .service-contents-wrapper
+    .desc {
     width: auto;
     display: inline-block;
     padding: 0 16px;
     line-height: 1.7;
     font-size: 14px;
   }
-  .page-service-list .flow-wrapper .chart-wrapper .chart .service-contents-wrapper .text-long {
+  .page-service-list
+    .flow-wrapper
+    .chart-wrapper
+    .chart
+    .service-contents-wrapper
+    .text-long {
     width: 80%;
   }
-  .page-service-list .flow-wrapper .chart-wrapper .chart .service-contents-heading {
+  .page-service-list
+    .flow-wrapper
+    .chart-wrapper
+    .chart
+    .service-contents-heading {
     width: 100%;
     margin-top: 24px;
     justify-content: center;
@@ -3461,7 +3544,11 @@ ul {
     font-size: 25px;
     line-height: 1.4;
   }
-  .page-service-list .solution-proposal .solution-proposal-wrapper .heading3 .strong {
+  .page-service-list
+    .solution-proposal
+    .solution-proposal-wrapper
+    .heading3
+    .strong {
     font-size: 30px;
     font-weight: 600;
   }
@@ -3518,10 +3605,20 @@ ul {
   .page-service-list .promise .reason-list:first-child .reason-text .heading4 {
     font-size: 20px;
   }
-  .page-service-list .promise .reason-list:first-child .reason-text .heading4 .strong-s {
+  .page-service-list
+    .promise
+    .reason-list:first-child
+    .reason-text
+    .heading4
+    .strong-s {
     font-size: 24px;
   }
-  .page-service-list .promise .reason-list:first-child .reason-text .heading4 .strong {
+  .page-service-list
+    .promise
+    .reason-list:first-child
+    .reason-text
+    .heading4
+    .strong {
     font-size: 32px;
   }
   .page-service-list .promise .reason-list:first-child .reason-text::after {
@@ -3560,7 +3657,11 @@ ul {
   .page-service-list .flow-wrapper .chart-wrapper .chart .heading3 {
     margin: 0;
   }
-  .page-service-list .flow-wrapper .chart-wrapper .chart .service-contents-wrapper {
+  .page-service-list
+    .flow-wrapper
+    .chart-wrapper
+    .chart
+    .service-contents-wrapper {
     vertical-align: middle;
     display: table-cell;
   }
@@ -3843,7 +3944,10 @@ ul {
   justify-content: center;
 }
 
-.page-about-lita .president-achievement-wrapper .achievement-list-wrapper .achievement-img {
+.page-about-lita
+  .president-achievement-wrapper
+  .achievement-list-wrapper
+  .achievement-img {
   max-width: 100%;
   height: auto;
 }
@@ -3852,7 +3956,10 @@ ul {
   width: 90%;
 }
 
-.page-about-lita .president-achievement-wrapper .achievement-list .achievement-name {
+.page-about-lita
+  .president-achievement-wrapper
+  .achievement-list
+  .achievement-name {
   background-color: #000066;
   color: #fff;
   margin-bottom: 8px;
@@ -3892,7 +3999,10 @@ ul {
   color: #000066;
 }
 
-.page-about-lita .activity .activity-list-wrapper .activity-list:not(:last-child) {
+.page-about-lita
+  .activity
+  .activity-list-wrapper
+  .activity-list:not(:last-child) {
   margin-bottom: 32px;
   border-bottom: 1px solid #eee;
   padding-bottom: 16px;
@@ -4122,7 +4232,11 @@ ul {
     width: 50%;
     font-size: 16px;
   }
-  .page-about-lita .president-achievement-wrapper .achievement-list-wrapper .achievement-list .achievement-name {
+  .page-about-lita
+    .president-achievement-wrapper
+    .achievement-list-wrapper
+    .achievement-list
+    .achievement-name {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -5181,11 +5295,21 @@ ul {
     border-radius: 8px;
     margin-bottom: 40px;
   }
-  .site-footer .nav-link .footer-nav .list-wrapper .footer-mailmag-link .text-wrapper {
+  .site-footer
+    .nav-link
+    .footer-nav
+    .list-wrapper
+    .footer-mailmag-link
+    .text-wrapper {
     display: flex;
     flex-direction: column;
   }
-  .site-footer .nav-link .footer-nav .list-wrapper .footer-mailmag-link .mail-magagine-footer-title {
+  .site-footer
+    .nav-link
+    .footer-nav
+    .list-wrapper
+    .footer-mailmag-link
+    .mail-magagine-footer-title {
     font-size: 20px;
   }
   .site-footer .nav-link > .footer_logo {

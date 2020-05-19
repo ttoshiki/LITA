@@ -58,7 +58,11 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php if (is_page() || (get_post_type() !== 'post')) {
+    body_class('header-nav');
+} else {
+    body_class();
+} ?>>
 	<?php if (is_front_page()): ?>
 	<div class="top-header">
 		<?php else: ?>
