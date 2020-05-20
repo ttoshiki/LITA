@@ -5772,6 +5772,10 @@ ul {
     margin: 48px auto 80px;
   }
 
+  .matching__graduateList {
+    width: 90%;
+  }
+
   .matching__graduateButton {
     padding: 6px 24px;
   }

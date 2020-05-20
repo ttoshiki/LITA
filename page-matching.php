@@ -94,7 +94,7 @@ get_header();
 				<ul class="matching__graduateList">
 					<li class="matching__graduateItem">
 						<img src="<?php echo get_template_directory_uri() ?>/assets/img/matching/tanaka_shinichi.jpg" alt="田中伸一" class="matching__graduateImage">
-						<p class="matching__graduateLead">PR未経験からNHK放送、<br />朝日新聞・佐賀新聞・ヤフーニュースに掲載！ ブログも開始2週間で1万PV超え！</p>
+						<p class="matching__graduateLead">PR未経験からNHK放送、<br class="pc" />朝日新聞・佐賀新聞・ヤフーニュースに掲載！ ブログも開始2週間で1万PV超え！</p>
 						<span class="matching__graduatePosition">アクシスエボリューション代表</span>
 						<p class="matching__graduateName">田中 伸一さん</p>
 						<p class="matching__graduateContent">「ダウン症の息子との気付きブログ」ブログ×facebookで認知拡大！開始半月で1万PV獲得！ブログランキングが1位に。</p>
