@@ -36,7 +36,7 @@ get_header();
 				</div>
 				</div>
 			</div>
-      <section class="sec">
+      <section class="sec fadein">
         <p class="matching__leadText fadein">
           弊社が運営する広報/ PRパーソン育成講座「PR塾」の卒業⽣を<br class="pc" />
           ご紹介するサービスです。<br />
@@ -49,44 +49,49 @@ get_header();
 			<section class="sec matching__flow">
 				<div class="flow-wrapper">
 					<div class="heading2-wrapper fadein">
-							<h2 class="heading2">サービスの流れ</h2>
-							<div class="heading2-borderbtm"></div>
-						</div>
-						<ul class="chart-wrapper">
-							<li class="matching__chartItem fadein">
-								<div class="matching__stepContents">
+						<h2 class="heading2">サービスの流れ</h2>
+						<div class="heading2-borderbtm"></div>
+					</div>
+					<ul class="chart-wrapper">
+						<li class="matching__chartItem fadein">
+							<div class="matching__stepContents">
+								<div class="matching__stepWrapper">
 									<div class="matching__stepIcon">
-										<img src="<?php echo get_template_directory_uri() ?>/assets/img/matching/step1.png" alt="">
+										<img src="<?php echo get_template_directory_uri() ?>/assets/img/matching/step1.png" alt="" class="matching__stepIconImage">
 									</div>
 									<h3 class="matching__step">STEP <strong class="matching__stepStrong">1.</strong></h3>
-									<p class="matching__stepParagraph">お申し込みフォームにご⼊⼒ください。</p>
 								</div>
-							</li>
-							<div class="triangle fadein"></div>
-							<li class="matching__chartItem fadein">
-								<div class="matching__stepContents">
+								<p class="matching__stepParagraph">お申し込みフォームにご⼊⼒ください。</p>
+							</div>
+						</li>
+						<div class="triangle fadein"></div>
+						<li class="matching__chartItem fadein">
+							<div class="matching__stepContents">
+								<div class="matching__stepWrapper">
 									<div class="matching__stepIcon">
-										<img src="<?php echo get_template_directory_uri() ?>/assets/img/matching/step2.png" alt="">
+										<img src="<?php echo get_template_directory_uri() ?>/assets/img/matching/step2.png" alt="" class="matching__stepIconImage">
 									</div>
 									<h3 class="matching__step">STEP <strong class="matching__stepStrong">2.</strong></h3>
-									<p class="matching__stepParagraph">弊社担当者から<br />ヒアリングさせていただきます。</p>
 								</div>
-							</li>
-							<div class="triangle fadein"></div>
-							<li class="matching__chartItem fadein">
-								<div class="matching__stepContents">
+								<p class="matching__stepParagraph">弊社担当者から<br />ヒアリングさせていただきます。</p>
+							</div>
+						</li>
+						<div class="triangle fadein"></div>
+						<li class="matching__chartItem fadein">
+							<div class="matching__stepContents">
+								<div class="matching__stepWrapper">
 									<div class="matching__stepIcon">
-										<img src="<?php echo get_template_directory_uri() ?>/assets/img/matching/step3.png" alt="">
+										<img src="<?php echo get_template_directory_uri() ?>/assets/img/matching/step3.png" alt="" class="matching__stepIconImage">
 									</div>
 									<h3 class="matching__step">STEP <strong class="matching__stepStrong">3.</strong></h3>
-									<p class="matching__stepParagraph">PRパーソンをご紹介いたします。<br />（ご納得いただきましたら契約となります）</p>
 								</div>
-							</li>
-						</ul>
-					</div>
+								<p class="matching__stepParagraph">PRパーソンをご紹介いたします。<br />（ご納得いただきましたら契約となります）</p>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</section>
-			<section class="sec">
+			<section class="sec matching__graduate">
 				<div class="heading2-wrapper fadein">
 						<h2 class="heading2">PR卒業生 一例</h2>
 						<div class="heading2-borderbtm"></div>
@@ -94,7 +99,7 @@ get_header();
 				<ul class="matching__graduateList">
 					<li class="matching__graduateItem">
 						<img src="<?php echo get_template_directory_uri() ?>/assets/img/matching/tanaka_shinichi.jpg" alt="田中伸一" class="matching__graduateImage">
-						<p class="matching__graduateLead">PR未経験からNHK放送、<br class="pc" />朝日新聞・佐賀新聞・ヤフーニュースに掲載！ ブログも開始2週間で1万PV超え！</p>
+						<p class="matching__graduateLead">PR未経験からNHK放送、朝日新聞・佐賀新聞・ヤフーニュースに掲載！ ブログも開始2週間で1万PV超え！</p>
 						<span class="matching__graduatePosition">アクシスエボリューション代表</span>
 						<p class="matching__graduateName">田中 伸一さん</p>
 						<p class="matching__graduateContent">「ダウン症の息子との気付きブログ」ブログ×facebookで認知拡大！開始半月で1万PV獲得！ブログランキングが1位に。</p>
@@ -125,6 +130,19 @@ get_header();
 						<a href="//pr-professional.jp/post_voice/#kawazu_yoshie-2" class="matching__graduateButton">more ></a>
 					</li>
 				</ul>
+			</section>
+			<section class="sec matching__detail">
+				<h1 class="matching__detailPrice fadein">金額　150,000円<small class="matching__detailSmall">(税込)</small></h1>
+				<div class="matching__detailExample fadein">
+					<h2 class="matching__detailSubHeading">依頼できる<br />仕事の一例</h2>
+					<span class="matching__detailTriangle"></span>
+					<ul class="matching__detailExampleList">
+						<li class="matching__detailExampleItem">PR戦略立案</li>
+						<li class="matching__detailExampleItem">プレスリリースの作成</li>
+						<li class="matching__detailExampleItem">メディアアプローチ</li>
+						<li class="matching__detailExampleItem">社内広報</li>
+					</ul>
+				</div>
 			</section>
 			<section class="sec request" id="request">
 				<div class="heading2-wrapper fadein">

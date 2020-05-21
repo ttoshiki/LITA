@@ -534,6 +534,10 @@ ul {
   .pagination .prev {
     display: none;
   }
+
+  html {
+    scroll-padding-top: 80px;
+  }
 }
 
 .conversion-box-wrapper {
@@ -5594,6 +5598,7 @@ ul {
 }
 
 /* PR人材マッチングサービス */
+
 .matching__mainVisual {
   width: 100%;
   vertical-align: bottom;
@@ -5603,12 +5608,22 @@ ul {
   position: relative;
 }
 
+.page-matching .heading2-wrapper > .heading2 {
+  font-size: 44px;
+}
+
+.page-matching .heading2-wrapper > .heading2-borderbtm {
+  width: 500px;
+  margin: 20px auto 0;
+}
+
 .matching__leadText {
   font-size: 22px;
   color: #000066;
   text-align: center;
-  margin: 72px auto 128px;
+  margin: 72px auto 100px;
   line-height: 1.8;
+  font-weight: 500;
 }
 
 .page-matching .chart-wrapper {
@@ -5656,7 +5671,7 @@ ul {
   color: #000066;
   margin-left: 60px;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.4;
 }
 
@@ -5670,6 +5685,8 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .matching__chartItem {
@@ -5679,9 +5696,9 @@ ul {
 .matching__graduateList {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 80px auto 0;
   justify-content: space-between;
-  width: 80%;
+  width: 90%;
   max-width: 1096px;
 }
 
@@ -5692,9 +5709,11 @@ ul {
 
 .matching__graduateLead {
   font-size: 14px;
+  font-weight: 600;
   width: 90%;
   margin: 16px auto;
   color: #000066;
+  text-align: center;
 }
 
 .matching__graduatePosition {
@@ -5703,11 +5722,13 @@ ul {
 }
 
 .matching__graduateName {
-  margin-top: 0;
+  margin: 0 auto;
 }
 
 .matching__graduateContent {
   font-size: 12px;
+  margin-top: 4px;
+  color: #333333;
 }
 
 .matching__graduateButton {
@@ -5735,6 +5756,65 @@ ul {
   width: 100%;
 }
 
+.matching__detail {
+  margin-bottom: 120px;
+}
+
+.matching__detailPrice {
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 44px;
+}
+
+.matching__detailPrice::after {
+  content: "";
+  width: 580px;
+  height: 2px;
+  display: block;
+  background-color: #000066;
+  margin: 16px auto 0;
+}
+
+.matching__detailTriangle {
+  margin: 0 56px;
+  border-top: 32px solid transparent;
+  border-bottom: 32px solid transparent;
+  border-left: 32px solid #b39441;
+}
+
+.matching__detailSmall {
+  font-size: 24px;
+  margin-left: 8px;
+}
+
+.matching__detailSubHeading {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.matching__detailExample {
+  background-color: #eeeefe;
+  padding: 32px 48px;
+  max-width: 660px;
+  margin: 60px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.6;
+  color: #000066;
+}
+
+.matching__detailExampleList {
+  list-style: disc;
+  margin-left: 12px;
+}
+
+.matching__detailExampleItem {
+  margin-bottom: 4px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 1024px) {
   .matching__graduateItem {
     margin: 0 12px;
@@ -5746,6 +5826,24 @@ ul {
 }
 
 @media screen and (max-width: 769px) {
+  .page-matching .heading2-wrapper > .heading2 {
+    font-size: 28px;
+  }
+
+  .page-matching .heading2-wrapper > .heading2-borderbtm {
+    width: 72%;
+    margin: 12px auto 0;
+    max-width: 260px;
+  }
+
+  .matching__graduate {
+    margin-top: 48px;
+  }
+
+  .matching__graduate .heading2-wrapper {
+    margin-bottom: 32px;
+  }
+
   .matching__graduateItem {
     width: 44%;
     margin: 0;
@@ -5767,20 +5865,126 @@ ul {
   }
 
   .matching__leadText {
-    font-size: 18px;
+    font-size: 16px;
     text-align: left;
-    margin: 48px auto 80px;
+    margin: 32px auto 48px;
   }
 
   .matching__graduateList {
     width: 90%;
+    margin: 48px auto 0;
   }
 
   .matching__graduateButton {
     padding: 6px 24px;
+    margin: 40px auto 80px;
   }
 
   .matching__flow {
     background-color: #ededfd;
+  }
+
+  .matching__flow .flow-wrapper {
+    padding: 24px 16px;
+  }
+
+  .matching__flow .flow-wrapper .heading2-wrapper {
+    margin-bottom: 48px;
+  }
+
+  .matching__chartItem {
+    background-color: #ffffff;
+  }
+
+  .matching__stepContents {
+    margin-left: 0;
+    display: block;
+  }
+
+  .matching__step {
+    margin: 0 0 0 20px;
+  }
+
+  .matching__step::after {
+    width: 120px;
+    height: 1px;
+    border-bottom: 1px solid #000066;
+    left: 50%;
+    top: auto;
+    bottom: 4px;
+    transform: translate(-50%, -50%);
+  }
+
+  .matching__stepIcon {
+    width: 80px;
+    height: 80px;
+    left: auto;
+    position: relative;
+    transform: none;
+  }
+
+  .matching__stepIconImage {
+    height: 42px;
+  }
+
+  .matching__stepParagraph {
+    font-size: 15px;
+    text-align: center;
+    margin: 16px 0 32px;
+  }
+
+  .matching__stepWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+  }
+
+  .page-matching .chart-wrapper {
+    margin: 0 auto 24px;
+  }
+
+  .matching__detailPrice {
+    font-size: 26px;
+  }
+
+  .matching__detailSmall {
+    font-size: 14px;
+  }
+
+  .matching__detailPrice::after {
+    width: 80%;
+    margin: 12px auto 0;
+  }
+
+  .matching__detail {
+    padding: 0 16px;
+    margin-bottom: 80px;
+  }
+
+  .matching__detailExample {
+    padding: 16px;
+    margin: 40px auto 0;
+    flex-direction: column;
+  }
+
+  .matching__detailTriangle {
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #b39441;
+    transform: rotate(90deg);
+  }
+
+  .matching__detailSubHeading {
+    font-size: 22px;
+    margin: 12px auto 0;
+  }
+
+  .matching__detailExampleList {
+    margin: 12px auto 10px;
+  }
+
+  .matching__detailExampleItem {
+    font-size: 16px;
   }
 }
