@@ -38,12 +38,9 @@ get_header();
 			</div>
       <section class="sec fadein">
         <p class="matching__leadText fadein">
-          弊社が運営する広報/ PRパーソン育成講座「PR塾」の卒業⽣を<br class="pc" />
-          ご紹介するサービスです。<br />
-          企業の依頼したい仕事内容に合わせて、<br />
-          最も適したPRパーソンをマッチングさせていただきます。<br />
-          PRのプロが低価格で<br class="pc" />
-          御社のビジネスをサポートいたします。
+          弊社が運営する広報/ PRパーソン育成講座「PR塾」の卒業⽣を<br class="pc" />ご紹介するサービスです。<br class="sp" />
+          企業の依頼したい仕事内容に合わせて、<br class="pc" />最も適したPRパーソンをマッチングさせていただきます。<br />
+          PRのプロが低価格で<br class="pc" />御社のビジネスをサポートいたします。
         </p>
       </section>
 			<section class="sec matching__flow">

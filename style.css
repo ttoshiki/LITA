@@ -5866,8 +5866,8 @@ ul {
 
   .matching__leadText {
     font-size: 16px;
-    text-align: left;
     margin: 32px auto 48px;
+    text-align: justify;
   }
 
   .matching__graduateList {
