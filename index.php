@@ -221,7 +221,7 @@ get_header();
 										PRプロフェッショナル講座「PR塾」の卒業生をご紹介するサービスです。貴社のPR業務を担い事業成長に貢献いたします。
 									</p>
 								</div>
-								<button class="detail" onclick="window.open('//pr-professional.jp/online')">詳細</button>
+								<button class="detail" onclick="location.href='/matching'">詳細</button>
 							</div>
 						</li>
 
