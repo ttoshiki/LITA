@@ -536,7 +536,7 @@ ul {
   }
 
   html {
-    scroll-padding-top: 80px;
+    scroll-padding-top: 86px;
   }
 }
 
@@ -2220,6 +2220,7 @@ ul {
   }
   .top-page .service-wrapper .service-list .detail {
     margin-top: 32px;
+    text-indent: 32px;
   }
   .book-anouncement__inner {
     display: block;
@@ -3640,6 +3641,15 @@ ul {
 
   .service-list__detailBandSpan {
     margin-left: 88px;
+  }
+
+  #request {
+    padding-top: 86px;
+    margin-top: -86px;
+  }
+
+  .request .heading2-wrapper > .heading2 {
+    margin-top: 0;
   }
 }
 
