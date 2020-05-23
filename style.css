@@ -3042,6 +3042,71 @@ ul {
   margin: auto;
 }
 
+.service-list__detail {
+  margin: 80px auto 120px;
+}
+
+.service-list__detailBand {
+  display: block;
+  background-color: #000066;
+  font-size: 25px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 600;
+  padding: 16px 0;
+  letter-spacing: 3px;
+  position: relative;
+}
+
+.service-list__detailBand:first-of-type {
+  margin-top: 64px;
+}
+
+.service-list__detailParagraph {
+  text-align: center;
+  margin-top: 48px;
+}
+
+.service-list__detailBandSpan {
+  position: relative;
+  display: inline-block;
+  margin-left: 120px;
+}
+
+.service-list__detailBandSpan::before {
+  content: "";
+  width: 120px;
+  height: 120px;
+  display: block;
+  background-image: url("assets/img/service-list/detail_badge.png");
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: -140px;
+  transform: translateY(-50%);
+}
+
+.service-list__detailTable {
+  margin: 24px auto 80px;
+  font-size: 18px;
+}
+
+.service-list__detailTable th {
+  color: #000066;
+  padding: 8px 16px 8px 0;
+  vertical-align: top;
+}
+
+.service-list__detailTableList {
+  list-style: disc;
+  margin: 6px auto 0;
+  padding-left: 18px;
+}
+
+.service-list__detailTableItem {
+  margin-bottom: 8px;
+}
+
 .flow-wrapper .chart-wrapper .chart {
   display: flex;
   align-items: stretch;
@@ -3526,6 +3591,55 @@ ul {
   .request .pr-contact-table .wpcf7-text,
   .request .pr-contact-table .wpcf7-textarea {
     width: 95%;
+  }
+
+  .service-list__detail {
+    margin: 80px auto 0;
+  }
+
+  .service-list__detailBand {
+    font-size: 20px;
+    padding: 12px 0;
+    line-height: 1.4;
+  }
+
+  .service-list__detailTable {
+    width: 90%;
+    margin: 16px auto 48px;
+    font-size: 16px;
+  }
+
+  .service-list__detailTableRow {
+    display: block;
+  }
+
+  .service-list__detailTableRow:not(:first-child) {
+    margin-top: 8px;
+  }
+
+  .service-list__detailTable th {
+    display: block;
+    text-align: left;
+    padding: 8px 16px 0 0;
+  }
+
+  .service-list__detailTableItemSpan {
+    font-size: 14px;
+    letter-spacing: -1px;
+  }
+
+  .service-list__detailParagraph {
+    margin-top: 32px;
+  }
+
+  .service-list__detailBandSpan::before {
+    width: 90px;
+    height: 90px;
+    left: -98px;
+  }
+
+  .service-list__detailBandSpan {
+    margin-left: 88px;
   }
 }
 
