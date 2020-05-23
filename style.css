@@ -354,8 +354,8 @@ template {
 }
 
 body {
-  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho",
-    serif;
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro",
+    "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
   font-weight: 300;
   font-style: normal;
   box-sizing: border-box;
@@ -403,8 +403,8 @@ ul {
 }
 
 .yumincho {
-  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho",
-    serif;
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro",
+    "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
 }
 
 .entry-header {
@@ -619,7 +619,12 @@ ul {
   z-index: 1000;
 }
 
-.top-header .site-header .navcenter-wrapper .navcenter-lower .nav-list .header-link {
+.top-header
+  .site-header
+  .navcenter-wrapper
+  .navcenter-lower
+  .nav-list
+  .header-link {
   color: #fff;
 }
 
@@ -749,7 +754,12 @@ ul {
   left: -54px;
 }
 
-.site-header .navcenter-wrapper .navcenter-lower .nav-list .submenu-wrapper .submenu {
+.site-header
+  .navcenter-wrapper
+  .navcenter-lower
+  .nav-list
+  .submenu-wrapper
+  .submenu {
   display: block;
   position: relative;
   font-size: 16px;
@@ -757,12 +767,22 @@ ul {
   width: 168px;
 }
 
-.site-header .navcenter-wrapper .navcenter-lower .nav-list .submenu-wrapper .submenu a {
+.site-header
+  .navcenter-wrapper
+  .navcenter-lower
+  .nav-list
+  .submenu-wrapper
+  .submenu
+  a {
   background-color: #000066;
   color: #fff;
 }
 
-.site-header .navcenter-wrapper .navcenter-lower .nav-list:nth-child(2) .submenu-wrapper {
+.site-header
+  .navcenter-wrapper
+  .navcenter-lower
+  .nav-list:nth-child(2)
+  .submenu-wrapper {
   left: -25px;
 }
 
@@ -1154,7 +1174,10 @@ ul {
   .announcementBlock .announcementBlock__wrapper .announcementBlock__attention {
     padding: 16px 12px;
   }
-  .announcementBlock .announcementBlock__wrapper .announcementBlock__attention .announcementBlock__attentionItem {
+  .announcementBlock
+    .announcementBlock__wrapper
+    .announcementBlock__attention
+    .announcementBlock__attentionItem {
     padding-left: 20px;
   }
   .announcementBlock__photo {
@@ -1525,6 +1548,41 @@ ul {
   font-size: 40px;
 }
 
+.top-page__ctaBannerWrapper {
+  display: block;
+  margin-top: 32px;
+  text-align: center;
+}
+
+.top-page__ctaBanner {
+  max-width: 534px;
+  box-shadow: 2px 1px 8px rgba(68, 68, 68, 0.59);
+}
+
+.top-page__ctaList {
+  margin: 54px auto 0;
+}
+
+.top-page__ctaItem {
+  text-align: center;
+}
+
+.top-page__ctaItemLink {
+  border: 4px solid #000066;
+  color: #000066;
+  padding: 24px 0;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+  display: inline-block;
+  width: 340px;
+}
+
+.top-page__ctaItem:not(:first-child) {
+  margin-top: 16px;
+}
+
 .book-anouncement {
   background-color: #000066;
   color: #fff;
@@ -1688,11 +1746,16 @@ ul {
 }
 
 .service-wrapper .service-list:not(:last-child) {
-  margin-right: 70px;
+  margin-right: 16px;
 }
 
 .service-wrapper .service-list .service {
   padding: 16px 16px 32px;
+}
+
+.service-list__small {
+  font-size: 0.4em;
+  letter-spacing: 0;
 }
 
 .service-wrapper .service-list .service .service-img {
@@ -1700,7 +1763,7 @@ ul {
 }
 
 .service-wrapper .service-list .heading3 {
-  font-size: 40px;
+  font-size: 30px;
   color: #000066;
   margin-top: 0;
   font-weight: 600;
@@ -1708,8 +1771,8 @@ ul {
 }
 
 .service-wrapper .service-list .heading4 {
-  font-size: 28px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.3;
   color: #000066;
   margin: 30px 0 20px;
   text-align: center;
@@ -1717,11 +1780,9 @@ ul {
 
 .service-wrapper .service-list .service-text {
   width: 90%;
+  height: 88px;
   margin: 0 auto;
-}
-
-.service-wrapper .service-list .body-wrapper {
-  height: 156px;
+  font-size: 15px;
 }
 
 .service-wrapper .service-list .detail {
@@ -1730,10 +1791,10 @@ ul {
   background-color: #000066;
   color: #fff;
   width: 100%;
-  font-size: 19.2px;
-  text-indent: 19.2px;
-  margin-top: 20px;
-  padding: 18px 16px;
+  font-size: 19px;
+  text-indent: 19px;
+  margin-top: 32px;
+  padding: 10px 16px;
   letter-spacing: 2em;
   transition: all 0.2s;
 }
@@ -1783,7 +1844,7 @@ ul {
 }
 
 .news {
-  padding: 120px 0 80px;
+  padding: 80px 0 80px;
 }
 
 .news .news-content {
@@ -1921,28 +1982,36 @@ ul {
 @media screen and (max-width: 1096px) {
   .top-page .service-wrapper .service-list .heading4 {
     height: 60px;
+    font-size: 22px;
   }
-  .top-page .service-wrapper .service-list .detail {
-    margin-top: 80px;
-  }
+
   .desc-wrapper:nth-child(4) .img {
     width: 90%;
   }
+
   .top-about .about-text-wrapper {
     padding-bottom: 64px;
   }
+
   .top-about .about-text-wrapper .strong {
     font-size: 48px;
   }
+
   .top-about .about-text-wrapper .heading2 {
     text-align: center;
   }
+
+  .service-wrapper .service-list .heading3 {
+    font-size: 26px;
+  }
+
   .top-about .desc {
     display: block;
     padding: 0 16px;
   }
+
   .news .heading2 {
-    margin: 80px auto 32px;
+    margin: 0 auto 32px;
   }
 }
 
@@ -1961,6 +2030,15 @@ ul {
     right: 16px;
     bottom: 16px;
   }
+  .top-page__ctaBannerWrapper {
+    margin-top: 24px;
+  }
+
+  .top-page__ctaBanner {
+    width: 100%;
+    margin: 0 auto;
+  }
+
   .top-page .sec.desc .heading2 {
     padding-top: 50px;
     font-size: 40px;
@@ -2108,9 +2186,13 @@ ul {
   .news .news-list-btn {
     margin-top: 60px;
   }
+  .news .heading2 {
+    margin-top: 64px;
+  }
   .top-page .service-wrapper {
     flex-direction: column;
     width: 90%;
+    margin: 0 auto;
   }
   .top-page .service-wrapper .service-list {
     display: block;
@@ -2119,11 +2201,22 @@ ul {
     max-width: 400px;
   }
   .top-page .service-wrapper .service-list .heading4 {
-    font-size: 23px;
+    font-size: 22px;
     color: #000066;
-    margin: 30px 0 20px;
+    margin: 16px 0;
     text-align: center;
-    height: 40px;
+    height: auto;
+  }
+
+  .top-page.serviceDetail {
+    margin-bottom: 0;
+  }
+
+  .service-wrapper .service-list .service {
+    padding: 24px 15px 32px;
+  }
+  .service-wrapper .service-list .service-text {
+    height: auto;
   }
   .top-page .service-wrapper .service-list .detail {
     margin-top: 32px;
@@ -2471,7 +2564,10 @@ ul {
   letter-spacing: 0.2em;
 }
 
-.page-service-list .solution-proposal .solution-proposal-wrapper .heading3::after {
+.page-service-list
+  .solution-proposal
+  .solution-proposal-wrapper
+  .heading3::after {
   content: "";
   position: absolute;
   top: 160px;
@@ -2481,7 +2577,11 @@ ul {
   border-bottom: 1px solid #fff;
 }
 
-.page-service-list .solution-proposal .solution-proposal-wrapper .heading3 .strong {
+.page-service-list
+  .solution-proposal
+  .solution-proposal-wrapper
+  .heading3
+  .strong {
   font-size: 48px;
 }
 
@@ -3176,17 +3276,27 @@ ul {
   .page-service-list .solution-proposal .solution-proposal-wrapper .heading3 {
     font-size: 32px;
   }
-  .page-service-list .solution-proposal .solution-proposal-wrapper .heading3 .strong {
+  .page-service-list
+    .solution-proposal
+    .solution-proposal-wrapper
+    .heading3
+    .strong {
     font-size: 40px;
   }
-  .page-service-list .solution-proposal .solution-proposal-wrapper .heading3::after {
+  .page-service-list
+    .solution-proposal
+    .solution-proposal-wrapper
+    .heading3::after {
     top: 134px;
   }
   .page-service-list .solution-proposal .solution-proposal-wrapper .desc {
     font-size: 20px;
     padding: 0 16px;
   }
-  .page-service-list .solution-proposal .solution-proposal-wrapper .desc:first-of-type {
+  .page-service-list
+    .solution-proposal
+    .solution-proposal-wrapper
+    .desc:first-of-type {
     margin-top: 48px;
   }
   .page-service-list .worries {
@@ -3374,20 +3484,38 @@ ul {
   .page-service-list .flow-wrapper .chart-wrapper .chart .desc::before {
     display: none;
   }
-  .page-service-list .flow-wrapper .chart-wrapper .chart .service-contents-wrapper {
+  .page-service-list
+    .flow-wrapper
+    .chart-wrapper
+    .chart
+    .service-contents-wrapper {
     flex-direction: column;
   }
-  .page-service-list .flow-wrapper .chart-wrapper .chart .service-contents-wrapper .desc {
+  .page-service-list
+    .flow-wrapper
+    .chart-wrapper
+    .chart
+    .service-contents-wrapper
+    .desc {
     width: auto;
     display: inline-block;
     padding: 0 16px;
     line-height: 1.7;
     font-size: 14px;
   }
-  .page-service-list .flow-wrapper .chart-wrapper .chart .service-contents-wrapper .text-long {
+  .page-service-list
+    .flow-wrapper
+    .chart-wrapper
+    .chart
+    .service-contents-wrapper
+    .text-long {
     width: 80%;
   }
-  .page-service-list .flow-wrapper .chart-wrapper .chart .service-contents-heading {
+  .page-service-list
+    .flow-wrapper
+    .chart-wrapper
+    .chart
+    .service-contents-heading {
     width: 100%;
     margin-top: 24px;
     justify-content: center;
@@ -3477,7 +3605,11 @@ ul {
     font-size: 25px;
     line-height: 1.4;
   }
-  .page-service-list .solution-proposal .solution-proposal-wrapper .heading3 .strong {
+  .page-service-list
+    .solution-proposal
+    .solution-proposal-wrapper
+    .heading3
+    .strong {
     font-size: 30px;
     font-weight: 600;
   }
@@ -3534,10 +3666,20 @@ ul {
   .page-service-list .promise .reason-list:first-child .reason-text .heading4 {
     font-size: 20px;
   }
-  .page-service-list .promise .reason-list:first-child .reason-text .heading4 .strong-s {
+  .page-service-list
+    .promise
+    .reason-list:first-child
+    .reason-text
+    .heading4
+    .strong-s {
     font-size: 24px;
   }
-  .page-service-list .promise .reason-list:first-child .reason-text .heading4 .strong {
+  .page-service-list
+    .promise
+    .reason-list:first-child
+    .reason-text
+    .heading4
+    .strong {
     font-size: 32px;
   }
   .page-service-list .promise .reason-list:first-child .reason-text::after {
@@ -3576,7 +3718,11 @@ ul {
   .page-service-list .flow-wrapper .chart-wrapper .chart .heading3 {
     margin: 0;
   }
-  .page-service-list .flow-wrapper .chart-wrapper .chart .service-contents-wrapper {
+  .page-service-list
+    .flow-wrapper
+    .chart-wrapper
+    .chart
+    .service-contents-wrapper {
     vertical-align: middle;
     display: table-cell;
   }
@@ -3859,7 +4005,10 @@ ul {
   justify-content: center;
 }
 
-.page-about-lita .president-achievement-wrapper .achievement-list-wrapper .achievement-img {
+.page-about-lita
+  .president-achievement-wrapper
+  .achievement-list-wrapper
+  .achievement-img {
   max-width: 100%;
   height: auto;
 }
@@ -3868,7 +4017,10 @@ ul {
   width: 90%;
 }
 
-.page-about-lita .president-achievement-wrapper .achievement-list .achievement-name {
+.page-about-lita
+  .president-achievement-wrapper
+  .achievement-list
+  .achievement-name {
   background-color: #000066;
   color: #fff;
   margin-bottom: 8px;
@@ -3908,7 +4060,10 @@ ul {
   color: #000066;
 }
 
-.page-about-lita .activity .activity-list-wrapper .activity-list:not(:last-child) {
+.page-about-lita
+  .activity
+  .activity-list-wrapper
+  .activity-list:not(:last-child) {
   margin-bottom: 32px;
   border-bottom: 1px solid #eee;
   padding-bottom: 16px;
@@ -4138,7 +4293,11 @@ ul {
     width: 50%;
     font-size: 16px;
   }
-  .page-about-lita .president-achievement-wrapper .achievement-list-wrapper .achievement-list .achievement-name {
+  .page-about-lita
+    .president-achievement-wrapper
+    .achievement-list-wrapper
+    .achievement-list
+    .achievement-name {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -5197,11 +5356,21 @@ ul {
     border-radius: 8px;
     margin-bottom: 40px;
   }
-  .site-footer .nav-link .footer-nav .list-wrapper .footer-mailmag-link .text-wrapper {
+  .site-footer
+    .nav-link
+    .footer-nav
+    .list-wrapper
+    .footer-mailmag-link
+    .text-wrapper {
     display: flex;
     flex-direction: column;
   }
-  .site-footer .nav-link .footer-nav .list-wrapper .footer-mailmag-link .mail-magagine-footer-title {
+  .site-footer
+    .nav-link
+    .footer-nav
+    .list-wrapper
+    .footer-mailmag-link
+    .mail-magagine-footer-title {
     font-size: 20px;
   }
   .site-footer .nav-link > .footer_logo {
@@ -5242,7 +5411,11 @@ ul {
   }
 
   .top-page .sec {
-    margin-bottom: 80px;
+    margin-bottom: 48px;
+  }
+
+  .top-page .column {
+    margin-top: 80px;
   }
 
   .page-service-list .achievement .text {
@@ -5282,10 +5455,6 @@ ul {
 
   .page-service-list .conversion-box-wrapper .img-bg.firstbg {
     top: 95vw;
-  }
-
-  .top-page .service-wrapper .service-list .heading4 {
-    font-size: 20px;
   }
 }
 
@@ -5418,6 +5587,7 @@ ul {
 @media screen and (max-width: 480px) {
   .service-wrapper .service-list .heading3 {
     line-height: 1;
+    font-size: 28px;
   }
 }
 
