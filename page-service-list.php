@@ -6,206 +6,204 @@ get_header();
 		<div class="content-area">
 			<main>
 				<div class="heroimg-wrapper">
-						<img src="<?php echo content_url() ?>/themes/lita/assets/img/heroimg_2.jpg" alt="" class="service-list-hero pc">
-						<img src="<?php echo content_url() ?>/themes/lita/assets/img/heroimg_2_sp.jpg" alt="" class="service-list-hero sp">
-						<div class="cover"></div>
-						<div class="catch-wrapper">
+					<img src="<?php echo content_url() ?>/themes/lita/assets/img/heroimg_2.jpg" alt="" class="service-list-hero pc">
+					<img src="<?php echo content_url() ?>/themes/lita/assets/img/heroimg_2_sp.jpg" alt="" class="service-list-hero sp">
+					<div class="cover"></div>
+					<div class="catch-wrapper"></div>
+				</div>
+			<div class="conversion-box-wrapper">
+				<div class="conversion-box">
+					<div class="box-left firstcv-box-wrapper">
+						<em class="text">まずはお気軽にご相談ください</em>
+						<div class="telbox">
+							<!-- 電話アイコン -->
+							<img src="<?php echo content_url() ?>/themes/lita/assets/img/icon_phone.svg" alt="" class="icon-phone">
+
+							<address>
+								<a href="tel:<?php phoneNumber() ?>" class="tel-num"><?php phoneNumber() ?></a>
+							</address>
 						</div>
 					</div>
-				</div>
-				<div class="conversion-box-wrapper">
-			<div class="conversion-box">
-				<div class="box-left firstcv-box-wrapper">
-					<em class="text">まずはお気軽にご相談ください</em>
-					<div class="telbox">
-						<!-- 電話アイコン -->
-						<img src="<?php echo content_url() ?>/themes/lita/assets/img/icon_phone.svg" alt="" class="icon-phone">
-
-						<address>
-							<a href="tel:<?php phoneNumber() ?>" class="tel-num"><?php phoneNumber() ?></a>
-						</address>
+					<div class="img-bg firstbg">
+						<a href="#request">
+							<img src="<?php echo content_url() ?>/themes/lita/assets/img/conversion_box_btn.png" srcset="<?php echo content_url() ?>/themes/lita/assets/img/conversion_box_btn@2x.png" alt="" class="conversion-btn">
+						</a>
 					</div>
-				</div>
-				<div class="img-bg firstbg">
-					<a href="#request">
-						<img src="<?php echo content_url() ?>/themes/lita/assets/img/conversion_box_btn.png" srcset="<?php echo content_url() ?>/themes/lita/assets/img/conversion_box_btn@2x.png" alt="" class="conversion-btn">
-					</a>
-				</div>
 				</div>
 			</div>
-				<section class="sec blue-bg worries">
+			<section class="sec blue-bg worries">
+				<div class="heading2-wrapper fadein">
+					<h2 class="heading2">こんなことで<br class="sp">お悩みではありませんか？</h2>
+				</div>
+				<ul class="list-wrapper">
+					<li class="list fadein">今までPR代行をお願いした経験があるが、<em class="strong">結果がイマイチ</em>だった</li>
+					<li class="list fadein">PR代行は<em class="strong">費用が高く手が届かない</em>と思っている</li>
+					<li class="list fadein">メディア掲載の経験はあるが、<em class="strong">売上に繋がらなかった</em></li>
+					<li class="list fadein">PR会社に苦い思い出があり、<em class="strong">頼むのが怖い</em></li>
+				</ul>
+				<div class="triangle"></div>
+			</section>
+			<section class="sec">
+				<div class="lita-solution fadein">
+					<img src="<?php echo content_url() ?>/themes/lita/assets/img/lita_solution.svg" alt="" class="flash">
+					<h2 class="heading2">
+						そんなお悩みをすべて解決するのが、<br>
+						<em class="strong">LITAのPR代行サービス</em>です
+					</h2>
+				</div>
+			</section>
+			<section class="sec solution-proposal">
+				<div class="solution-proposal-wrapper">
+					<h3 class="heading3 fadein">
+						<em class="strong">LITA</em>は<br>
+						<em class="strong">売上に繋がる広報PR</em><br class="sp">をしていきます
+					</h3>
+					<p class="desc fadein">偶然的な単発のメディア露出のみでも、<br class="sp">変化は実感できません。</p>
+					<p class="desc fadein">
+						売上拡大に繋がるための<br class="sp">情報・実績の流れをつくり、<br class="sp">口コミの渦を作っていく
+					</p>
+					<p class="desc fadein">
+						それが、LITAの仕事です。
+					</p>
+				</div>
+			</section>
+			<section class="sec whirlpool">
+				<div class="whirlpool-wrapper">
 					<div class="heading2-wrapper fadein">
-						<h2 class="heading2">こんなことで<br class="sp">お悩みではありませんか？</h2>
-					</div>
-					<ul class="list-wrapper">
-						<li class="list fadein">今までPR代行をお願いした経験があるが、<em class="strong">結果がイマイチ</em>だった</li>
-						<li class="list fadein">PR代行は<em class="strong">費用が高く手が届かない</em>と思っている</li>
-						<li class="list fadein">メディア掲載の経験はあるが、<em class="strong">売上に繋がらなかった</em></li>
-						<li class="list fadein">PR会社に苦い思い出があり、<em class="strong">頼むのが怖い</em></li>
-					</ul>
-					<div class="triangle"></div>
-				</section>
-				<section class="sec">
-					<div class="lita-solution fadein">
-						<img src="<?php echo content_url() ?>/themes/lita/assets/img/lita_solution.svg" alt="" class="flash">
 						<h2 class="heading2">
-							そんなお悩みをすべて解決するのが、<br>
-							<em class="strong">LITAのPR代行サービス</em>です
+							メディア露出だけで終わらせず、<br>
+							<em class="strong">そこを起点に売上拡大につなげる渦を作る</em>
 						</h2>
+						<div class="heading2-borderbtm"></div>
 					</div>
-				</section>
-				<section class="sec solution-proposal">
-					<div class="solution-proposal-wrapper">
-						<h3 class="heading3 fadein">
-							<em class="strong">LITA</em>は<br>
-							<em class="strong">売上に繋がる広報PR</em><br class="sp">をしていきます
-						</h3>
-						<p class="desc fadein">偶然的な単発のメディア露出のみでも、<br class="sp">変化は実感できません。</p>
-						<p class="desc fadein">
-							売上拡大に繋がるための<br class="sp">情報・実績の流れをつくり、<br class="sp">口コミの渦を作っていく
-						</p>
-						<p class="desc fadein">
-							それが、LITAの仕事です。
-						</p>
+					<div class="chart fadein">
+						<h3 class="heading3">認知拡大までの一例</h3>
+						<img src="<?php echo content_url() ?>/themes/lita/assets/img/whirlpool_img1@2x.jpg" alt="認知拡大までの一例" class="whirlpool-chart pc">
+						<img src="<?php echo content_url() ?>/themes/lita/assets/img/whirlpool_img1_sp@2x.jpg" alt="認知拡大までの一例" class="whirlpool-chart sp">
 					</div>
-				</section>
-				<section class="sec whirlpool">
-					<div class="whirlpool-wrapper">
-						<div class="heading2-wrapper fadein">
-							<h2 class="heading2">
-								メディア露出だけで終わらせず、<br>
-								<em class="strong">そこを起点に売上拡大につなげる渦を作る</em>
-							</h2>
-							<div class="heading2-borderbtm"></div>
-						</div>
-						<div class="chart fadein">
-							<h3 class="heading3">認知拡大までの一例</h3>
-							<img src="<?php echo content_url() ?>/themes/lita/assets/img/whirlpool_img1@2x.jpg" alt="認知拡大までの一例" class="whirlpool-chart pc">
-							<img src="<?php echo content_url() ?>/themes/lita/assets/img/whirlpool_img1_sp@2x.jpg" alt="認知拡大までの一例" class="whirlpool-chart sp">
-						</div>
-						<div class="horizontal">
-							<div class="desc-wrapper">
-								<p class="desc fadein">
-									10年前に比べ、1日の情報摂取量<br class="sp">410倍以上と言われている現在。<br>
-									やみくもに発信、広告を増やしても<br class="sp">埋もれてしまいます。<br>
-									情報接触回数を単純に増やし、<br class="sp">記憶させることは、困難です。
-								</p>
-								<em class="strong fadein">
-									10回の一方的で宣伝的な情報よりも<br>
-									3回の信頼ある価値ある情報を。
+					<div class="horizontal">
+						<div class="desc-wrapper">
+							<p class="desc fadein">
+								10年前に比べ、1日の情報摂取量<br class="sp">410倍以上と言われている現在。<br>
+								やみくもに発信、広告を増やしても<br class="sp">埋もれてしまいます。<br>
+								情報接触回数を単純に増やし、<br class="sp">記憶させることは、困難です。
+							</p>
+							<em class="strong fadein">
+								10回の一方的で宣伝的な情報よりも<br>
+								3回の信頼ある価値ある情報を。
+							</em>
+							<p class="desc fadein">
+								それは、信頼ある第三者の<br class="sp">紹介・口コミでのみ実現します。<br>
+								その手法が広報PR戦略です。
+							</p>
+							<div class="line-wrapper fadein">
+								<em class="strong">
+									しかし、<br class="sp">偶然的な単発のメディア露出のみでも<br>
+									変化は実感できません。
 								</em>
-								<p class="desc fadein">
-									それは、信頼ある第三者の<br class="sp">紹介・口コミでのみ実現します。<br>
-									その手法が広報PR戦略です。
-								</p>
-								<div class="line-wrapper fadein">
-									<em class="strong">
-										しかし、<br class="sp">偶然的な単発のメディア露出のみでも<br>
-										変化は実感できません。
-									</em>
-									<p class="desc">ゴールを見据えたPRをしていき、<br class="sp">口コミの渦を作っていくのがLITAの仕事です。</p>
-								</div>
-								<p class="desc fadein">
-									職種関係無く、広告予算が無くても、<br class="sp">創業初期で無名でも<br>
-									<em class="important">広報PRは社会的信頼をつけ、<br class="sp">売上を1→100にする力があります。</em>
-								</p>
+								<p class="desc">ゴールを見据えたPRをしていき、<br class="sp">口コミの渦を作っていくのがLITAの仕事です。</p>
 							</div>
-							<div class="img-wrapper">
-								<img src="<?php echo content_url() ?>/themes/lita/assets/img/whirlpool_img2.png" alt="" class="sales-chart fadein">
-							</div>
+							<p class="desc fadein">
+								職種関係無く、広告予算が無くても、<br class="sp">創業初期で無名でも<br>
+								<em class="important">広報PRは社会的信頼をつけ、<br class="sp">売上を1→100にする力があります。</em>
+							</p>
+						</div>
+						<div class="img-wrapper">
+							<img src="<?php echo content_url() ?>/themes/lita/assets/img/whirlpool_img2.png" alt="" class="sales-chart fadein">
 						</div>
 					</div>
-				</section>
-				<?php include('lp-conversion-box.php'); ?>
-				<section class="sec blue-bg pr-strategy">
-					<div class="pr-strategy-wrapper">
-						<div class="heading2-wrapper fadein">
-							<h2 class="heading2">
-								LITAが提案するPR戦略
-							</h2>
-							<div class="heading2-borderbtm"></div>
-						</div>
-						<div class="figure-wrapper fadein">
-							<div class="circle">
-								<h4 class="heading4">マスメディア</h4>
-								<span class="subtitle">影響力</span>
-							</div>
-							<div class="cross">
-								<svg xmlns="http://www.w3.org/2000/svg" width="52.34" height="52.41" viewBox="0 0 52.34 52.41" class="icon-cross">
-								<defs>
-								</defs>
-								<path id="_" data-name="×" class="cross-1" d="M7165.24,5989.7l22.53-22.62-3.59-3.59-22.62,22.62-22.53-22.62-3.6,3.67,22.54,22.54-22.54,22.53,3.6,3.68,22.53-22.62,22.62,22.62,3.59-3.68Z" transform="translate(-7135.44 -5963.5)"/>
-								</svg>
-							</div>
-							<div class="circle">
-								<h4 class="heading4">SNS</h4>
-								<span class="subtitle">拡散性</span>
-							</div>
-						</div>
-						<h3 class="heading3 fadein">
-							<em class="important">マスメディア</em><small class="small">と</small><em class="important">SNS</em><small class="small">の</small>掛け合わせで<br>
-							相乗効果<small class="small">を</small>狙う</h3>
-						<p class="desc fadein">
-							全人口がスマホを使う時代。<br class="sp">テレビで見たら、スマホで検索。<br>
-							SNSで、拡散されているものを発見し、<br class="sp">スマホで検索して調べるというように、<br>
-							<em class="strong">PRもスマホ・SNS抜きには語れません。</em><br>
-							SNSの拡散性を考慮したPR戦略で<br class="sp">「ヒット」「話題」を作り出します。
-						</p>
-						<div class="strategy-chart-wrapper fadein">
-							<img src="<?php echo content_url() ?>/themes/lita/assets/img/pr_strategy_1.png" alt="" class="strategy-chart">
-							<img src="<?php echo content_url() ?>/themes/lita/assets/img/pr_strategy_2.png" alt="" class="strategy-chart">
-						</div>
-					</div>
-				</section>
-				<section class="sec researcher">
-					<div class="desc-wrapper">
-						<h2 class="heading2 fadein">
-							スマホ時代にあった最新の広報PRを、<br>
-							LITAは研究し、実践し続けています。
+				</div>
+			</section>
+			<?php include('lp-conversion-box.php'); ?>
+			<section class="sec blue-bg pr-strategy">
+				<div class="pr-strategy-wrapper">
+					<div class="heading2-wrapper fadein">
+						<h2 class="heading2">
+							LITAが提案するPR戦略
 						</h2>
-						<div class="img-wrapper fadein">
-							<img src="<?php echo content_url() ?>/themes/lita/assets/img/top_catch4.jpg" alt="" class="img">
-						</div>
-						<ul class="text-wrapper">
-							<li class="desc fadein">
-								日経BP社発行ビジネス誌「日経トップリーダー」で【社長のためのSNS本質講座】11回連載。中⼩企業経営に役⽴つSNS活⽤用、PRノウハウを紹介
-							</li>
-							<li class="desc fadein">
-								日本テレビ系列「中京テレビ」と女性のためのアカデミー企画プロデュース。SNSを中心に集客を行う新しい試みにより、1年半で900名の女性がアカデミー受講。
-							</li>
-							<li class="desc fadein">
-								日経BP社の中小企業教材のための動画コンテンツ「GOKUU」で【SNS本質講座】講師を担当。
-							</li>
-							<li class="desc fadein">
-								明治大学スマートキャリアプログラムで「PR/SNS講座」実施
-							</li>
-							<li class="desc fadein">
-								経営者向け雑誌「経済界」を発行する株式会社経済界と「女性エヴァンジェリスト養成講座」長期講座を企画運営実施。女性インフルエンサーを育成。
-							</li>
-							<li class="desc fadein">
-								大手企業A 社がメルマガ会員向けに行う「インフルエンサー養成講座」で受講者500名に対して長期間インフルエンサー育成。
-							</li>
-							<li class="desc fadein">
-								SNS累計100万人フォロワーの”ゆうこす”こと菅本裕子さん、PRTimesとのコラボPR講義を実施。50名の女性インフルエンサーにPR指導。
-							</li>
-							<li class="desc fadein">
-								株式会社LITA登壇 「PR講座」3年で累計1200名受講
-							</li>
-							<li class="desc fadein">
-								株式会社LITA主催「長期講座PR塾」1期～14期満席。卒業生330名
-							</li>
-						</ul>
+						<div class="heading2-borderbtm"></div>
 					</div>
-				</section>
-				<section class="sec">
-					<div class="achievement">
-						<div class="heading2-wrapper fadein">
-							<h2 class="heading2">取引実績</h2>
-							<div class="heading2-borderbtm"></div>
-							<p class="text">株式会社エアウィーヴ、株式会社致知出版社、株式会社日経BP、中京テレビ放送株式会社、株式会社経済界、株式会社テンポスホールディングス、ロフテー株式会社、株式会社サンマーク出版、株式会社幻冬舎、明治大学、武蔵コーポレーション株式会社、株式会社四季倶楽部旅、株式会社エスアンドケイ、株式会社インプレッションラーニング、日本高圧電気株式会社、株式会社インラビングメモリー、HAPPY WOMAN株式会社、スポーツ庁、株式会社ファニー、一般社団法人日本人グローバル化計画推進協会  JGPAA、綜合ユニコム株式会社、一般社団法人日本レジャーホテル協会、全国専修学校一般課程各種学校協会、株式会社電通国際情報サービス、ライブコマース推進委員会、株式会社サイトビジット、ピルボックスジャパン株式会社、株式会社FeelWorks 他（順不同）</p>
+					<div class="figure-wrapper fadein">
+						<div class="circle">
+							<h4 class="heading4">マスメディア</h4>
+							<span class="subtitle">影響力</span>
+						</div>
+						<div class="cross">
+							<svg xmlns="http://www.w3.org/2000/svg" width="52.34" height="52.41" viewBox="0 0 52.34 52.41" class="icon-cross">
+							<defs>
+							</defs>
+							<path id="_" data-name="×" class="cross-1" d="M7165.24,5989.7l22.53-22.62-3.59-3.59-22.62,22.62-22.53-22.62-3.6,3.67,22.54,22.54-22.54,22.53,3.6,3.68,22.53-22.62,22.62,22.62,3.59-3.68Z" transform="translate(-7135.44 -5963.5)"/>
+							</svg>
+						</div>
+						<div class="circle">
+							<h4 class="heading4">SNS</h4>
+							<span class="subtitle">拡散性</span>
 						</div>
 					</div>
-				</section>
+					<h3 class="heading3 fadein">
+						<em class="important">マスメディア</em><small class="small">と</small><em class="important">SNS</em><small class="small">の</small>掛け合わせで<br>
+						相乗効果<small class="small">を</small>狙う</h3>
+					<p class="desc fadein">
+						全人口がスマホを使う時代。<br class="sp">テレビで見たら、スマホで検索。<br>
+						SNSで、拡散されているものを発見し、<br class="sp">スマホで検索して調べるというように、<br>
+						<em class="strong">PRもスマホ・SNS抜きには語れません。</em><br>
+						SNSの拡散性を考慮したPR戦略で<br class="sp">「ヒット」「話題」を作り出します。
+					</p>
+					<div class="strategy-chart-wrapper fadein">
+						<img src="<?php echo content_url() ?>/themes/lita/assets/img/pr_strategy_1.png" alt="" class="strategy-chart">
+						<img src="<?php echo content_url() ?>/themes/lita/assets/img/pr_strategy_2.png" alt="" class="strategy-chart">
+					</div>
+				</div>
+			</section>
+			<section class="sec researcher">
+				<div class="desc-wrapper">
+					<h2 class="heading2 fadein">
+						スマホ時代にあった最新の広報PRを、<br>
+						LITAは研究し、実践し続けています。
+					</h2>
+					<div class="img-wrapper fadein">
+						<img src="<?php echo content_url() ?>/themes/lita/assets/img/top_catch4.jpg" alt="" class="img">
+					</div>
+					<ul class="text-wrapper">
+						<li class="desc fadein">
+							日経BP社発行ビジネス誌「日経トップリーダー」で【社長のためのSNS本質講座】11回連載。中⼩企業経営に役⽴つSNS活⽤用、PRノウハウを紹介
+						</li>
+						<li class="desc fadein">
+							日本テレビ系列「中京テレビ」と女性のためのアカデミー企画プロデュース。SNSを中心に集客を行う新しい試みにより、1年半で900名の女性がアカデミー受講。
+						</li>
+						<li class="desc fadein">
+							日経BP社の中小企業教材のための動画コンテンツ「GOKUU」で【SNS本質講座】講師を担当。
+						</li>
+						<li class="desc fadein">
+							明治大学スマートキャリアプログラムで「PR/SNS講座」実施
+						</li>
+						<li class="desc fadein">
+							経営者向け雑誌「経済界」を発行する株式会社経済界と「女性エヴァンジェリスト養成講座」長期講座を企画運営実施。女性インフルエンサーを育成。
+						</li>
+						<li class="desc fadein">
+							大手企業A 社がメルマガ会員向けに行う「インフルエンサー養成講座」で受講者500名に対して長期間インフルエンサー育成。
+						</li>
+						<li class="desc fadein">
+							SNS累計100万人フォロワーの”ゆうこす”こと菅本裕子さん、PRTimesとのコラボPR講義を実施。50名の女性インフルエンサーにPR指導。
+						</li>
+						<li class="desc fadein">
+							株式会社LITA登壇 「PR講座」3年で累計1200名受講
+						</li>
+						<li class="desc fadein">
+							株式会社LITA主催「長期講座PR塾」1期～14期満席。卒業生330名
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="sec">
+				<div class="achievement">
+					<div class="heading2-wrapper fadein">
+						<h2 class="heading2">取引実績</h2>
+						<div class="heading2-borderbtm"></div>
+						<p class="text">株式会社エアウィーヴ、株式会社致知出版社、株式会社日経BP、中京テレビ放送株式会社、株式会社経済界、株式会社テンポスホールディングス、ロフテー株式会社、株式会社サンマーク出版、株式会社幻冬舎、明治大学、武蔵コーポレーション株式会社、株式会社四季倶楽部旅、株式会社エスアンドケイ、株式会社インプレッションラーニング、日本高圧電気株式会社、株式会社インラビングメモリー、HAPPY WOMAN株式会社、スポーツ庁、株式会社ファニー、一般社団法人日本人グローバル化計画推進協会  JGPAA、綜合ユニコム株式会社、一般社団法人日本レジャーホテル協会、全国専修学校一般課程各種学校協会、株式会社電通国際情報サービス、ライブコマース推進委員会、株式会社サイトビジット、ピルボックスジャパン株式会社、株式会社FeelWorks 他（順不同）</p>
+					</div>
+				</div>
+			</section>
 			<section class="sec blue-bg">
 				<div class="service">
 					<div class="heading2-wrapper fadein">
@@ -357,7 +355,6 @@ get_header();
 								</p>
 							</div>
 						</div>
-
 					</div>
 				</section>
 				<section class="sec blue-bg">
@@ -423,7 +420,121 @@ get_header();
 							</li>
 						</ul>
 					</div>
+			</section>
+			<section class="sec service-list__detail">
+				<div class="heading2-wrapper fadein">
+					<h2 class="heading2">サービス一覧</h2>
+					<div class="heading2-borderbtm"></div>
 				</div>
+				<h3 class="service-list__detailBand fadein">PR代行サービス<span class="pc">／</span><br class="sp">ライトコース</h3>
+				<p class="service-list__detailParagraph fadein">PR戦略策定から実⾏まで、<br class="sp">PR業務を弊社スタッフが代⾏いたします。</p>
+				<table class="service-list__detailTable fadein">
+					<tr class="service-list__detailTableRow">
+						<th>【期　　間】</th>
+						<td>6ヶ⽉間〜</td>
+					</tr>
+					<tr class="service-list__detailTableRow">
+						<th>【⾦　　額】</th>
+						<td>⽉額400,000円(税抜)</td>
+					</tr>
+					<tr class="service-list__detailTableRow">
+						<th>【業務内容】</th>
+						<td>
+							<ul class="service-list__detailTableList">
+								<li class="service-list__detailTableItem">PR戦略の策定</li>
+								<li class="service-list__detailTableItem">コアメッセージの構築</li>
+								<li class="service-list__detailTableItem">プレスリリースの企画、作成<br class="sp">（⽉1本まで）</li>
+								<li class="service-list__detailTableItem">メディア選定</li>
+								<li class="service-list__detailTableItem">コアターゲットメディア<br class="sp">20媒体へアプローチ<br /><span class="service-list__detailTableItemSpan">(メール、電話、お⼿紙、FAX、訪問アプローチなど)</span></li>
+								<li class="service-list__detailTableItem">定例ミーティングの実施<br /><span class="service-list__detailTableItemSpan">(原則⽉1回、初⽉は2回、その他必要に応じて)</span></li>
+								<li class="service-list__detailTableItem">PR実務に関するご相談応対<br /><span class="service-list__detailTableItemSpan">(お電話、メールなど)</span></li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+				<h3 class="service-list__detailBand fadein"><span class="service-list__detailBandSpan">PR代行サービス<span class="pc">／</span><br class="sp">スタンダードコース</span></h3>
+				<p class="service-list__detailParagraph fadein">PR戦略策定から実⾏まで、<br class="sp">PR業務を弊社スタッフが代⾏いたします。</p>
+				<table class="service-list__detailTable fadein">
+					<tr class="service-list__detailTableRow">
+						<th>【期　　間】</th>
+						<td>6ヶ⽉間〜</td>
+					</tr>
+					<tr class="service-list__detailTableRow">
+						<th>【⾦　　額】</th>
+						<td>⽉額600,000円(税抜)</td>
+					</tr>
+					<tr class="service-list__detailTableRow">
+						<th>【業務内容】</th>
+						<td>
+							<ul class="service-list__detailTableList">
+								<li class="service-list__detailTableItem">PR戦略の策定</li>
+								<li class="service-list__detailTableItem">コアメッセージの構築</li>
+								<li class="service-list__detailTableItem">プレスリリースの企画、作成<br class="sp">（⽉2本まで）</li>
+								<li class="service-list__detailTableItem">メディア選定</li>
+								<li class="service-list__detailTableItem">マッチングメディアへ<br class="sp">一斉アプローチ300媒体<br /><span class="service-list__detailTableItemSpan">(メール、FAXなど)</span></li>
+								<li class="service-list__detailTableItem">コアターゲットメディア<br class="sp">40媒体へアプローチ<br /><span class="service-list__detailTableItemSpan">(メール、電話、お⼿紙、FAX、訪問アプローチなど)</span></li>
+								<li class="service-list__detailTableItem">定例ミーティングの実施<br /><span class="service-list__detailTableItemSpan">(週1回、その他必要に応じて)</span></li>
+								<li class="service-list__detailTableItem">PR実務に関するご相談応対<br /><span class="service-list__detailTableItemSpan">(お電話、メールなど)</span></li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+				<h3 class="service-list__detailBand fadein">PR代行サービス<span class="pc">／</span><br class="sp" />アドバンスコース</h3>
+				<p class="service-list__detailParagraph fadein">PR戦略策定から実⾏まで、<br class="sp">PR業務を弊社スタッフが代⾏いたします。</p>
+				<table class="service-list__detailTable fadein">
+					<tr class="service-list__detailTableRow">
+						<th>【期　　間】</th>
+						<td>6ヶ⽉間〜</td>
+					</tr>
+					<tr class="service-list__detailTableRow">
+						<th>【⾦　　額】</th>
+						<td>⽉額800,000円(税抜)</td>
+					</tr>
+					<tr class="service-list__detailTableRow">
+						<th>【業務内容】</th>
+						<td>
+							<ul class="service-list__detailTableList">
+								<li class="service-list__detailTableItem">PR戦略の策定</li>
+								<li class="service-list__detailTableItem">コアメッセージの構築</li>
+								<li class="service-list__detailTableItem">プレスリリースの企画、作成<br class="sp">（⽉2本まで）</li>
+								<li class="service-list__detailTableItem">メディア選定</li>
+								<li class="service-list__detailTableItem">マッチングメディアへ<br class="sp">一斉アプローチ500媒体<br /><span class="service-list__detailTableItemSpan">(メール、FAXなど)</span></li>
+								<li class="service-list__detailTableItem">コアターゲットメディア<br class="sp">50媒体へアプローチ<br /><span class="service-list__detailTableItemSpan">(メール、電話、お⼿紙、FAX、訪問アプローチなど)</span></li>
+								<li class="service-list__detailTableItem">マーケティングコンサルティング</li>
+								<li class="service-list__detailTableItem">SNSコンサルティング</li>
+								<li class="service-list__detailTableItem">定例ミーティングの実施<br /><span class="service-list__detailTableItemSpan">(週1回、その他必要に応じて）</span></li>
+								<li class="service-list__detailTableItem">PR実務に関するご相談応対<br /><span class="service-list__detailTableItemSpan">(お電話、メールなど)</span></li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+				<h3 class="service-list__detailBand fadein">書籍PRコース</h3>
+				<p class="service-list__detailParagraph fadein">PR戦略策定から実⾏まで、<br class="sp">PR業務を弊社スタッフが代⾏いたします。</p>
+				<table class="service-list__detailTable fadein">
+					<tr class="service-list__detailTableRow">
+						<th>【期　　間】</th>
+						<td>6ヶ⽉間〜</td>
+					</tr>
+					<tr class="service-list__detailTableRow">
+						<th>【⾦　　額】</th>
+						<td>⽉額150,000円(税抜)</td>
+					</tr>
+					<tr class="service-list__detailTableRow">
+						<th>【業務内容】</th>
+						<td>
+							<ul class="service-list__detailTableList">
+								<li class="service-list__detailTableItem">コアメッセージの構築</li>
+								<li class="service-list__detailTableItem">プレスリリースの企画、作成<br class="sp">（⽉1本まで）</li>
+								<li class="service-list__detailTableItem">メディア選定</li>
+								<li class="service-list__detailTableItem">マッチングメディアへ<br class="sp">一斉アプローチ100媒体<br /><span class="service-list__detailTableItemSpan">(メール、FAXなど)</span></li>
+								<li class="service-list__detailTableItem">コアターゲットメディア<br class="sp">10媒体へアプローチ<br /><span class="service-list__detailTableItemSpan">(メール、電話、お⼿紙、FAX、訪問アプローチなど)</span></li>
+								<li class="service-list__detailTableItem">定例ミーティングの実施<br /> <span class="service-list__detailTableItemSpan">(月1回、その他必要に応じて)</span></li>
+								<li class="service-list__detailTableItem">PR実務に関するご相談応対<br /><span class="service-list__detailTableItemSpan">(お電話、メールなど)</span<</li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+			</section>
 			</section>
 			<section class="sec request" id="request">
 				<div class="heading2-wrapper fadein">
