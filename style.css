@@ -5087,6 +5087,17 @@ ul {
   }
   .announcement .announcement-list-wrapper {
     margin-bottom: 40px;
+    max-width: 100%;
+  }
+  .announcement-list img {
+    max-width: 100%;
+    height: auto;
+  }
+  .announcement-list a {
+    word-break: break-word;
+  }
+  .announcement-list iframe {
+    max-width: 100%;
   }
 }
 
