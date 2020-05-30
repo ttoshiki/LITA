@@ -3878,6 +3878,41 @@ ul {
   padding-left: 12px;
 }
 
+.vision-wrapper .heading2-wrapper {
+  margin-bottom: 0;
+}
+
+.about-lita__heading3 {
+  text-align: center;
+  font-size: 35px;
+  margin: 64px auto 0;
+}
+
+.page-about-lita .-en {
+  font-family: 'Georgia';
+  font-style: normal;
+}
+
+.about-lita__heading3::after {
+  content: "";
+  background-image: url(assets/img/about_lita_line.png);
+  background-position: center;
+  width: 90%;
+  height: 1px;
+  max-width: 560px;
+  display: block;
+  margin: 8px auto 0;
+  text-align: center;
+}
+
+.about-lita__headingEn {
+  display: block;
+  text-align: center;
+  margin: 8px auto 72px;
+  font-size: 20px;
+  color: #181818;
+}
+
 .page-about-lita .header-img-wrapper {
   position: relative;
 }
@@ -3916,67 +3951,72 @@ ul {
 }
 
 .page-about-lita .sec.vision {
-  background: url("./assets/img/about_vision_bg.jpg") no-repeat;
-  background-size: cover;
   padding: 80px 0;
   margin-bottom: 0;
 }
 
 .page-about-lita .sec.vision .heading2 {
   font-size: 56px;
+  text-indent: -0.1em;
 }
 
 .page-about-lita .sec.vision .desc {
   text-align: center;
-  line-height: 2.2;
+  line-height: 1.8;
   font-size: 24px;
   color: #181818;
   margin-bottom: 40px;
 }
 
-.page-about-lita .philosophy {
+.page-about-lita .sec.vision .desc:last-child {
+  margin-bottom: 24px;
+}
+
+.page-about-lita .principle {
   background-color: #f5f5ff;
   padding: 80px 0;
 }
 
-.page-about-lita .philosophy .heading2 {
-  font-size: 40px;
-  margin-bottom: 80px;
-}
-
-.page-about-lita .philosophy .block-wrapper {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  margin: 40px auto;
-  position: relative;
-}
-
-.page-about-lita .philosophy .block-wrapper:nth-of-type(2) {
-  flex-direction: row-reverse;
-}
-
-.page-about-lita .philosophy .philosophy-heading {
-  height: auto;
-  color: #000066;
-  font-size: 40px;
-  width: 500px;
-  margin: 0 auto 40px;
-  padding: 16px 8px;
-  border: 2px solid #000066;
-  letter-spacing: 0.2em;
-  position: relative;
-}
-
-.page-about-lita .philosophy .philosophy-heading .first-letter {
+.page-about-lita .principle .heading2 {
   font-size: 56px;
+  margin-bottom: 64px;
 }
 
-.page-about-lita .philosophy .desc {
-  font-size: 24px;
+.page-about-lita .principle__paragraphs {
+  max-width: 640px;
   text-align: center;
-  line-height: 2;
+  margin: 0 auto;
+}
+
+.principle__paragraph {
+  text-align: left;
+  font-size: 24px;
+  margin: 12px 0;
+}
+
+.page-about-lita .principle__en {
   color: #181818;
+  border: 2px solid #181818;
+  font-size: 28px;
+  margin-right: 12px;
+  padding: 8px 0;
+  width: 188px;
+  display: inline-block;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.principle__heading3 {
+  text-align: center;
+  margin: 48px auto 0;
+  color: #181818;
+  font-size: 24px;
+}
+
+.principle__text {
+  text-align: center;
+  font-size: 24px;
+  margin: 8px auto 64px;
 }
 
 .page-about-lita .company-overview .table-wrapper {
@@ -4335,8 +4375,7 @@ ul {
     font-size: 8vw;
   }
   .page-about-lita .sec.vision {
-    background: url("./assets/img/about_vision_bg_sp.jpg") no-repeat;
-    padding: 20px 0;
+    padding: 48px 0 0;
   }
   .page-about-lita .sec.vision .heading2 {
     font-size: 40px;
@@ -4344,18 +4383,7 @@ ul {
   .page-about-lita .sec.vision .desc {
     font-size: 16px;
     padding: 0 16px;
-  }
-  .page-about-lita .philosophy .heading2 {
-    margin-bottom: 40px;
-  }
-  .page-about-lita .philosophy .text-wrapper {
-    padding: 16px;
-  }
-  .page-about-lita .philosophy .philosophy-heading {
-    width: 90%;
-  }
-  .page-about-lita .philosophy .desc {
-    font-size: 14px;
+    margin-bottom: 24px;
   }
   .page-about-lita .company-overview .table-wrapper {
     border-collapse: collapse;
@@ -4480,6 +4508,67 @@ ul {
   }
   .page-about-lita .president-wrapper .bookInformation {
     display: none;
+  }
+
+  .page-about-lita .sec.vision .heading2 {
+    font-size: 24px;
+  }
+
+  .about-lita__heading3 {
+    margin: 24px auto 0;
+    font-size: 22px;
+  }
+
+  .about-lita__headingEn {
+    font-size: 16px;
+    margin: 8px auto 40px;
+  }
+
+  .page-about-lita .principle .heading2 {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .page-about-lita .principle {
+    padding: 48px 0;
+  }
+
+  .page-about-lita .principle__en {
+    font-size: 16px;
+    width: 80px;
+    padding: 2px 0;
+    margin-right: 6px;
+  }
+
+  .principle .heading2-wrapper {
+    margin-bottom: 32px;
+  }
+
+  .page-about-lita .principle__paragraphs {
+    padding: 0 16px;
+  }
+
+  .principle__paragraph {
+    font-size: 14px;
+  }
+
+  .principle__heading3 {
+    font-size: 16px;
+    margin: 32px auto 0;
+  }
+
+  .principle__text {
+    padding: 0 16px;
+    font-size: 16px;
+    margin: 8px auto 32px;
+  }
+
+  .page-about-lita .sec:not(:last-child) {
+    margin-bottom: 80px;
+  }
+
+  .page-about-lita .heading2-wrapper {
+    margin-bottom: 40px;
   }
 }
 

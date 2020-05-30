@@ -15,60 +15,34 @@ get_header();
             <section class="sec vision">
                 <div class="vision-wrapper">
                     <div class="heading2-wrapper fadein">
-                            <h2 class="heading2" id="vision">ビジョン</h2>
+                            <h2 class="heading2" id="vision">企業理念</h2>
                     </div>
+                    <h3 class="about-lita__heading3 fadein">自ら輝き、世界を照らす。</h3>
+                    <i class="about-lita__headingEn fadein -en">Shine, to make the world a brighter place.</i>
                     <p class="desc fadein">
-                        素晴らしい商品を持っている全ての人や企業が<br>
-                        日本中・世界中に苦労なく<br class="sp">自社商品（サービス）のすばらしさを伝え、<br>
-                        発展できるような世の中にする。
+                        一人一人が光っていこう。<br />
+                        そして、お客様や周りに更なる輝きを。<br />
+                        最後には、世の中全体に、<br class="sp">大きな輝きを作ろう。
                     </p>
                     <p class="desc fadein">
-                        そのために弊社は多大な資金がないと<br>
-                        強いＰＲはできないという<br class="sp">業界の常識を破壊し、<br>
-                        ＰＲ業界の変革リーダーとしての地位を<br class="sp">担っていきます。
-                    </p>
-                    <p class="desc fadein">
-                        人間力を上げ、仕事力の向上に尽力します。
+                        LITAの光は、最初は1つから。<br />
+                        百の光を目指そう。<br class="sp">千の光。万の光を作っていこう。
                     </p>
                 </div>
             </section>
 
             <section class="sec">
-                <div class="philosophy">
+                <div class="principle">
                     <div class="heading2-wrapper fadein">
-                        <h2 class="heading2" id="vision">経営方針</h2>
-                        <div class="block-wrapper">
-                            <div class="text-wrapper">
-                                <p class="philosophy-heading fadein">本質的貢献</p>
-                                <p class="desc fadein">
-                                   お客様から依頼を受けた仕事をするのは当然ですが、<br>
-                                    私たちはクライアントの会社発展を見据え、<br>
-                                    そのためにどうするかをクライアントとともに考え<br class="sp">貢献していきます。<br>
-                                    貢献なき利益は追及しません。
-                                </p>
-                            </div>
-                        </div>
-                        <div class="block-wrapper">
-                            <div class="text-wrapper">
-                                <p class="philosophy-heading fadein">感動的価値</p>
-                                <p class="desc fadein">
-                                    質、スピード、アイデアを<br class="sp">日々、チームとしてブラッシュアップし、<br>
-                                    チームとして感動レベルの仕事を追及していきます。
-                                </p>
-                            </div>
-                        </div>
-                        <div class="block-wrapper">
-                            <div class="text-wrapper">
-                                <p class="philosophy-heading fadein ">利他の心</p>
-                                <p class="desc fadein">
-                                    私たちは自社の利益よりも<br>
-                                    クライアントの利益や社会の利益を常に優先します。<br>
-                                    クライアントと相互に信頼し合い、尊敬し合います。<br>
-                                    常に感謝を忘れず、人間力高い行動を心がけます。
-                                </p>
-                            </div>
-                        </div>
+                        <h2 class="heading2" id="vision">行動指針</h2>
                     </div>
+                    <div class="principle__paragraphs fadein">
+                        <p class="principle__paragraph"><b class="principle__en -en">Soulful</b>に、お客様の夢を一緒に目指す。</p>
+                        <p class="principle__paragraph"><b class="principle__en -en">Powerful</b>に、結果に向けた行動を重ねる。</p>
+                        <p class="principle__paragraph"><b class="principle__en -en">Joyful</b>な、人とビジネスの関係を作っていく。</p>
+                    </div>
+                    <h3 class="principle__heading3 fadein">チームLITA</h3>
+                    <p class="principle__text fadein">私たちは常に、利他の心を体現していきます。</p>
                 </div>
             </section>
 
