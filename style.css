@@ -3897,6 +3897,7 @@ ul {
   content: "";
   background-image: url(assets/img/about_lita_line.png);
   background-position: center;
+  background-size: contain;
   width: 90%;
   height: 1px;
   max-width: 560px;
@@ -3957,7 +3958,7 @@ ul {
 
 .page-about-lita .sec.vision .heading2 {
   font-size: 56px;
-  text-indent: -0.1em;
+  text-indent: -0.2em;
 }
 
 .page-about-lita .sec.vision .desc {
