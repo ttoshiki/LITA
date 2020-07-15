@@ -4351,7 +4351,8 @@ ul {
 
 .president-img.pc {
   min-width: 450px;
-  max-height: 630px;
+  max-height: 726px;
+  margin-right: 32px;
 }
 
 @media screen and (max-width: 769px) {
@@ -4575,7 +4576,7 @@ ul {
 
 @media screen and (max-width: 480px) {
   .page-about-lita .president-wrapper .position-name-wrapper {
-    top: 40px;
+    top: 54px;
   }
   .page-about-lita .president-wrapper .position-name-wrapper .president-name {
     font-size: 30px;

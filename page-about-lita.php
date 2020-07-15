@@ -106,8 +106,8 @@ get_header();
                     <div class="heading2-borderbtm"></div>
                 </div>
                 <div class="president-wrapper horizontal fadein">
-                    <img src="<?php echo content_url() ?>/themes/lita/assets/img/president_img.jpg" alt="笹木 郁乃" class="president-img pc" width="450" height="630">
-                    <img src="<?php echo content_url() ?>/themes/lita/assets/img/president_img_sp.jpg" alt="笹木 郁乃" class="president-img sp" width="450" height="630">
+                    <img src="<?php echo content_url() ?>/themes/lita/assets/img/president_img.jpg" alt="笹木 郁乃" class="president-img pc" width="450" height="726">
+                    <img src="<?php echo content_url() ?>/themes/lita/assets/img/president_img-sp.jpg" alt="笹木 郁乃" class="president-img sp" width="375" height="422">
                     <div class="text">
                         <div class="position-name-wrapper">
                             <a href="/book-anouncement" class="bookInformation">
