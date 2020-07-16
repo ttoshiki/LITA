@@ -74,6 +74,9 @@ get_header();
 						</div>
 					</div>
 				</section>
+				<picture class="top-page__picture">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/team_lita01.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/team_lita01.jpg 1x <?php echo get_template_directory_uri(); ?>/assets/img/team_lita01@2x.jpg 2x" alt="LITA社員集合写真">
+				</picture>
 				<section class="sec desc">
 					<div class="desc-wrapper">
 						<div class="desc-text">

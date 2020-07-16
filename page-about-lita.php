@@ -46,7 +46,7 @@ get_header();
                 </div>
             </section>
 
-            <section class="sec">
+            <section class="sec overview">
                 <div class="company-overview">
                     <div class="heading2-wrapper fadein">
                             <h2 class="heading2" id="company-overview">会社概要</h2>
@@ -100,6 +100,9 @@ get_header();
                     </table>
                 </div>
             </section>
+            <picture class="about-lita__picture">
+			    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/team_lita02.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/team_lita02.jpg 1x <?php echo get_template_directory_uri(); ?>/assets/img/team_lita02@2x.jpg 2x" alt="LITA社員集合写真" class="fadein">
+			</picture>
             <section>
                 <div class="heading2-wrapper fadein">
                     <h2 class="heading2" id="president-introduction">代表紹介</h2>
