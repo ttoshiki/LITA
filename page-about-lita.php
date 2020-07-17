@@ -46,7 +46,7 @@ get_header();
                 </div>
             </section>
 
-            <section class="sec">
+            <section class="sec overview">
                 <div class="company-overview">
                     <div class="heading2-wrapper fadein">
                             <h2 class="heading2" id="company-overview">会社概要</h2>
@@ -100,14 +100,17 @@ get_header();
                     </table>
                 </div>
             </section>
+            <picture class="about-lita__picture">
+			    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/team_lita02.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/team_lita02.jpg 1x <?php echo get_template_directory_uri(); ?>/assets/img/team_lita02@2x.jpg 2x" alt="LITA社員集合写真" class="fadein">
+			</picture>
             <section>
                 <div class="heading2-wrapper fadein">
                     <h2 class="heading2" id="president-introduction">代表紹介</h2>
                     <div class="heading2-borderbtm"></div>
                 </div>
                 <div class="president-wrapper horizontal fadein">
-                    <img src="<?php echo content_url() ?>/themes/lita/assets/img/president_img.jpg" alt="笹木 郁乃" class="president-img pc" width="450" height="630">
-                    <img src="<?php echo content_url() ?>/themes/lita/assets/img/president_img_sp.jpg" alt="笹木 郁乃" class="president-img sp" width="450" height="630">
+                    <img src="<?php echo content_url() ?>/themes/lita/assets/img/president_img.jpg" alt="笹木 郁乃" class="president-img pc" width="450" height="726">
+                    <img src="<?php echo content_url() ?>/themes/lita/assets/img/president_img-sp.jpg" alt="笹木 郁乃" class="president-img sp" width="375" height="422">
                     <div class="text">
                         <div class="position-name-wrapper">
                             <a href="/book-anouncement" class="bookInformation">
