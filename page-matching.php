@@ -129,7 +129,7 @@ get_header();
 				</ul>
 			</section>
 			<section class="sec matching__detail">
-				<h1 class="matching__detailPrice fadein">金額　150,000円<small class="matching__detailSmall">(税込)</small></h1>
+				<h1 class="matching__detailPrice fadein">金額　50,000円〜<small class="matching__detailSmall">(税込)</small></h1>
 				<div class="matching__detailExample fadein">
 					<h2 class="matching__detailSubHeading">依頼できる<br />仕事の一例</h2>
 					<span class="matching__detailTriangle"></span>
