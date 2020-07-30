@@ -83,7 +83,7 @@ get_header();
                         </tr>
                         <tr>
                             <td class="heading">スタッフ数</td>
-                            <td class="desc">7名</td>
+                            <td class="desc">10名</td>
                         </tr>
                         <tr>
                             <td class="heading">TEL</td>
@@ -91,7 +91,7 @@ get_header();
                         </tr>
                         <tr>
                             <td class="heading">FAX</td>
-                            <td class="desc">03-6684-4399</td>
+                            <td class="desc">03-5801-0975</td>
                         </tr>
 						<tr>
                             <td class="heading">関連会社</td>
