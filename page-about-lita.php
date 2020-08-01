@@ -83,7 +83,7 @@ get_header();
                         </tr>
                         <tr>
                             <td class="heading">スタッフ数</td>
-                            <td class="desc">10名</td>
+                            <td class="desc">11名</td>
                         </tr>
                         <tr>
                             <td class="heading">TEL</td>
