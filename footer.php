@@ -1,4 +1,5 @@
 <?php if (!is_archive() || get_post_type() !== 'post') { ?>
+</div>
 <footer class="site-footer">
 	<div class="footer-contact">
 		<div class="contact-phone">

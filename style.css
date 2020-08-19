@@ -416,6 +416,16 @@ picture {
 }
 
 /*＝＝＝＝＝＝＝＝＝＝＝
+    ページリンク
+＝＝＝＝＝＝＝＝＝＝＝＝*/
+
+.pagelink__target {
+  padding-top: 80px;
+  margin-top: -80px;
+}
+
+
+/*＝＝＝＝＝＝＝＝＝＝＝
     フェードイン
 ＝＝＝＝＝＝＝＝＝＝＝＝*/
 .fadein {
@@ -618,7 +628,7 @@ picture {
 }
 
 .top-header .site-header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   z-index: 1000;
 }
@@ -629,7 +639,7 @@ picture {
   .navcenter-lower
   .nav-list
   .header-link {
-  color: #fff;
+  color: #202d72;
 }
 
 .top-header .logo {
@@ -643,9 +653,11 @@ picture {
 }
 
 .site-header {
-  display: flex;
   width: 100%;
-  justify-content: space-around;
+  padding: 10px 30px 10px 40px;
+  box-sizing: border-box;
+  background-color: rgba(255,255,255,0.9);
+  box-shadow: 0 0 10px #ccc;
   /*チェックボックス等は非表示に*/
   /*アイコンのスペース*/
   /*ハンバーガーアイコンをCSSだけで表現*/
@@ -655,11 +667,10 @@ picture {
 }
 
 .site-header .site-branding {
-  margin-right: 40px;
-  margin-left: 12px;
-  display: flex;
-  align-items: center;
+  float: left;
+  width: 149px;
 }
+
 
 .site-header .site-branding img {
   align-items: center;
@@ -667,6 +678,7 @@ picture {
   max-width: 300px;
   min-width: 140px;
   height: auto;
+  margin-top: 9px;
 }
 
 .site-header .pc-nav {
@@ -674,9 +686,16 @@ picture {
   white-space: nowrap;
 }
 
+.site-header .site-navigation {
+  float: right;
+  width: calc(100% - 149px);
+}
+
+
 .site-header .navcenter-wrapper {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
 }
 
 .site-header .navcenter-wrapper .navcenter-upper {
@@ -726,19 +745,32 @@ picture {
   display: flex;
   flex-direction: row;
   margin: 0;
-  height: 80px;
+  height: 60px;
   align-items: center;
+  justify-content: center;
+  float: left;
+}
+.site-header .navcenter-wrapper2 .navcenter-lower.__contact {
+  display: flex;
+  height: 60px;
+  margin: 0;
+  position: relative;
+}
+.site-header .navcenter-wrapper2 .navcenter-lower.__contact img {
+  vertical-align: top;
 }
 
 .site-header .navcenter-wrapper .navcenter-lower .nav-list {
-  margin: 24px;
-  font-size: 18px;
+  margin: 0 16px;
+  font-size: 17px;
   z-index: 100;
   position: relative;
 }
-
+.site-header .navcenter-wrapper .navcenter-lower .nav-list:first-child {
+  margin-left: 0;
+}
 .site-header .navcenter-wrapper .navcenter-lower .nav-list:last-child {
-  margin-right: 16px;
+  margin-right: 0;
 }
 
 .site-header .navcenter-wrapper .navcenter-lower .nav-list:hover ul {
@@ -747,11 +779,40 @@ picture {
   text-align: center;
 }
 
+.site-header .navcenter-wrapper2 .navcenter-lower .nav-list {
+  margin-right: 10px;
+}
+.site-header .navcenter-wrapper2 .navcenter-lower .nav-list:last-child {
+  margin-right: 0;
+}
+.site-header .navcenter-wrapper2 .navcenter-lower .nav-list.lg {
+  display: block;
+}
+.site-header .navcenter-wrapper2 .navcenter-lower .nav-list.sm {
+  display: none;
+}
+.site-header .navcenter-wrapper2 .navcenter-lower .nav-list.sm.__tel {
+  margin-top: 12px;
+  margin-right: 20px;
+}
+.site-header .navcenter-wrapper2 .navcenter-lower .nav-list.sm.__mail {
+  margin-top: 6px;
+}
+
+
 .site-header .navcenter-wrapper .navcenter-lower .nav-list a {
   color: #000066;
   text-decoration: none;
 }
-
+.site-header .navcenter-lower .nav-list a {
+  transition: all 300ms ease-out 0s;
+}
+.site-header .navcenter-lower .nav-list a:hover {
+  opacity: 0.7;
+}
+.site-header .navcenter-wrapper .navcenter-lower .nav-list img {
+  vertical-align: top;
+}
 .site-header .navcenter-wrapper .navcenter-lower .nav-list .submenu-wrapper {
   display: none;
   position: absolute;
@@ -818,6 +879,7 @@ picture {
 
 .site-header #nav-drawer {
   position: relative;
+  top: 10px;
 }
 
 .site-header .nav-unshown {
@@ -923,17 +985,31 @@ picture {
   text-decoration: none;
 }
 
+@media screen and (max-width: 1200px) {
+  .site-header .navcenter-wrapper .navcenter-lower .nav-list {
+    font-size: 14px;
+  }
+  .site-header .navcenter-wrapper2 .navcenter-lower .nav-list.lg {
+    display: none;
+  }
+  .site-header .navcenter-wrapper2 .navcenter-lower .nav-list.sm {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 1096px) {
   .site-header .site-branding {
     margin-right: 0;
-    width: 150px;
+    width: 140px;
   }
   .site-header .site-branding img {
     width: 90%;
   }
   .site-header .navcenter-wrapper .navcenter-lower .nav-list {
     margin: 24px 14px;
-    font-size: 16px;
+  }
+  .site-header .navcenter-wrapper .navcenter-lower .nav-list {
+    margin: 0 10px;
   }
 }
 
@@ -945,6 +1021,7 @@ picture {
     position: fixed;
     top: 0;
     z-index: 1000;
+    box-shadow: none;
   }
   body.header-nav {
     margin-top: 87px;
@@ -956,6 +1033,7 @@ picture {
   .site-header .site-branding img {
     min-width: auto;
     transition: all 0.2s;
+    margin-top: 0;
   }
   .site-header .site-branding {
     width: 180px;
@@ -971,6 +1049,9 @@ picture {
   .site-header .pc-nav {
     display: none;
   }
+  .site-header .pc-logo {
+    display: none;
+  }
   .site-header a {
     color: #fff;
     text-decoration: none;
@@ -979,6 +1060,8 @@ picture {
   .site-header .site-navigation {
     display: flex;
     align-items: center;
+    float: right;
+    width: auto;
   }
   .site-header #nav-content {
     background-color: #080841;
@@ -1014,6 +1097,17 @@ picture {
     margin-left: 0;
     padding-left: 8px;
   }
+}
+
+
+.site-main__wrapper {
+  padding-top: 80px;
+}
+
+@media screen and (max-width: 960px) {
+.site-main__wrapper {
+  padding-top: 0;
+}
 }
 
 .announcementBlock {
@@ -5232,7 +5326,8 @@ picture {
 
 .contact {
   max-width: 1096px;
-  margin: 0 auto 160px;
+  margin: -1px auto 160px;
+  padding-top: 20px;
 }
 
 .contact .sp {
@@ -5395,6 +5490,10 @@ picture {
 }
 
 @media screen and (max-width: 769px) {
+  .contact {
+    padding-top: 1px;
+    margin-top: -50px;
+  }
   .contact .sp {
     display: block;
   }

@@ -63,93 +63,75 @@
 } else {
     body_class();
 } ?>>
-	<?php if (is_front_page()): ?>
-	<div class="top-header">
-		<?php else: ?>
-		<div class="site-header">
-			<?php endif; ?>
-			<?php if (!is_archive() || get_post_type() !== 'post') { ?>
+		<div class="top-header">
+		<?php if (!is_archive() || get_post_type() !== 'post') { ?>
 			<header class="site-header">
 				<div class="site-branding">
 					<?php if (is_front_page()): ?>
-					<a href="/"><img src="<?php echo content_url() ?>/themes/lita/assets/img/lita_logo_white.svg" alt=""
+						<div class="pc pc-logo">
+							<a href="<?= home_url() ?>/"><img src="<?php echo content_url() ?>/themes/lita/assets/img/img_headerlogo.png" srcset="<?php echo content_url() ?>/themes/lita/assets/img/img_headerlogo@2x.png 2x" alt=""
 							class="logo"></a>
+						</div>
+						<div class="sp">
+							<a href="<?= home_url() ?>/"><img src="<?php echo content_url() ?>/themes/lita/assets/img/lita_logo_white.svg" alt=""
+							class="logo"></a>
+						</div>
 					<?php else: ?>
-					<a href="/"><img src="<?php echo content_url() ?>/themes/lita/assets/img/lita_logo.svg" alt=""
+						<div class="pc pc-logo">
+							<a href="<?= home_url() ?>/"><img src="<?php echo content_url() ?>/themes/lita/assets/img/img_headerlogo.png" srcset="<?php echo content_url() ?>/themes/lita/assets/img/img_headerlogo@2x.png 2x" alt=""
 							class="logo"></a>
+						</div>
+						<div class="sp">
+							<a href="<?= home_url() ?>/"><img src="<?php echo content_url() ?>/themes/lita/assets/img/lita_logo_white.svg" alt=""
+							class="logo"></a>
+						</div>
 					<?php endif; ?>
 				</div><!-- .site-branding -->
 				<nav class="site-navigation main-navigation">
 					<div class="pc-nav pc">
 						<div class="navcenter-wrapper">
-							<div class="navcenter-upper">
-								<div class="phone">
-									<!-- <img src="<?php echo content_url() ?>/themes/lita/assets/img/icon_phone.png" alt="" class="icon-phone"> -->
-									<svg version="1.1" id="_x31_0" xmlns="http://www.w3.org/2000/svg"
-										xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
-										style="width: 16px; height: 16px; opacity: 1;margin-top: -16px;"
-										xml:space="preserve" class="icon-phone">
-										<style type="text/css">
-											.st0 {
-												fill: #374149;
-											}
-										</style>
-										<g>
-											<path class="st0" d="M454.824,0H57.176C25.726,0,0,25.726,0,57.176v397.648C0,486.27,25.726,512,57.176,512h397.648
-									C486.27,512,512,486.27,512,454.824V57.176C512,25.726,486.27,0,454.824,0z M405.242,357.355
-									c-2.035,8.047-14.18,27.29-27.91,39.126c-0.394,0.336-0.778,0.702-1.176,1.027c-0.074,0.058-0.148,0.109-0.218,0.168
-									c-3.875,3.133-7.863,5.668-11.805,7.199c-0.078,0.027-0.16,0.042-0.238,0.074c-1.117,0.422-2.23,0.746-3.332,1
-									c-1.218,0.254-2.426,0.402-3.61,0.402l-0.726-0.015c-5.316-0.238-14.754-3.313-28.851-9.406
-									c-28.114-12.148-55.043-27.656-80.043-46.09c-32.918-24.215-61.894-53.18-86.125-86.094
-									c-18.469-25.028-34.004-51.996-46.176-80.157c-6.09-14.09-9.164-23.523-9.402-28.847c-0.93-20.817,38.398-46.348,48.977-49.02
-									c2.824-0.714,5.789-1.074,8.816-1.074c1.528,0,3.051,0.09,4.566,0.262c5.606,0.668,10.774,2.473,15.469,5.398
-									c1.489,0.945,2.535,1.707,3.551,2.519c2.691,2.199,4.613,4.125,6.172,6.133l20.675,26.516
-									c11.215,14.382,10.414,34.637-1.914,48.156c-3.738,4.098-8.989,9.594-12.79,12.5c-0.074,0.058-0.312,0.238-0.355,0.988
-									c-0.598,10.672,33.543,49.954,44.5,60.481c10.375,10.797,49.215,44.574,60.317,44.57c0.465,0,0.836-0.074,1.046-0.203
-									c3.09-3.969,8.582-9.215,12.672-12.946c6.922-6.312,15.89-9.789,25.25-9.789c8.378,0,16.301,2.722,22.914,7.875l26.512,20.672
-									C403.676,327.875,408.871,343.019,405.242,357.355z" style="fill: rgb(255, 255, 255);"></path>
-										</g>
-									</svg>
-
-									<a href="tel:<?php phoneNumber(); ?>" style="color:#ffffff;text-decoration: none;">
-										<address class="phone-number" style="line-height:1;"><?php phoneNumber() ?><br><span
-												style="font-size:0.7em;font-weight:300;margin-left:-20px;">平日10〜17時（土日祝休み）</span>
-										</address>
-									</a>
-								</div>
-								<button class="btn-contact" onclick="location.href='/contact'">お問い合わせ</button>
-							</div>
 							<ul class="navcenter-lower">
-								<li class="nav-list"><a href="/about" class="header-link">LITAとは</a>
+								<li class="nav-list"><a href="<?= home_url() ?>/about" class="header-link">LITAとは</a>
 									<ul class="submenu-wrapper">
-										<li class="submenu"><a href="/about-lita#company-overview"
+										<li class="submenu"><a href="<?= home_url() ?>/about-lita#company-overview"
 												class="header-link">会社概要</a></li>
-										<li class="submenu"><a href="/about-lita#president-introduction"
+										<li class="submenu"><a href="<?= home_url() ?>/about-lita#president-introduction"
 												class="header-link">代表紹介</a></li>
 									</ul>
 								</li>
-								<li class="nav-list"><a href="/service-list" class="header-link">PR代行</a>
-								<li class="nav-list"><a href="//pr-professional.jp/pr-learn/" class="header-link"
+								<li class="nav-list"><a href="<?= home_url() ?>/service-list" class="header-link">PR代行</a></li>
+								<li class="nav-list"><a href="https://pr-professional.jp/online/" class="header-link"
 										target="_blank">PR塾</a></li>
-								<!-- <li class="nav-list"><a href="/column" class="header-link">PRコラム</a></li> -->
-								<li class="nav-list"><a href="/sns_voice" class="header-link">SNS口コミ</a></li>
-								<li class="nav-list"><a href="/announcement" class="header-link">活動実績</a></li>
-								<li class="nav-list"><a href="/entry" class="header-link">採用情報</a>
+								<!-- <li class="nav-list"><a href="<?= home_url() ?>/column" class="header-link">PRコラム</a></li> -->
+								<li class="nav-list"><a href="<?= home_url() ?>/matching" class="header-link">人材紹介</a></li>
+								<li class="nav-list"><a href="<?= home_url() ?>/announcement" class="header-link">活動実績</a></li>
+								<li class="nav-list"><a href="<?= home_url() ?>/entry" class="header-link">採用情報</a>
 									<ul class="submenu-wrapper">
-										<li class="submenu"><a href="/entry-form" class="header-link">エントリー</a></li>
+										<li class="submenu"><a href="<?= home_url() ?>/entry-form" class="header-link">エントリー</a></li>
 									</ul>
-								<li class="nav-list  RightToLeft inmail">
-									<a href="//55auto.biz/ikunosasaki/touroku/sp/entryform2.htm"
-										class="mailmagazine-link" target="_blank">
-										<svg xmlns="http://www.w3.org/2000/svg"
-											xmlns:xlink="http://www.w3.org/1999/xlink" width="28px" height="23px"
-											class="mail-icon fuwafuwa">
-											<path fill-rule="evenodd" fill="rgb(255, 255, 255)"
-												d="M19.287,10.189 L27.711,2.474 L27.711,21.999 L19.287,10.189 ZM0.234,0.972 L27.643,0.972 L13.938,13.521 L0.234,0.972 ZM0.129,22.050 L0.152,2.462 L8.590,10.189 L0.129,22.050 ZM13.935,15.083 L13.935,15.089 L13.938,15.087 L13.942,15.089 L13.942,15.083 L18.612,10.807 L26.688,22.129 L1.189,22.129 L9.265,10.807 L13.935,15.083 Z" />
-										</svg>
-										<span class="description">PR広報担当者のための<br>
-											<em class="strong">無料メール講座</em>
-										</span>
+								</li>
+							</ul>
+						</div>
+						<div class="navcenter-wrapper2">
+							<ul class="navcenter-lower __contact">
+								<li class="nav-list __tel lg">
+									<a href="tel:0358010777">
+										<img src="<?php echo content_url() ?>/themes/lita/assets/img/phone.png" srcset="<?php echo content_url() ?>/themes/lita/assets/img/phone@2x.png 2x" alt="03-5801-0777 平日10～17時（土日祝休み）">
+									</a>
+								</li>
+								<li class="nav-list __mail lg">
+									<a href="<?= home_url() ?>/contact/">
+										<img src="<?php echo content_url() ?>/themes/lita/assets/img/contact.png" srcset="<?php echo content_url() ?>/themes/lita/assets/img/contact@2x.png 2x" alt="03-5801-0777 平日10～17時（土日祝休み）">
+									</a>
+								</li>
+								<li class="nav-list __tel sm">
+									<a href="tel:0358010777">
+										<img src="<?php echo content_url() ?>/themes/lita/assets/img/phone2.png" srcset="<?php echo content_url() ?>/themes/lita/assets/img/phone2@2x.png 2x" alt="03-5801-0777 平日10～17時（土日祝休み）">
+									</a>
+								</li>
+								<li class="nav-list __mail sm">
+									<a href="<?= home_url() ?>/contact/">
+										<img src="<?php echo content_url() ?>/themes/lita/assets/img/contact2.png" srcset="<?php echo content_url() ?>/themes/lita/assets/img/contact2@2x.png 2x" alt="03-5801-0777 平日10～17時（土日祝休み）">
 									</a>
 								</li>
 							</ul>
@@ -162,21 +144,21 @@
 							<label class="nav-unshown" id="nav-close" for="nav-input"></label>
 							<div id="nav-content">
 								<ul class="sp-nav-wrapper">
-									<li class="nav-list"><a href="/">ホーム</a></li>
-									<li class="nav-list"><a href="/about">LITAとは</a>
+									<li class="nav-list"><a href="<?= home_url() ?>/">ホーム</a></li>
+									<li class="nav-list"><a href="<?= home_url() ?>/about">LITAとは</a>
 										<ul class="submenu-wrapper">
-											<li class="submenu"><a href="/about-lita#company-overview">会社概要</a></li>
-											<li class="submenu"><a href="/about-lita#president-introduction">代表紹介</a>
+											<li class="submenu"><a href="<?= home_url() ?>/about-lita#company-overview">会社概要</a></li>
+											<li class="submenu"><a href="<?= home_url() ?>/about-lita#president-introduction">代表紹介</a>
 											</li>
 										</ul>
-									<li class="nav-list"><a href="/service-list">PR代行</a>
-									<li class="nav-list"><a href="//pr-professional.jp/pr-learn/">PR塾</a>
-									<!-- <li class="nav-list"><a href="/column">PRコラム</a></li> -->
-									<li class="nav-list"><a href="/sns_voice" class="header-link">SNS口コミ</a></li>
-									<li class="nav-list"><a href="/announcement">活動実績</a>
-									<li class="nav-list"><a href="/entry" class="header-link">採用情報</a>
+									<li class="nav-list"><a href="<?= home_url() ?>/service-list">PR代行</a>
+									<li class="nav-list"><a href="https://pr-professional.jp/online/">PR塾</a>
+									<!-- <li class="nav-list"><a href="<?= home_url() ?>/column">PRコラム</a></li> -->
+									<li class="nav-list"><a href="<?= home_url() ?>/matching" class="header-link">人材紹介</a></li>
+									<li class="nav-list"><a href="<?= home_url() ?>/announcement">活動実績</a>
+									<li class="nav-list"><a href="<?= home_url() ?>/entry" class="header-link">採用情報</a>
 										<ul class="submenu-wrapper">
-											<li class="submenu"><a href="/entry-form" class="header-link">エントリー</a></li>
+											<li class="submenu"><a href="<?= home_url() ?>/entry-form" class="header-link">エントリー</a></li>
 										</ul>
 									</li>
 									<div class="nav-contact">
@@ -186,7 +168,7 @@
 											<path fill-rule="evenodd" fill="rgb(248, 246, 239)"
 												d="M39.733,31.095 L1.300,31.095 C0.863,31.095 0.510,30.702 0.510,30.218 L0.510,1.771 C0.510,1.287 0.863,0.894 1.300,0.894 L39.733,0.894 C40.170,0.894 40.522,1.287 40.522,1.771 L40.522,30.218 C40.522,30.702 40.170,31.095 39.733,31.095 ZM38.248,29.341 L26.620,12.576 L20.543,17.095 L14.368,12.517 L2.718,29.341 L38.248,29.341 ZM2.090,27.370 L13.051,11.540 L2.090,3.412 L2.090,27.370 ZM3.904,2.648 L20.518,14.972 L37.129,2.648 L3.904,2.648 ZM27.937,11.598 L38.943,27.469 L38.943,3.413 L27.937,11.598 Z" />
 										</svg>
-										<li class="nav-list"><a href="/contact" class="footer-contact-link">お問い合わせ</a>
+										<li class="nav-list"><a href="<?= home_url() ?>/contact" class="footer-contact-link">お問い合わせ</a>
 										</li>
 									</div>
 								</ul>
@@ -197,3 +179,6 @@
 			</header><!-- #masthead -->
 			<?php } ; ?>
 		</div>
+<?php if (!is_archive() || get_post_type() !== 'post') { ?>
+	<div class="site-main__wrapper">
+<?php } ?>

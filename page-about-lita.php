@@ -49,7 +49,7 @@ get_header();
             <section class="sec overview">
                 <div class="company-overview">
                     <div class="heading2-wrapper fadein">
-                            <h2 class="heading2" id="company-overview">会社概要</h2>
+                            <h2 class="heading2 pagelink__target" id="company-overview">会社概要</h2>
                             <div class="heading2-borderbtm"></div>
                     </div>
                     <table class="table-wrapper fadein">
@@ -83,7 +83,7 @@ get_header();
                         </tr>
                         <tr>
                             <td class="heading">スタッフ数</td>
-                            <td class="desc">11名</td>
+                            <td class="desc">7名</td>
                         </tr>
                         <tr>
                             <td class="heading">TEL</td>
@@ -91,7 +91,7 @@ get_header();
                         </tr>
                         <tr>
                             <td class="heading">FAX</td>
-                            <td class="desc">03-5801-0975</td>
+                            <td class="desc">03-6684-4399</td>
                         </tr>
 						<tr>
                             <td class="heading">関連会社</td>
@@ -105,7 +105,7 @@ get_header();
 			</picture>
             <section>
                 <div class="heading2-wrapper fadein">
-                    <h2 class="heading2" id="president-introduction">代表紹介</h2>
+                    <h2 class="heading2 pagelink__target" id="president-introduction">代表紹介</h2>
                     <div class="heading2-borderbtm"></div>
                 </div>
                 <div class="president-wrapper horizontal fadein">
