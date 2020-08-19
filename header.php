@@ -102,7 +102,7 @@
 								<li class="nav-list"><a href="<?= home_url() ?>/service-list" class="header-link">PR代行</a></li>
 								<li class="nav-list"><a href="https://pr-professional.jp/online/" class="header-link"
 										target="_blank">PR塾</a></li>
-								<!-- <li class="nav-list"><a href="<?= home_url() ?>/column" class="header-link">PRコラム</a></li> -->
+								<li class="nav-list"><a href="<?= home_url() ?>/column" class="header-link">PRコラム</a></li>
 								<li class="nav-list"><a href="<?= home_url() ?>/matching" class="header-link">人材紹介</a></li>
 								<li class="nav-list"><a href="<?= home_url() ?>/announcement" class="header-link">活動実績</a></li>
 								<li class="nav-list"><a href="<?= home_url() ?>/entry" class="header-link">採用情報</a>
@@ -153,7 +153,7 @@
 										</ul>
 									<li class="nav-list"><a href="<?= home_url() ?>/service-list">PR代行</a>
 									<li class="nav-list"><a href="https://pr-professional.jp/online/">PR塾</a>
-									<!-- <li class="nav-list"><a href="<?= home_url() ?>/column">PRコラム</a></li> -->
+									<li class="nav-list"><a href="<?= home_url() ?>/column">PRコラム</a></li>
 									<li class="nav-list"><a href="<?= home_url() ?>/matching" class="header-link">人材紹介</a></li>
 									<li class="nav-list"><a href="<?= home_url() ?>/announcement">活動実績</a>
 									<li class="nav-list"><a href="<?= home_url() ?>/entry" class="header-link">採用情報</a>

@@ -58,7 +58,7 @@
 			</ul>
 
 			<ul class="list-wrapper">
-				<!-- <li class="list"><a href="/column"><span class="list-root">-</span>PRコラム</a></li> -->
+				<li class="list"><a href="/column"><span class="list-root">-</span>PRコラム</a></li>
 				<li class="list"><a href="/sns_voice"><span class="list-root">-</span>SNS口コミ</a></li>
 				<li class="list"><a href="/announcement"><span class="list-root">-</span>活動実績</a></li>
 
