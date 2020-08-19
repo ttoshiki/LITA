@@ -261,7 +261,7 @@ get_header();
 						</div>
 					</div>
 				</section>
-				<!-- <section class="sec column">
+				<section class="sec column">
 					<div class="heading2-wrapper fadein">
 						<h2 class="heading2">PR Column</h2>
 						<div class="heading2-borderbtm"></div>
@@ -311,7 +311,7 @@ get_header();
 						</article>
 						<button onclick="location.href='/column'" class="clm fadein">>> コラム一覧</button>
 					</div>
-				</section> -->
+				</section>
 				<?php get_template_part('mailMagazine-btn'); ?>
 				<?php get_template_part('bookPresentPlanning'); ?>
 			</main>
