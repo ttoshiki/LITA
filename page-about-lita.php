@@ -82,16 +82,12 @@ get_header();
                             <td class="desc">2017年2月</td>
                         </tr>
                         <tr>
-                            <td class="heading">スタッフ数</td>
-                            <td class="desc">7名</td>
-                        </tr>
-                        <tr>
                             <td class="heading">TEL</td>
                             <td class="desc"><?php phoneNumber(); ?></td>
                         </tr>
                         <tr>
                             <td class="heading">FAX</td>
-                            <td class="desc">03-6684-4399</td>
+                            <td class="desc">03-5801-0975</td>
                         </tr>
 						<tr>
                             <td class="heading">関連会社</td>
@@ -133,7 +129,7 @@ get_header();
                             <p class="desc">
                                 会社員時代、創業期2社のPRを担当。<br>
                                 株式会社エアウィーヴ 5年で1億→120億<br>
-                                愛知トビー株式会社（バーミキュラ製造販売）2年で11億→44億<br>と、PRの力で急成長に貢献。
+                                愛知ドビー株式会社（バーミキュラ製造販売）2年で11億→44億<br>と、PRの力で急成長に貢献。
                             </p>
                             <p class="desc">
                                 その後、企業価値にPRの力を加えることで、会社が劇的に変化するということを多くの経営者に伝えるべく、PR代行事業を立ち上げる。また、自身の10年間のPR経験より構築した独自のPR理論をコンンテンツとするPR塾を主宰。延べ330人以上の起業家、経営者、PR担当者にPRを指導、14期連続満席にて開催。
@@ -158,7 +154,7 @@ get_header();
                 <?php get_template_part('bookAnouncement_band'); ?>
             </section>
             <section class="sec banner-area horizontal fadein">
-                <a href="/blog" class="banner-link"><img src="<?php echo content_url() ?>/themes/lita/assets/img/blog_banner.jpg" alt="president_blog" class="banner"></a>
+                <!--a href="/blog" class="banner-link"><img src="<?php echo content_url() ?>/themes/lita/assets/img/blog_banner.jpg" alt="president_blog" class="banner"></a-->
                 <a href="https://www.facebook.com/PRikunosasaki" class="banner-link"><img src="<?php echo content_url() ?>/themes/lita/assets/img/fb_banner.jpg" alt="facebook_banner" class="banner"></a>
             </section>
 

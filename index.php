@@ -5,20 +5,7 @@ get_header();
 	<div class="top-page">
 		<div class="content-area">
 			<main class="site-main">
-				<div class="top-page__mainVisual pc" style="background-image: url('<?php echo content_url() ?>/themes/lita/assets/img/heroimg_1@2x.jpg');"></div>
-				<div class="top-page__mainVisual sp" id="top-page__mainVisualSp" style="background-image: url('<?php echo content_url() ?>/themes/lita/assets/img/heroimg_1_sp@2x.jpg');"></div>
-				<a href="/book-anouncement"><img src="<?php echo content_url() ?>/themes/lita/assets/img/mainvisual_book_info.png" alt="" class="heroimg-wrapper__bookInformation"></a>
-				<section class="top-page__cta">
-					<span class="top-page__ctaBannerWrapper">
-						<a href="//pr-professional.jp/online/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/online_banner.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/online_banner@2x.png" alt="在宅PR塾バナー" class="top-page__ctaBanner pc"></a>
-						<a href="//pr-professional.jp/online/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/online_banner-sp.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/online_banner-sp@2x.png" alt="在宅PR塾バナー" class="top-page__ctaBanner sp"></a>
-					</span>
-					<ul class="top-page__ctaList">
-						<li class="top-page__ctaItem"><a href="service-list" class="top-page__ctaItemLink">LITAにPRを依頼したい方</a></li>
-						<li class="top-page__ctaItem"><a href="//pr-professional.jp/pr-learn" class="top-page__ctaItemLink">PRのスキルを身に付けたい方</a></li>
-						<li class="top-page__ctaItem"><a href="matching" class="top-page__ctaItemLink">PR人材を探している企業の方</a></li>
-					</ul>
-				</section>
+			<?php echo do_shortcode('[rev_slider alias="classic-carousel1"][/rev_slider]'); ?>
 				<section class="desc">
 					<div class="news">
 						<div class="news-content">
@@ -73,6 +60,54 @@ get_header();
 							<button onclick="location.href='/announcement'" class="news-list-btn fadein">お知らせ一覧</button>
 						</div>
 					</div>
+				</section>
+								<section class="sec serviceDetail">
+					<div class="heading2-wrapper fadein">
+						<h2 class="heading2">SERVICE</h2>
+						<div class="heading2-borderbtm"></div>
+						<p class="subtitle">LITAが提供するサービス</p>
+					</div>
+
+					<ul class="service-wrapper horizontal">
+						<li class="service-list fadein">
+							<div class="service">
+								<h3 class="heading3 yumincho">PR代行</h3>
+								<img src="<?php echo content_url() ?>/themes/lita/assets/img/service_pr_agent.jpg" alt="" class="service-img">
+								<div class="body-wrapper">
+									<h4 class="heading4">結果に繋げる<br />プロのPR</h4>
+									<p class="service-text">PRは売り上げを1→100にする力がある。クライアントと伴走しながら、二人三脚で結果にコミットします。</p>
+								</div>
+								<button class="detail" onclick="location.href='/service-list'">詳細</button>
+							</div>
+						</li>
+						<li class="service-list fadein">
+							<div class="service">
+								<h3 class="heading3 yumincho">PR塾<br class="sp"><small class="service-list__small">-PRプロフェッショナル講座-</small></h3>
+								<img src="<?php echo content_url() ?>/themes/lita/assets/img/service_pr_school.jpg" alt="" class="service-img">
+								<div class="body-wrapper">
+									<h4 class="heading4">2,000名以上の経営者<br />起業家・広報に対し指導</h4>
+									<p class="service-text">
+										PRスキルを習得し、自社の力で認知拡大を目指しましょう。PR設計、メディア掲載、SNSコミュニケーションを3ヶ月で徹底習得。
+									</p>
+								</div>
+								<button class="detail" onclick="window.open('//pr-professional.jp/kobetupage/')">詳細</button>
+							</div>
+						</li>
+						<li class="service-list fadein">
+							<div class="service">
+								<h3 class="heading3 yumincho">PR人材のご紹介<br class="sp"></h3>
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/service_pr_introduce@2x.jpg" alt="" class="service-img">
+								<div class="body-wrapper">
+									<h4 class="heading4">PR塾卒業生を<br />ご紹介いたします</h4>
+									<p class="service-text">
+										PRプロフェッショナル講座「PR塾」の卒業生をご紹介するサービスです。貴社のPR業務を担い事業成長に貢献いたします。
+									</p>
+								</div>
+								<button class="detail" onclick="location.href='https://sns-pr.com/'">詳細</button>
+							</div>
+						</li>
+
+					</ul>
 				</section>
 				<picture class="top-page__picture">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/team_lita01.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/team_lita01.jpg 1x <?php echo get_template_directory_uri(); ?>/assets/img/team_lita01@2x.jpg 2x" alt="LITA社員集合写真">
@@ -182,7 +217,7 @@ get_header();
 						</div>
 					</div>
 				</section>
-				<section class="sec serviceDetail">
+												<section class="sec serviceDetail">
 					<div class="heading2-wrapper fadein">
 						<h2 class="heading2">SERVICE</h2>
 						<div class="heading2-borderbtm"></div>
@@ -206,12 +241,12 @@ get_header();
 								<h3 class="heading3 yumincho">PR塾<br class="sp"><small class="service-list__small">-PRプロフェッショナル講座-</small></h3>
 								<img src="<?php echo content_url() ?>/themes/lita/assets/img/service_pr_school.jpg" alt="" class="service-img">
 								<div class="body-wrapper">
-									<h4 class="heading4">PRスペシャリスト<br />330名輩出</h4>
+									<h4 class="heading4">2,000名以上の経営者<br />起業家・広報に対し指導</h4>
 									<p class="service-text">
 										PRスキルを習得し、自社の力で認知拡大を目指しましょう。PR設計、メディア掲載、SNSコミュニケーションを3ヶ月で徹底習得。
 									</p>
 								</div>
-								<button class="detail" onclick="window.open('//pr-professional.jp/pr-learn/')">詳細</button>
+								<button class="detail" onclick="window.open('//pr-professional.jp/kobetupage/')">詳細</button>
 							</div>
 						</li>
 						<li class="service-list fadein">
@@ -224,7 +259,7 @@ get_header();
 										PRプロフェッショナル講座「PR塾」の卒業生をご紹介するサービスです。貴社のPR業務を担い事業成長に貢献いたします。
 									</p>
 								</div>
-								<button class="detail" onclick="location.href='/matching'">詳細</button>
+								<button class="detail" onclick="location.href='https://sns-pr.com/'">詳細</button>
 							</div>
 						</li>
 

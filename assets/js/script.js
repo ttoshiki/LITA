@@ -86,3 +86,10 @@ jQuery(function () {
     });
   }
 });
+
+//モーダル
+jQuery(function () {
+    jQuery('.modIframe').modaal({
+        type: 'iframe'
+    });
+});

@@ -55,6 +55,11 @@
 	<div id="fb-root"></div>
 	<script async defer crossorigin="anonymous"
 		src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v6.0"></script>
+
+	<?php if (is_home() || is_front_page()) : ?>
+		<link rel="stylesheet" href="<?= get_theme_file_uri(); ?>/assets/css/modaal.min.css">
+		<script src="<?= get_theme_file_uri(); ?>/assets/js/modaal.min.js" defer></script>
+	<?php endif; ?>
 	<?php wp_head(); ?>
 </head>
 
@@ -73,7 +78,7 @@
 							class="logo"></a>
 						</div>
 						<div class="sp">
-							<a href="<?= home_url() ?>/"><img src="<?php echo content_url() ?>/themes/lita/assets/img/lita_logo_white.svg" alt=""
+							<a href="<?= home_url() ?>/"><img src="<?php echo content_url() ?>/themes/lita/assets/img/img_headerlogo_sp.png" width="74" height="21" alt=""
 							class="logo"></a>
 						</div>
 					<?php else: ?>
@@ -82,7 +87,7 @@
 							class="logo"></a>
 						</div>
 						<div class="sp">
-							<a href="<?= home_url() ?>/"><img src="<?php echo content_url() ?>/themes/lita/assets/img/lita_logo_white.svg" alt=""
+							<a href="<?= home_url() ?>/"><img src="<?php echo content_url() ?>/themes/lita/assets/img/img_headerlogo_sp.png" width="74" height="21" alt=""
 							class="logo"></a>
 						</div>
 					<?php endif; ?>
@@ -93,18 +98,18 @@
 							<ul class="navcenter-lower">
 								<li class="nav-list"><a href="<?= home_url() ?>/about" class="header-link">LITAとは</a>
 									<ul class="submenu-wrapper">
-										<li class="submenu"><a href="<?= home_url() ?>/about-lita#company-overview"
+										<li class="submenu"><a href="<?= home_url() ?>/about-lita"
 												class="header-link">会社概要</a></li>
 										<li class="submenu"><a href="<?= home_url() ?>/about-lita#president-introduction"
 												class="header-link">代表紹介</a></li>
 									</ul>
 								</li>
 								<li class="nav-list"><a href="<?= home_url() ?>/service-list" class="header-link">PR代行</a></li>
-								<li class="nav-list"><a href="https://pr-professional.jp/online/" class="header-link"
+								<li class="nav-list"><a href="https://pr-professional.jp/kobetupage/" class="header-link"
 										target="_blank">PR塾</a></li>
-								<li class="nav-list"><a href="<?= home_url() ?>/column" class="header-link">PRコラム</a></li>
-								<li class="nav-list"><a href="<?= home_url() ?>/matching" class="header-link">人材紹介</a></li>
+								<li class="nav-list"><a href="https://sns-pr.com/" class="header-link">人材マッチング</a></li>
 								<li class="nav-list"><a href="<?= home_url() ?>/announcement" class="header-link">活動実績</a></li>
+								<li class="nav-list"><a href="<?= home_url() ?>/column" class="header-link">PRコラム</a></li>
 								<li class="nav-list"><a href="<?= home_url() ?>/entry" class="header-link">採用情報</a>
 									<ul class="submenu-wrapper">
 										<li class="submenu"><a href="<?= home_url() ?>/entry-form" class="header-link">エントリー</a></li>
@@ -147,27 +152,22 @@
 									<li class="nav-list"><a href="<?= home_url() ?>/">ホーム</a></li>
 									<li class="nav-list"><a href="<?= home_url() ?>/about">LITAとは</a>
 										<ul class="submenu-wrapper">
-											<li class="submenu"><a href="<?= home_url() ?>/about-lita#company-overview">会社概要</a></li>
+											<li class="submenu"><a href="<?= home_url() ?>/about-lita">会社概要</a></li>
 											<li class="submenu"><a href="<?= home_url() ?>/about-lita#president-introduction">代表紹介</a>
 											</li>
 										</ul>
 									<li class="nav-list"><a href="<?= home_url() ?>/service-list">PR代行</a>
-									<li class="nav-list"><a href="https://pr-professional.jp/online/">PR塾</a>
-									<li class="nav-list"><a href="<?= home_url() ?>/column">PRコラム</a></li>
-									<li class="nav-list"><a href="<?= home_url() ?>/matching" class="header-link">人材紹介</a></li>
+									<li class="nav-list"><a href="https://pr-professional.jp/kobetupage/">PR塾</a>
+									<li class="nav-list"><a href="https://sns-pr.com/" class="header-link">人材マッチング</a></li>
 									<li class="nav-list"><a href="<?= home_url() ?>/announcement">活動実績</a>
+									<li class="nav-list"><a href="<?= home_url() ?>/column">PRコラム</a></li>
 									<li class="nav-list"><a href="<?= home_url() ?>/entry" class="header-link">採用情報</a>
 										<ul class="submenu-wrapper">
 											<li class="submenu"><a href="<?= home_url() ?>/entry-form" class="header-link">エントリー</a></li>
 										</ul>
 									</li>
 									<div class="nav-contact">
-										<svg xmlns="http://www.w3.org/2000/svg"
-											xmlns:xlink="http://www.w3.org/1999/xlink" width="41px" height="32px"
-											class="mail-icon">
-											<path fill-rule="evenodd" fill="rgb(248, 246, 239)"
-												d="M39.733,31.095 L1.300,31.095 C0.863,31.095 0.510,30.702 0.510,30.218 L0.510,1.771 C0.510,1.287 0.863,0.894 1.300,0.894 L39.733,0.894 C40.170,0.894 40.522,1.287 40.522,1.771 L40.522,30.218 C40.522,30.702 40.170,31.095 39.733,31.095 ZM38.248,29.341 L26.620,12.576 L20.543,17.095 L14.368,12.517 L2.718,29.341 L38.248,29.341 ZM2.090,27.370 L13.051,11.540 L2.090,3.412 L2.090,27.370 ZM3.904,2.648 L20.518,14.972 L37.129,2.648 L3.904,2.648 ZM27.937,11.598 L38.943,27.469 L38.943,3.413 L27.937,11.598 Z" />
-										</svg>
+										<img src="<?php echo content_url() ?>/themes/lita/assets/img/img_mail.png" width="27" height="25" alt="">
 										<li class="nav-list"><a href="<?= home_url() ?>/contact" class="footer-contact-link">お問い合わせ</a>
 										</li>
 									</div>
